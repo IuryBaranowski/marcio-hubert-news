@@ -16,10 +16,12 @@ export default function Header() {
 
   const navItems = [
     { label: t("home"), href: "/" },
-    { label: t("politics"), href: "/politica" },
-    { label: t("economy"), href: "/economia" },
-    { label: t("usbr"), href: "/eua-x-brasil" },
+    { label: t("about"), href: "/politica" },
+    { label: t("news"), href: "/economia" },
+    { label: t("tv"), href: "/eua-x-brasil" },
+    { label: t("media"), href: "/contato" },
     { label: t("contact"), href: "/contato" },
+    { label: t("events"), href: "/eventos" },
   ];
 
   function changeLocale(nextLocale: "pt-br" | "en") {
