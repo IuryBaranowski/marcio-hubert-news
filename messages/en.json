@@ -5,11 +5,9 @@
   },
   "Header": {
     "home": "Home",
-    "about": "About",
-    "news": "News/Blog",
-    "tv": "TV & Videos",
-    "media": "Media Kit",
-    "contact": "Contact",
-    "events": "Events"
+    "politics": "Politics",
+    "economy": "Economy",
+    "usbr": "US x Brazil",
+    "contact": "Contact"
   }
 }
