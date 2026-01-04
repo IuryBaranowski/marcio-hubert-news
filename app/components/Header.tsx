@@ -9,10 +9,10 @@ export default function Header() {
   const navItems = [
     { label: "Home", href: "#" },
     { label: "Sobre", href: "#" },
-    { label: "Notícias", href: "#" },
-    { label: "TV", href: "#" },
+    { label: "Blog", href: "#" },
+    { label: "Clipping", href: "#" },
     { label: "Eventos", href: "#" },
-    { label: "Media Kit", href: "#" },
+    { label: "Tv & Radio", href: "#" },
     { label: "Contato", href: "#" },
   ];
 
@@ -49,10 +49,10 @@ export default function Header() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <button className="hidden lg:flex items-center space-x-2 px-5 py-2.5 bg-[#C8102E] text-white text-sm font-medium rounded hover:bg-red-700 transition-colors">
+            {/* <button className="hidden lg:flex items-center space-x-2 px-5 py-2.5 bg-[#C8102E] text-white text-sm font-medium rounded hover:bg-red-700 transition-colors">
               <i className="fa-solid fa-envelope"></i>
               <span>Newsletter</span>
-            </button>
+            </button> */}
             <button
               className="lg:hidden text-gray-600"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -78,14 +78,14 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
+            {/* <Link
               href="#"
               className="flex items-center justify-center space-x-2 px-5 py-3 bg-[#C8102E] text-white text-sm font-medium rounded mt-4"
               onClick={() => setMobileMenuOpen(false)}
             >
               <i className="fa-solid fa-envelope"></i>
               <span>Newsletter</span>
-            </Link>
+            </Link> */}
           </nav>
         </div>
       )}

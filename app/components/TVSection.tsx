@@ -56,7 +56,7 @@ export default function TVSection() {
             <div className="inline-flex items-center space-x-2 px-3 md:px-4 py-1.5 md:py-2 bg-red-50 rounded-full mb-3 md:mb-4">
               <i className="fa-brands fa-youtube text-[#C8102E] text-sm md:text-base"></i>
               <span className="text-[#C8102E] text-xs md:text-sm font-semibold">
-                MARCIO HUBERT TV
+                MARCIO HUBERT NEWS
               </span>
             </div>
             <h2 className="font-serif font-bold text-2xl md:text-4xl text-[#0A1628] mb-2 md:mb-3">
@@ -67,7 +67,9 @@ export default function TVSection() {
             </p>
           </div>
           <Link
-            href="#"
+            href="https://www.youtube.com/@MarcioHubertNews"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center space-x-2 px-5 md:px-6 py-3 bg-[#C8102E] text-white font-semibold rounded-lg hover:bg-red-700 transition-colors w-full md:w-auto"
           >
             <i className="fa-brands fa-youtube"></i>

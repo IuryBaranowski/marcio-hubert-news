@@ -6,27 +6,21 @@ export default function Footer() {
   const navigationLinks = [
     { label: "Home", href: "#" },
     { label: "Sobre", href: "#" },
-    { label: "Notícias", href: "#" },
-    { label: "TV", href: "#" },
+    { label: "Blog", href: "#" },
+    { label: "Clipping", href: "#" },
     { label: "Eventos", href: "#" },
-    { label: "Media Kit", href: "#" },
+    { label: "Tv & Radio", href: "#" },
     { label: "Contato", href: "#" },
   ];
 
-  const categories = [
-    { label: "Agronegócio", href: "#" },
-    { label: "Política", href: "#" },
-    { label: "Economia", href: "#" },
-    { label: "Brasil-EUA", href: "#" },
-    { label: "Mundo", href: "#" },
-    { label: "Análises", href: "#" },
-  ];
-
   const socialLinks = [
-    { icon: "fa-brands fa-youtube", href: "#" },
+    {
+      icon: "fa-brands fa-youtube",
+      href: "https://www.youtube.com/@MarcioHubertNews",
+    },
     { icon: "fa-brands fa-linkedin", href: "#" },
     { icon: "fa-brands fa-twitter", href: "#" },
-    { icon: "fa-brands fa-instagram", href: "#" },
+    { icon: "fa-brands fa-instagram", href: "https://www.instagram.com/marciohubert.news/" },
   ];
 
   return (
@@ -56,6 +50,8 @@ export default function Footer() {
                 <Link
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-[#C8102E] transition-colors"
                 >
                   <i className={social.icon}></i>
@@ -76,24 +72,6 @@ export default function Footer() {
                     className="text-gray-400 hover:text-white transition-colors text-xs md:text-sm"
                   >
                     {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-serif font-bold text-white text-sm md:text-lg mb-4 md:mb-6">
-              Categorias
-            </h4>
-            <ul className="space-y-2 md:space-y-3">
-              {categories.map((category) => (
-                <li key={category.label}>
-                  <Link
-                    href={category.href}
-                    className="text-gray-400 hover:text-white transition-colors text-xs md:text-sm"
-                  >
-                    {category.label}
                   </Link>
                 </li>
               ))}
@@ -140,7 +118,7 @@ export default function Footer() {
                     Sede
                   </div>
                   <span className="text-white text-xs md:text-sm">
-                    Brasília, DF - Brasil
+                    Chattanooga, TN - Estados-Unidos
                   </span>
                 </div>
               </li>
@@ -177,4 +155,3 @@ export default function Footer() {
     </footer>
   );
 }
-

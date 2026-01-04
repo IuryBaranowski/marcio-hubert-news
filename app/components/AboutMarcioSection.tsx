@@ -20,35 +20,41 @@ export default function AboutMarcioSection() {
               Jornalismo com Credibilidade
             </h2>
             <p className="text-gray-300 text-sm md:text-lg leading-relaxed mb-4 md:mb-6">
-              Com mais de 15 anos de experiência em jornalismo político e
-              econômico, Marcio Hubert consolidou-se como uma das principais vozes
-              na análise estratégica do agronegócio e das relações
-              Brasil-Estados Unidos.
+              Em um ambiente cada vez mais marcado por polarização, desinformação e narrativas
+              simplificadas, compreender como os Estados Unidos funcionam de fato tornou-se
+              essencial para o público brasileiro. Leis, instituições e decisões políticas
+               americanas impactam diretamente o Brasil e a vida de milhões de brasileiros que 
+               vivem fora do país.
             </p>
             <p className="text-gray-300 text-sm md:text-lg leading-relaxed mb-6 md:mb-8">
-              Sua trajetória inclui passagens por grandes veículos de
-              comunicação, cobertura de eventos internacionais e entrevistas
-              exclusivas com lideranças políticas e empresariais. O compromisso
-              com a imparcialidade e a profundidade analítica são marcas
-              registradas de seu trabalho.
+              O Marcio Hubert News nasce para preencher essa lacuna com jornalismo educativo, 
+              direto e acessível. O projeto traduz o funcionamento do sistema político, 
+              jurídico e econômico americano com base em fatos, dados oficiais e experiência 
+              prática, sem discursos ideológicos ou atalhos narrativos.
+            </p>
+            <p className="text-gray-300 text-sm md:text-lg leading-relaxed mb-6 md:mb-8">
+             Para a comunidade brasileira no Brasil e no exterior, o canal se propõe a ser
+              uma referência confiável. Um espaço de informação responsável, feito por quem 
+              vive, trabalha e atua nos Estados Unidos, com o compromisso de informar para 
+              esclarecer e não para dividir.
             </p>
             <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
               <div className="flex items-center space-x-3">
                 <i className="fa-solid fa-check-circle text-[#C8102E] text-lg md:text-xl"></i>
                 <span className="text-white text-sm md:text-base">
-                  Especialista em Agronegócio e Relações Internacionais
+                  Especialista em Agronegócio, Economia e Política.
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <i className="fa-solid fa-check-circle text-[#C8102E] text-lg md:text-xl"></i>
                 <span className="text-white text-sm md:text-base">
-                  Correspondente em Washington D.C. (2018-2021)
+                  Membro da Society of Professional Journalists / USA 3.
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <i className="fa-solid fa-check-circle text-[#C8102E] text-lg md:text-xl"></i>
                 <span className="text-white text-sm md:text-base">
-                  Palestrante em Eventos Nacionais e Internacionais
+                  Palestrante e mediador de eventos.
                 </span>
               </div>
             </div>
@@ -65,7 +71,7 @@ export default function AboutMarcioSection() {
             <div className="absolute -top-8 -left-8 w-48 h-48 md:w-72 md:h-72 bg-[#C8102E]/20 rounded-full blur-3xl hidden md:block"></div>
             <div className="relative rounded-xl md:rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d93acf9715-3b1b2b5f4966254e90a6.png"
+                src="images/marciosecondphoto.jpeg"
                 alt="professional male journalist in business suit, corporate portrait photography, editorial style, confident pose"
                 className="w-full h-auto object-cover"
               />
@@ -75,9 +81,10 @@ export default function AboutMarcioSection() {
                 <i className="fa-solid fa-quote-left text-[#C8102E] text-xl md:text-2xl"></i>
               </div>
               <p className="text-[#0A1628] text-sm md:text-base font-medium italic">
-                "Não basta informar. É preciso contextualizar, analisar e
-                oferecer perspectivas que empoderem o leitor a tomar decisões
-                estratégicas."
+                "Em um cenário marcado por polarização e excesso de narrativas, o Marcio
+                Hubert News surge como um espaço de jornalismo educativo e esclarecedor. Informação com contexto,
+                fatos e linguagem simples para quem quer entender, na prática, como funcionam as instituições e
+                as leis americanas. Sem discurso, sem militância e sem distorções."
               </p>
             </div>
             {/* Mobile Quote */}
