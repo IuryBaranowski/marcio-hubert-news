@@ -11,7 +11,7 @@ export default function Header() {
     { label: "Sobre", href: "/sobre" },
     { label: "Notícias", href: "#" },
     { label: "TV", href: "#" },
-    { label: "Eventos", href: "#" },
+    { label: "Eventos", href: "/eventos" },
     { label: "Media Kit", href: "#" },
     { label: "Contato", href: "#" },
   ];
