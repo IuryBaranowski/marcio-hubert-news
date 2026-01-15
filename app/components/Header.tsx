@@ -13,7 +13,7 @@ export default function Header() {
     { label: "TV", href: "/tv" },
     { label: "Eventos", href: "/eventos" },
     { label: "Media Kit", href: "/media-kit" },
-    { label: "Contato", href: "#" },
+    { label: "Contato", href: "/contato" },
   ];
 
   return (
