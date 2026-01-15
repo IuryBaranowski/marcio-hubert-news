@@ -1,16 +1,16 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "../../i18n/navigation";
 
 export default function Footer() {
   const navigationLinks = [
-    { label: "Home", href: "#" },
-    { label: "Sobre", href: "#" },
-    { label: "Notícias", href: "#" },
-    { label: "TV", href: "#" },
-    { label: "Eventos", href: "#" },
-    { label: "Media Kit", href: "#" },
-    { label: "Contato", href: "#" },
+    { label: "Home", href: "/" },
+    { label: "Sobre", href: "/sobre" },
+    { label: "Notícias", href: "/noticias" },
+    { label: "TV", href: "/tv" },
+    { label: "Eventos", href: "/eventos" },
+    { label: "Media Kit", href: "/media-kit" },
+    { label: "Contato", href: "/contato" },
   ];
 
   const categories = [

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "../../i18n/navigation";
 import EventCard from "./EventCard";
 
 const events = [
@@ -76,7 +76,7 @@ export default function EventsSection() {
             </p>
           </div>
           <Link
-            href="#"
+            href="/eventos"
             className="inline-flex items-center space-x-2 text-[#C8102E] font-semibold hover:underline text-sm md:text-base"
           >
             <span className="hidden md:inline">Ver todos os eventos</span>

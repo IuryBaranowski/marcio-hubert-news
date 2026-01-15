@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "../../i18n/navigation";
 
 export default function HeroSection() {
   return (
@@ -31,14 +31,14 @@ export default function HeroSection() {
 
           <div className="flex flex-wrap gap-4">
             <Link
-              href="#"
+              href="/noticias"
               className="inline-flex items-center space-x-2 px-6 md:px-8 py-3 md:py-4 bg-[#C8102E] text-white font-semibold rounded-lg hover:bg-red-700 transition-all transform hover:scale-105 shadow-xl"
             >
               <span>Acesse a Cobertura Completa</span>
               <i className="fa-solid fa-arrow-right"></i>
             </Link>
             <Link
-              href="#"
+              href="/tv"
               className="inline-flex items-center space-x-2 px-6 md:px-8 py-3 md:py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg hover:bg-white/20 transition-all border border-white/20"
             >
               <i className="fa-brands fa-youtube"></i>

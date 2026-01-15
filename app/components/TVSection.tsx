@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "../../i18n/navigation";
 import VideoCard from "./VideoCard";
 
 const videos = [
@@ -67,7 +67,7 @@ export default function TVSection() {
             </p>
           </div>
           <Link
-            href="#"
+            href="/tv"
             className="inline-flex items-center justify-center space-x-2 px-5 md:px-6 py-3 bg-[#C8102E] text-white font-semibold rounded-lg hover:bg-red-700 transition-colors w-full md:w-auto"
           >
             <i className="fa-brands fa-youtube"></i>

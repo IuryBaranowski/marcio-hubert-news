@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "../../i18n/navigation";
 
 export default function AboutMarcioSection() {
   return (
@@ -53,7 +53,7 @@ export default function AboutMarcioSection() {
               </div>
             </div>
             <Link
-              href="#"
+              href="/sobre"
               className="inline-flex items-center justify-center space-x-2 px-6 md:px-8 py-3 md:py-4 bg-[#C8102E] text-white font-semibold rounded-lg hover:bg-red-700 transition-colors w-full md:w-auto"
             >
               <span className="text-sm md:text-base">Conheça a Trajetória</span>
@@ -75,9 +75,9 @@ export default function AboutMarcioSection() {
                 <i className="fa-solid fa-quote-left text-[#C8102E] text-xl md:text-2xl"></i>
               </div>
               <p className="text-[#0A1628] text-sm md:text-base font-medium italic">
-                "Não basta informar. É preciso contextualizar, analisar e
+                &ldquo;Não basta informar. É preciso contextualizar, analisar e
                 oferecer perspectivas que empoderem o leitor a tomar decisões
-                estratégicas."
+                estratégicas.&rdquo;
               </p>
             </div>
             {/* Mobile Quote */}
@@ -86,9 +86,9 @@ export default function AboutMarcioSection() {
                 <i className="fa-solid fa-quote-left text-[#C8102E] text-xl"></i>
               </div>
               <p className="text-[#0A1628] text-sm font-medium italic">
-                "Não basta informar. É preciso contextualizar, analisar e
+                &ldquo;Não basta informar. É preciso contextualizar, analisar e
                 oferecer perspectivas que empoderem o leitor a tomar decisões
-                estratégicas."
+                estratégicas.&rdquo;
               </p>
             </div>
           </div>
