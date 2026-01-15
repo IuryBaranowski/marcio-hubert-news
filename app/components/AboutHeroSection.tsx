@@ -9,12 +9,14 @@ interface AboutHeroSectionProps {
   };
   title: string | ReactNode;
   description: string;
+  ctaButtons?: ReactNode;
 }
 
 export default function AboutHeroSection({
   badge = { icon: "fa-solid fa-user-tie", text: "Sobre o Editor" },
   title,
   description,
+  ctaButtons,
 }: AboutHeroSectionProps) {
   return (
     <section className="bg-gradient-to-br from-[#0A1628] via-[#1E3A5F] to-[#0A1628] h-[500px] flex items-center relative overflow-hidden">
@@ -38,9 +40,15 @@ export default function AboutHeroSection({
             {title}
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl">
+          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mb-6 md:mb-10">
             {description}
           </p>
+
+          {ctaButtons && (
+            <div className="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-4">
+              {ctaButtons}
+            </div>
+          )}
         </div>
       </div>
     </section>
