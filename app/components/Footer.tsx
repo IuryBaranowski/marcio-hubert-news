@@ -1,26 +1,32 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "../../i18n/navigation";
 
 export default function Footer() {
   const navigationLinks = [
-    { label: "Home", href: "#" },
-    { label: "Sobre", href: "#" },
-    { label: "Blog", href: "#" },
-    { label: "Clipping", href: "#" },
-    { label: "Eventos", href: "#" },
-    { label: "Tv & Radio", href: "#" },
-    { label: "Contato", href: "#" },
+    { label: "Home", href: "/" },
+    { label: "Sobre", href: "/sobre" },
+    { label: "Notícias", href: "/noticias" },
+    { label: "TV", href: "/tv" },
+    { label: "Eventos", href: "/eventos" },
+    { label: "Media Kit", href: "/media-kit" },
+    { label: "Contato", href: "/contato" },
+  ];
+
+  const categories = [
+    { label: "Agronegócio", href: "#" },
+    { label: "Política", href: "#" },
+    { label: "Economia", href: "#" },
+    { label: "Brasil-EUA", href: "#" },
+    { label: "Mundo", href: "#" },
+    { label: "Análises", href: "#" },
   ];
 
   const socialLinks = [
-    {
-      icon: "fa-brands fa-youtube",
-      href: "https://www.youtube.com/@MarcioHubertNews",
-    },
+    { icon: "fa-brands fa-youtube", href: "#" },
     { icon: "fa-brands fa-linkedin", href: "#" },
     { icon: "fa-brands fa-twitter", href: "#" },
-    { icon: "fa-brands fa-instagram", href: "https://www.instagram.com/marciohubert.news/" },
+    { icon: "fa-brands fa-instagram", href: "#" },
   ];
 
   return (
@@ -50,8 +56,6 @@ export default function Footer() {
                 <Link
                   key={index}
                   href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-[#C8102E] transition-colors"
                 >
                   <i className={social.icon}></i>
@@ -72,6 +76,24 @@ export default function Footer() {
                     className="text-gray-400 hover:text-white transition-colors text-xs md:text-sm"
                   >
                     {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-serif font-bold text-white text-sm md:text-lg mb-4 md:mb-6">
+              Categorias
+            </h4>
+            <ul className="space-y-2 md:space-y-3">
+              {categories.map((category) => (
+                <li key={category.label}>
+                  <Link
+                    href={category.href}
+                    className="text-gray-400 hover:text-white transition-colors text-xs md:text-sm"
+                  >
+                    {category.label}
                   </Link>
                 </li>
               ))}
@@ -118,7 +140,7 @@ export default function Footer() {
                     Sede
                   </div>
                   <span className="text-white text-xs md:text-sm">
-                    Chattanooga, TN - Estados-Unidos
+                    Brasília, DF - Brasil
                   </span>
                 </div>
               </li>

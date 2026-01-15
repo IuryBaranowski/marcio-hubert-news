@@ -17,14 +17,15 @@ export default function Home() {
 
   return (
     <main className="font-sans bg-white text-[#2C2C2C] antialiased">
+      {/* <Header /> */}
       <HeroSection />
-      {/* <LatestNewsSection /> */}
+      <LatestNewsSection />
       <CategoryHighlights />
       <TVSection />
       <AboutMarcioSection />
       <EventsSection />
       <EditorialPrinciples />
-      {/* <NewsletterCTA /> */}
+      <NewsletterCTA />
       <Footer />
     </main>
   );

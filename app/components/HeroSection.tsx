@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "../../i18n/navigation";
 
 export default function HeroSection() {
   return (
@@ -15,38 +15,33 @@ export default function HeroSection() {
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6">
             <div className="w-2 h-2 bg-[#C8102E] rounded-full animate-pulse"></div>
             <span className="text-white text-sm font-medium">
-              Jornalismo Educativo • Fatos e Contexto
+              Análise Estratégica • Credibilidade Editorial
             </span>
           </div>
 
           <h1 className="font-serif font-bold text-4xl md:text-6xl text-white leading-tight mb-6">
-            Análise Profunda para
-            <br />
-            Decisões Estratégicas.
+            Análise Profunda para<br />Decisões Estratégicas.
           </h1>
 
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-3xl">
-            Como funcionam as leis, o poder e as insituições dos EUA.
+            O seu portal de notícias com foco em Agronegócio, Política,
+            Economia e Relações Brasil-EUA. Informação com contexto, análise com
+            imparcialidade.
           </p>
 
           <div className="flex flex-wrap gap-4">
             <Link
-              href="#"
+              href="/noticias"
               className="inline-flex items-center space-x-2 px-6 md:px-8 py-3 md:py-4 bg-[#C8102E] text-white font-semibold rounded-lg hover:bg-red-700 transition-all transform hover:scale-105 shadow-xl"
             >
               <span>Acesse a Cobertura Completa</span>
               <i className="fa-solid fa-arrow-right"></i>
             </Link>
             <Link
-              href="https://www.youtube.com/@MarcioHubertNews"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/tv"
               className="inline-flex items-center space-x-2 px-6 md:px-8 py-3 md:py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-lg hover:bg-white/20 transition-all border border-white/20"
             >
-              <i
-                className="fa-brands fa-youtube"
-                style={{ color: "#ff0000b6" }}
-              ></i>
+              <i className="fa-brands fa-youtube"></i>
               <span className="hidden md:inline">
                 Conteúdo Exclusivo no Nosso Canal
               </span>
