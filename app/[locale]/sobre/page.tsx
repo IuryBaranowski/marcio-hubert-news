@@ -6,7 +6,7 @@ import TimelineSection from "../../components/TimelineSection";
 import EditorialPrinciplesDetailSection from "../../components/EditorialPrinciplesDetailSection";
 import CoverageAreasSection from "../../components/CoverageAreasSection";
 import ClosingMissionSection from "../../components/ClosingMissionSection";
-import AboutNewsletterCTA from "../../components/AboutNewsletterCTA";
+import SimpleNewsletterCTA from "../../components/SimpleNewsletterCTA";
 import Footer from "../../components/Footer";
 
 export default function SobrePage() {
@@ -31,7 +31,7 @@ export default function SobrePage() {
       <EditorialPrinciplesDetailSection />
       <CoverageAreasSection />
       <ClosingMissionSection />
-      <AboutNewsletterCTA />
+      <SimpleNewsletterCTA source="sobre" />
       <Footer />
     </main>
   );

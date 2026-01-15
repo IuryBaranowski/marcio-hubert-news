@@ -2,13 +2,23 @@
 
 import { useState } from "react";
 
-export default function EventsNewsletterCTA() {
+interface SimpleNewsletterCTAProps {
+  title?: string;
+  description?: string;
+  source?: string; // Para identificar de onde vem (opcional, para tracking)
+}
+
+export default function SimpleNewsletterCTA({
+  title = "Receba Análises Diárias no Seu E-mail",
+  description = "Não fique apenas na manchete. Entenda o contexto com análises exclusivas sobre agronegócio, política, economia e relações Brasil-EUA.",
+  source,
+}: SimpleNewsletterCTAProps) {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
-    console.log("Newsletter subscription:", email);
+    console.log("Newsletter subscription:", { email, source });
   };
 
   return (
@@ -26,12 +36,11 @@ export default function EventsNewsletterCTA() {
             </div>
 
             <h2 className="font-serif font-bold text-2xl md:text-4xl text-white mb-4 md:mb-6 leading-tight">
-              Receba Cobertura Exclusiva de Eventos
+              {title}
             </h2>
 
             <p className="text-base md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-6 md:mb-10">
-              Seja o primeiro a receber análises, entrevistas e bastidores dos
-              principais eventos do agronegócio, política e economia brasileira.
+              {description}
             </p>
 
             <form
@@ -43,7 +52,7 @@ export default function EventsNewsletterCTA() {
                 placeholder="Seu melhor e-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full md:flex-1 px-4 md:px-6 py-3 md:py-4 rounded-lg text-[#0A1628] font-medium focus:outline-none focus:ring-2 focus:ring-[#C8102E] text-sm md:text-base"
+                className="w-full md:flex-1 px-4 md:px-6 py-3 md:py-4 bg-white rounded-lg text-[#0A1628] placeholder:text-gray-400 font-medium focus:outline-none focus:ring-2 focus:ring-[#C8102E] text-sm md:text-base"
                 required
               />
               <button

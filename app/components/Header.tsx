@@ -10,7 +10,7 @@ export default function Header() {
     { label: "Home", href: "/" },
     { label: "Sobre", href: "/sobre" },
     { label: "Notícias", href: "/noticias" },
-    { label: "TV", href: "#" },
+    { label: "TV", href: "/tv" },
     { label: "Eventos", href: "/eventos" },
     { label: "Media Kit", href: "#" },
     { label: "Contato", href: "#" },

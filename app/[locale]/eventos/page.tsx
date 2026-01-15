@@ -8,7 +8,7 @@ import PastEventsSection from "../../components/PastEventsSection";
 import CoverageStructureSection from "../../components/CoverageStructureSection";
 import EventTypesSection from "../../components/EventTypesSection";
 import EventCommitmentSection from "../../components/EventCommitmentSection";
-import EventsNewsletterCTA from "../../components/EventsNewsletterCTA";
+import SimpleNewsletterCTA from "../../components/SimpleNewsletterCTA";
 import Footer from "../../components/Footer";
 
 export default function EventosPage() {
@@ -35,7 +35,11 @@ export default function EventosPage() {
       <CoverageStructureSection />
       <EventTypesSection />
       <EventCommitmentSection />
-      <EventsNewsletterCTA />
+      <SimpleNewsletterCTA
+        title="Receba Cobertura Exclusiva de Eventos"
+        description="Seja o primeiro a receber análises, entrevistas e bastidores dos principais eventos do agronegócio, política e economia brasileira."
+        source="eventos"
+      />
       <Footer />
     </main>
   );
