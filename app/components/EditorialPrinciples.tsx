@@ -41,15 +41,67 @@ export default function EditorialPrinciples() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-8 md:mb-16">
           <h2 className="font-serif font-bold text-2xl md:text-4xl text-[#0A1628] mb-2 md:mb-4">
-            Nossos Princípios Editoriais
+            Ecossistema
           </h2>
           <p className="text-gray-600 text-sm md:text-lg max-w-3xl mx-auto">
-            Compromisso com a verdade, imparcialidade e análise aprofundada que
-            orienta cada publicação do Marcio Hubert News
+            Parcerias institucionais e estratégicas no Brasil, Estados Unidos e mercados globais.
           </p>
+
+          {/* Logos */}
+          <div className="mt-6 md:mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 max-w-6xl mx-auto">
+              {/* Logo 1 */}
+              <a
+                href="#"
+                aria-label="Parceiro 1"
+                className="group"
+              >
+                <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-200 p-5 md:p-7 h-28 md:h-50 flex items-center justify-center">
+                  <img
+                    src="/images/uslands-logo.jpeg"
+                    alt="Logo Parceiro 1"
+                    className="h-full w-full object-contain opacity-90 group-hover:opacity-100 transition-opacity md:grayscale md:group-hover:grayscale-0"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+
+              {/* Logo 2 */}
+              <a
+                href="#"
+                aria-label="Parceiro 2"
+                className="group"
+              >
+                <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-200 p-5 md:p-7 h-28 md:h-50 flex items-center justify-center">
+                  <img
+                    src="/images/noticias-logo-dois.jpeg"
+                    alt="Logo Parceiro 2"
+                    className="h-full w-full object-contain opacity-90 group-hover:opacity-100 transition-opacity md:grayscale md:group-hover:grayscale-0"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+
+              {/* Logo 3 */}
+              <a
+                href="#"
+                aria-label="Parceiro 3"
+                className="group"
+              >
+                <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-200 p-5 md:p-7 h-28 md:h-50 flex items-center justify-center">
+                  <img
+                    src="/images/hHubert.jpeg"
+                    alt="Logo Parceiro 3"
+                    className="h-full w-full object-contain opacity-90 group-hover:opacity-100 transition-opacity md:grayscale md:group-hover:grayscale-0"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12">
           {principles.map((principle) => (
             <div
               key={principle.title}
@@ -70,18 +122,18 @@ export default function EditorialPrinciples() {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="bg-gradient-to-r from-[#0A1628] to-[#1E3A5F] rounded-2xl p-6 md:p-12 text-center">
           <div className="max-w-3xl mx-auto">
             <i className="fa-solid fa-quote-left text-[#C8102E] text-3xl md:text-4xl mb-4 md:mb-6"></i>
             <blockquote className="font-serif text-lg md:text-2xl text-white leading-relaxed mb-4 md:mb-6 italic">
-              "Nosso compromisso é entregar jornalismo de qualidade que respeita
-              a inteligência do leitor e contribui para um debate público mais
-              informado e construtivo."
+              "A informação só tem valor quando ajuda a decidir melhor. Nosso
+              trabalho é transformar contexto e leitura institucional em
+              estratégia, previsibilidade e proteção."
             </blockquote>
             <p className="text-gray-300 text-sm md:text-base font-semibold">
-              — Marcio Hubert, Editor-Chefe
+              Marcio Hubert, Strategic Communication – USA
             </p>
           </div>
         </div>
@@ -89,4 +141,3 @@ export default function EditorialPrinciples() {
     </section>
   );
 }
-

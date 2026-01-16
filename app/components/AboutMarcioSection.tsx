@@ -15,40 +15,53 @@ export default function AboutMarcioSection() {
               </span>
             </div>
             <h2 className="font-serif font-bold text-2xl md:text-4xl text-white mb-4 md:mb-6 leading-tight">
-              Marcio Hubert:
-              <br />
-              Jornalismo com Credibilidade
+              Comunicação Estratégica para Redução de Risco e Crescimento
             </h2>
             <p className="text-gray-300 text-sm md:text-lg leading-relaxed mb-4 md:mb-6">
-              Com mais de 15 anos de experiência em jornalismo político e
-              econômico, Marcio Hubert consolidou-se como uma das principais vozes
-              na análise estratégica do agronegócio e das relações
-              Brasil-Estados Unidos.
+              Em ambientes marcados por instabilidade política, ruído informacional e 
+              decisões de alto impacto, empresas e empres ários não precisam apenas de 
+              informação precisam de clareza estratégica, previsibilidade e proteção.
+              Minha atuação vai além da análise ou observação do cenário. 
+              Sou jornalista internacional baseado nos Estados Unidos,
+              empresário com operações ativas no país e profissional inserido no 
+              ecossistema da mídia americana. Isso me permite atuar diretamente no jogo,
+              compreendendo como decisões institucionais, narrativas públicas e movimentos 
+              de poder afetam negócios, reputações e resultados financeiros.
             </p>
             <p className="text-gray-300 text-sm md:text-lg leading-relaxed mb-6 md:mb-8">
-              Sua trajetória inclui passagens por grandes veículos de
-              comunicação, cobertura de eventos internacionais e entrevistas
-              exclusivas com lideranças políticas e empresariais. O compromisso
-              com a imparcialidade e a profundidade analítica são marcas
-              registradas de seu trabalho.
+              Ajudo empresas e líderes a reduzir riscos de exposição pública, regulatória
+              e reputacional; Blindar o negócio contra crises, ruídos e narrativas 
+              desfavoráveis; Ganhar escala com posicionamento claro e comunicação estratégica;
+              Aumentar previsibilidade em cenários complexos e voláteis;
+              Gerar valor e lucro por meio de decisões mais informadas e seguras.
+              Não entrego discursos genéricos nem soluções teóricas. 
+              Estruturo narrativas, estratégias e decisões baseadas em fatos, dados 
+              oficiais e vivência direta nos bastidores.
             </p>
+            <p className="text-gray-300 text-sm md:text-lg leading-relaxed mb-6 md:mb-8">
+             Não atuo como comentarista externo, mas como parceiro estratégico de empresas e
+              empresários que precisam se posicionar, se proteger e crescer em mercados 
+              altamente expostos, especialmente na relação entre Brasil, Estados Unidos, 
+              Emirados Árabes Unidos e América Latina.
+              </p>
             <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
               <div className="flex items-center space-x-3">
                 <i className="fa-solid fa-check-circle text-[#C8102E] text-lg md:text-xl"></i>
-                <span className="text-white text-sm md:text-base">
-                  Especialista em Agronegócio e Relações Internacionais
-                </span>
+                  <span className="text-white text-sm md:text-base">
+                  Especialista em Agronegócio, Economia e Política.
+                  </span>
+                
               </div>
               <div className="flex items-center space-x-3">
                 <i className="fa-solid fa-check-circle text-[#C8102E] text-lg md:text-xl"></i>
                 <span className="text-white text-sm md:text-base">
-                  Correspondente em Washington D.C. (2018-2021)
-                </span>
+                  Palestrante e mediador de eventos.
+                  </span>
               </div>
               <div className="flex items-center space-x-3">
                 <i className="fa-solid fa-check-circle text-[#C8102E] text-lg md:text-xl"></i>
                 <span className="text-white text-sm md:text-base">
-                  Palestrante em Eventos Nacionais e Internacionais
+                  Membro da Society of Professional Journalists / USA.
                 </span>
               </div>
             </div>
@@ -65,19 +78,22 @@ export default function AboutMarcioSection() {
             <div className="absolute -top-8 -left-8 w-48 h-48 md:w-72 md:h-72 bg-[#C8102E]/20 rounded-full blur-3xl hidden md:block"></div>
             <div className="relative rounded-xl md:rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d93acf9715-3b1b2b5f4966254e90a6.png"
+                src="images/marciosecondphoto.jpeg"
                 alt="professional male journalist in business suit, corporate portrait photography, editorial style, confident pose"
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-4 md:p-6 max-w-xs hidden md:block">
+            <div className="absolute -bottom-15 -right-6 bg-white rounded-xl shadow-xl p-4 md:p-6 max-w-xs hidden md:block">
               <div className="flex items-center space-x-3 mb-2 md:mb-3">
                 <i className="fa-solid fa-quote-left text-[#C8102E] text-xl md:text-2xl"></i>
               </div>
               <p className="text-[#0A1628] text-sm md:text-base font-medium italic">
-                &ldquo;Não basta informar. É preciso contextualizar, analisar e
-                oferecer perspectivas que empoderem o leitor a tomar decisões
-                estratégicas.&rdquo;
+                Nosso trabalho é diagnosticar cenários, estruturar posicionamento, preparar
+                porta-vozes e gerir riscos. A compreensão prática de como funcionam as
+                instituições, as leis e o ecossistema de poder nos Estados Unidos é usada 
+                como ferramenta para tomada de decisão, gestão de crise e crescimento
+                sustentável. Ajudamos empresas e líderes a ganhar previsibilidade, bater
+                metas e se posicionar com clareza em mercados complexos.
               </p>
             </div>
             {/* Mobile Quote */}
@@ -86,9 +102,7 @@ export default function AboutMarcioSection() {
                 <i className="fa-solid fa-quote-left text-[#C8102E] text-xl"></i>
               </div>
               <p className="text-[#0A1628] text-sm font-medium italic">
-                &ldquo;Não basta informar. É preciso contextualizar, analisar e
-                oferecer perspectivas que empoderem o leitor a tomar decisões
-                estratégicas.&rdquo;
+                &ldquo;Nosso trabalho é diagnosticar cenários, estruturar posicionamento, preparar porta-vozes e gerir riscos. A compreensão prática de como funcionam as instituições, as leis e o ecossistema de poder nos Estados Unidos é usada como ferramenta para tomada de decisão, gestão de crise e crescimento sustentável. Ajudamos empresas e líderes a ganhar previsibilidade, bater metas e se posicionar com clareza em mercados complexos.&rdquo;
               </p>
             </div>
           </div>

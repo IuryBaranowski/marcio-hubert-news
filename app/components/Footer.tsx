@@ -23,10 +23,10 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: "fa-brands fa-youtube", href: "#" },
-    { icon: "fa-brands fa-linkedin", href: "#" },
-    { icon: "fa-brands fa-twitter", href: "#" },
-    { icon: "fa-brands fa-instagram", href: "#" },
+    { icon: "fa-brands fa-youtube", href: "https://www.youtube.com/@MarcioHubertNews" },
+    { icon: "fa-brands fa-linkedin", href: "https://www.linkedin.com/in/marciohubert/" },
+    { icon: "fa-brands fa-tiktok", href: "https://www.tiktok.com/@marciohubertnews?is_from_webapp=1&sender_device=pc" },
+    { icon: "fa-brands fa-instagram", href: "https://www.instagram.com/marciohubertnews/" },
   ];
 
   return (
@@ -48,14 +48,15 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
-              Jornalismo profissional com foco em agronegócio, política,
-              economia e relações Brasil-EUA.
+              Leitura institucional e estratégica dos Estados Unidos para líderes e empresas.
             </p>
             <div className="flex items-center space-x-2 md:space-x-3">
               {socialLinks.map((social, index) => (
                 <Link
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-[#C8102E] transition-colors"
                 >
                   <i className={social.icon}></i>
@@ -112,10 +113,10 @@ export default function Footer() {
                     E-mail
                   </div>
                   <a
-                    href="mailto:contato@marciohubertnews.com"
+                    href="mailto:journalist.marciohubert@gmail.com"
                     className="text-white text-xs md:text-sm hover:text-[#C8102E] transition-colors"
                   >
-                    contato@marciohubertnews.com
+                    journalist.marciohubert@gmail.com
                   </a>
                 </div>
               </li>
@@ -126,10 +127,10 @@ export default function Footer() {
                     Imprensa
                   </div>
                   <a
-                    href="tel:+5511999999999"
+                    href="tel:+16892434840"
                     className="text-white text-xs md:text-sm hover:text-[#C8102E] transition-colors"
                   >
-                    +55 11 99999-9999
+                    +1 (689) 243-4840
                   </a>
                 </div>
               </li>
@@ -140,7 +141,7 @@ export default function Footer() {
                     Sede
                   </div>
                   <span className="text-white text-xs md:text-sm">
-                    Brasília, DF - Brasil
+                    Tennessee - USA
                   </span>
                 </div>
               </li>

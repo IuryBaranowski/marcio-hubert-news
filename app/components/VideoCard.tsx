@@ -21,7 +21,7 @@ export default function VideoCard({
   description,
   date,
   views,
-  href = "#",
+  href,
 }: VideoCardProps) {
   return (
     <article className="bg-white rounded-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow group cursor-pointer">

@@ -16,7 +16,7 @@ const categories: CategoryItem[] = [
   {
     icon: "fa-solid fa-seedling",
     title: "Agronegócio",
-    description: "Análises do setor que move a economia brasileira",
+    description: "Mediador em painéis, fóruns e debates técnicos no agro.",
     color: "green",
     borderColor: "border-green-600",
     textColor: "text-green-600",
@@ -25,7 +25,7 @@ const categories: CategoryItem[] = [
   {
     icon: "fa-solid fa-landmark",
     title: "Política",
-    description: "Contexto e análise dos principais debates nacionais",
+    description: "Cobertura de eventos políticos, entrevistas e debates nacionais.",
     color: "blue",
     borderColor: "border-blue-600",
     textColor: "text-blue-600",
@@ -34,7 +34,7 @@ const categories: CategoryItem[] = [
   {
     icon: "fa-solid fa-chart-line",
     title: "Economia",
-    description: "Mercados, indicadores e perspectivas econômicas",
+    description: "Eventos de economia estratégica para o agronegocio Brasileiro.",
     color: "purple",
     borderColor: "border-purple-600",
     textColor: "text-purple-600",
@@ -42,8 +42,8 @@ const categories: CategoryItem[] = [
   },
   {
     icon: "fa-solid fa-globe-americas",
-    title: "Brasil-EUA",
-    description: "Relações bilaterais e impactos estratégicos",
+    title: "Estados Unidos",
+    description: "Editor, produtor e âncora do Headlines na CBS TV - News 12.",
     color: "red",
     borderColor: "border-red-600",
     textColor: "text-red-600",
