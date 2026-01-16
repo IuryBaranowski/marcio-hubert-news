@@ -25,7 +25,8 @@ const categories: CategoryItem[] = [
   {
     icon: "fa-solid fa-landmark",
     title: "Política",
-    description: "Cobertura de eventos políticos, entrevistas e debates nacionais.",
+    description:
+      "Cobertura de eventos políticos, entrevistas e debates nacionais.",
     color: "blue",
     borderColor: "border-blue-600",
     textColor: "text-blue-600",
@@ -34,7 +35,8 @@ const categories: CategoryItem[] = [
   {
     icon: "fa-solid fa-chart-line",
     title: "Economia",
-    description: "Eventos de economia estratégica para o agronegocio Brasileiro.",
+    description:
+      "Eventos de economia estratégica para o agronegócio Brasileiro.",
     color: "purple",
     borderColor: "border-purple-600",
     textColor: "text-purple-600",
@@ -43,7 +45,8 @@ const categories: CategoryItem[] = [
   {
     icon: "fa-solid fa-globe-americas",
     title: "Estados Unidos",
-    description: "Editor, produtor e âncora do Headlines na CBS TV - News 12.",
+    description:
+      "Editor, produtor e âncora do Headlines na CBS TV - News 12.",
     color: "red",
     borderColor: "border-red-600",
     textColor: "text-red-600",
@@ -55,7 +58,19 @@ export default function CategoryHighlights() {
   return (
     <section className="py-10 md:py-16 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
+
+          {/* CARD 1 — LOGO */}
+          <div className="bg-white rounded-lg p-6 md:p-8 border-l-4 border-[#C8102E] flex items-center justify-center hover:shadow-lg transition-shadow overflow-visible">
+            <img
+              src="/images/marcio-logo-removebg-preview.png"
+              alt="Marcio Hubert News"
+              className="w-full object-contain max-w-[235px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-none lg:w-[135%]"              
+              loading="lazy"
+            />
+          </div>
+
+          {/* DEMAIS CARDS */}
           {categories.map((category) => (
             <div
               key={category.title}
@@ -64,14 +79,19 @@ export default function CategoryHighlights() {
               <div
                 className={`w-10 h-10 md:w-12 md:h-12 ${category.bgColor} rounded-lg flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform`}
               >
-                <i className={`${category.icon} ${category.textColor} text-xl md:text-2xl`}></i>
+                <i
+                  className={`${category.icon} ${category.textColor} text-xl md:text-2xl`}
+                ></i>
               </div>
+
               <h3 className="font-serif font-bold text-lg md:text-xl text-[#0A1628] mb-2">
                 {category.title}
               </h3>
+
               <p className="text-gray-600 text-xs md:text-sm mb-3 md:mb-4">
                 {category.description}
               </p>
+
               <Link
                 href="#"
                 className={`${category.textColor} font-semibold text-xs md:text-sm hover:underline`}
@@ -85,4 +105,3 @@ export default function CategoryHighlights() {
     </section>
   );
 }
-

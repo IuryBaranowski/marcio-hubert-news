@@ -28,7 +28,7 @@ export default function HeroSection() {
 </h6>
 
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-3xl">
-            Especialista no ambiente politico, economico e midiatico dos EUA.
+            Especialista no ambiente político, econômico e midiático dos EUA.
             <br />
             Ajudo empresas na tomada de decisão.
           </p>
