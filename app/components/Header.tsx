@@ -10,10 +10,11 @@ export default function Header() {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Sobre", href: "/sobre" },
-    { label: "Notícias", href: "/noticias" },
-    { label: "TV", href: "/tv" },
-    { label: "Eventos", href: "/eventos" },
-    { label: "Media Kit", href: "/media-kit" },
+    { label: "Consultoria", href: "/noticias" },
+    { label: "Palestra", href: "/eventos" },
+    { label: "Mentoria", href: "/tv" },
+    { label: "Media Training", href: "/tv" },
+    { label: "Gestão de Crise", href: "/media-kit" },
     { label: "Contato", href: "/contato" },
   ];
 
