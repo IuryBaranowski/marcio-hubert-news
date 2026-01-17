@@ -6,10 +6,11 @@ export default function Footer() {
   const navigationLinks = [
     { label: "Home", href: "/" },
     { label: "Sobre", href: "/sobre" },
-    { label: "Notícias", href: "/noticias" },
-    { label: "TV", href: "/tv" },
-    { label: "Eventos", href: "/eventos" },
-    { label: "Media Kit", href: "/media-kit" },
+    { label: "Consultoria", href: "/noticias" },
+    { label: "Palestra", href: "/tv" },
+    { label: "Mentoria", href: "/eventos" },
+    { label: "Media Training", href: "/media-kit" },
+    { label: "Gestão de Crise", href: "/media-kit" },
     { label: "Contato", href: "/contato" },
   ];
 
@@ -17,9 +18,7 @@ export default function Footer() {
     { label: "Agronegócio", href: "#" },
     { label: "Política", href: "#" },
     { label: "Economia", href: "#" },
-    { label: "Brasil-EUA", href: "#" },
-    { label: "Mundo", href: "#" },
-    { label: "Análises", href: "#" },
+    { label: "Estados Unidos", href: "#" }
   ];
 
   const socialLinks = [
@@ -151,7 +150,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
           <p className="text-gray-400 text-xs md:text-sm text-center md:text-left">
-            © 2025 Marcio Hubert News. Todos os direitos reservados.
+            © 2026 Marcio Hubert News. Todos os direitos reservados.
           </p>
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
             <Link

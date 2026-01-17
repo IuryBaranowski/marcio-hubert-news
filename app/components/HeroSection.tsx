@@ -20,12 +20,12 @@ export default function HeroSection() {
           </div>
 
           <h1 className="font-serif font-bold text-4xl md:text-6xl text-white leading-tight mb-6">
-            • Jornalista Internacional <br/>
+            • Jornalista Internacional <br />
             • Comunicação Estratégica <br />
           </h1>
-<h6 className="font-serif font-bold text-1xl md:text-2xl text-white leading-tight mb-6">
-  🇧🇷 Brasil &nbsp;&nbsp; 🇺🇸 EUA &nbsp;&nbsp; 🌎 LatAm &nbsp;&nbsp; 🇦🇪 EAU
-</h6>
+          <h6 className="font-serif font-bold text-1xl md:text-2xl text-white leading-tight mb-6">
+            🇧🇷 Brasil &nbsp;&nbsp; 🇺🇸 EUA &nbsp;&nbsp; 🌎 LatAm &nbsp;&nbsp; 🇦🇪 EAU
+          </h6>
 
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-3xl">
             Especialista no ambiente político, econômico e midiático dos EUA.
@@ -50,7 +50,7 @@ export default function HeroSection() {
               <i className="fa-brands fa-youtube"
                 style={{ color: "#ff0000b6" }}></i>
               <span className="hidden md:inline">
-                Conteúdo do Nosso Canal
+                Inscreva-se
               </span>
               <span className="md:hidden">Nosso Canal</span>
             </Link>
