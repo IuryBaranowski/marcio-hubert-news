@@ -2,24 +2,37 @@
 
 import { ReactNode } from "react";
 
-interface AboutHeroSectionProps {
+interface Stat {
+  icon: string;
+  value: string;
+  label: string;
+}
+
+interface HeroSectionProps {
   badge?: {
     icon?: string;
     text: string;
   };
   title: string | ReactNode;
-  description: string;
+  description: string | ReactNode;
   ctaButtons?: ReactNode;
+  stats?: Stat[];
+  height?: number;
 }
 
-export default function AboutHeroSection({
-  badge = { icon: "fa-solid fa-user-tie", text: "Sobre o Editor" },
+export default function HeroSection({
+  badge,
   title,
   description,
   ctaButtons,
-}: AboutHeroSectionProps) {
+  stats,
+  height = 500,
+}: HeroSectionProps) {
   return (
-    <section className="bg-gradient-to-br from-[#0A1628] via-[#1E3A5F] to-[#0A1628] h-[500px] flex items-center relative overflow-hidden">
+    <section
+      className="bg-gradient-to-br from-[#0A1628] via-[#1E3A5F] to-[#0A1628] flex items-center relative overflow-hidden"
+      style={{ height: `${height}px` }}
+    >
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-96 h-96 bg-white rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#C8102E] rounded-full blur-3xl"></div>
@@ -47,6 +60,24 @@ export default function AboutHeroSection({
           {ctaButtons && (
             <div className="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-4">
               {ctaButtons}
+            </div>
+          )}
+
+          {stats && stats.length > 0 && (
+            <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-8 mt-12 pt-12 border-t border-white/20">
+              {stats.map((stat, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <i className={`${stat.icon} text-[#C8102E] text-2xl`}></i>
+                  <div>
+                    <div className="text-white font-bold text-xl md:text-2xl">
+                      {stat.value}
+                    </div>
+                    <div className="text-gray-400 text-xs md:text-sm">
+                      {stat.label}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           )}
         </div>

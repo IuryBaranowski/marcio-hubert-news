@@ -1,16 +1,12 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Header from "../components/Header";
-import HeroSection from "../components/HeroSection";
-import LatestNewsSection from "../components/LatestNewsSection";
-import CategoryHighlights from "../components/CategoryHighlights";
-import TVSection from "../components/TVSection";
-import AboutMarcioSection from "../components/AboutMarcioSection";
-import EventsSection from "../components/EventsSection";
-import EditorialPrinciples from "../components/EditorialPrinciples";
-import NewsletterCTA from "../components/NewsletterCTA";
-import Footer from "../components/Footer";
+import HeroSection from "../components/home/HeroSection";
+import CategoryHighlights from "../components/home/CategoryHighlights";
+import TVSection from "../components/home/TVSection";
+import AboutMarcioSection from "../components/home/AboutMarcioSection";
+import EditorialPrinciples from "../components/home/EditorialPrinciples";
+import Footer from "../components/shared/Footer";
 
 export default function Home() {
   const t = useTranslations("Home");

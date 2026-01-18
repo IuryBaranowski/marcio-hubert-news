@@ -1,19 +1,19 @@
 "use client";
 
-import AboutHeroSection from "../../components/AboutHeroSection";
-import NewsIntroSection from "../../components/NewsIntroSection";
-import NewsCategoriesSection from "../../components/NewsCategoriesSection";
-import ArticlesGridIntroSection from "../../components/ArticlesGridIntroSection";
-import FilterSection from "../../components/FilterSection";
-import ArticlesGridSection from "../../components/ArticlesGridSection";
-import ReadingExperienceSection from "../../components/ReadingExperienceSection";
-import NewsletterCTA from "../../components/NewsletterCTA";
-import Footer from "../../components/Footer";
+import HeroSection from "../../components/shared/HeroSection";
+import NewsIntroSection from "../../components/noticias/NewsIntroSection";
+import NewsCategoriesSection from "../../components/noticias/NewsCategoriesSection";
+import ArticlesGridIntroSection from "../../components/noticias/ArticlesGridIntroSection";
+import FilterSection from "../../components/noticias/FilterSection";
+import ArticlesGridSection from "../../components/noticias/ArticlesGridSection";
+import ReadingExperienceSection from "../../components/noticias/ReadingExperienceSection";
+import NewsletterCTA from "../../components/home/NewsletterCTA";
+import Footer from "../../components/shared/Footer";
 
 export default function NoticiasPage() {
   return (
     <main className="font-sans bg-white text-[#2C2C2C] antialiased">
-      <AboutHeroSection
+      <HeroSection
         badge={{
           icon: "fa-solid fa-newspaper",
           text: "Central de Notícias",

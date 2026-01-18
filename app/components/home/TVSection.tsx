@@ -1,6 +1,6 @@
 "use client";
 
-import { Link } from "../../i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import VideoCard from "./VideoCard";
 
 const videos = [

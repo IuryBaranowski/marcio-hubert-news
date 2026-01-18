@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { usePathname, Link } from "../../i18n/navigation";
+import { usePathname, Link } from "@/i18n/navigation";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

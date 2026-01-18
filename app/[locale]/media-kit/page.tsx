@@ -1,18 +1,18 @@
 "use client";
 
-import AboutHeroSection from "../../components/AboutHeroSection";
-import MediaKitIntroSection from "../../components/MediaKitIntroSection";
-import ProfessionalProfileSection from "../../components/ProfessionalProfileSection";
-import ContentFormatsSection from "../../components/ContentFormatsSection";
-import AudienceProfileSection from "../../components/AudienceProfileSection";
-import PressContactSection from "../../components/PressContactSection";
-import DownloadCTASection from "../../components/DownloadCTASection";
-import Footer from "../../components/Footer";
+import HeroSection from "../../components/shared/HeroSection";
+import MediaKitIntroSection from "../../components/media-kit/MediaKitIntroSection";
+import ProfessionalProfileSection from "../../components/media-kit/ProfessionalProfileSection";
+import ContentFormatsSection from "../../components/media-kit/ContentFormatsSection";
+import AudienceProfileSection from "../../components/media-kit/AudienceProfileSection";
+import PressContactSection from "../../components/media-kit/PressContactSection";
+import DownloadCTASection from "../../components/media-kit/DownloadCTASection";
+import Footer from "../../components/shared/Footer";
 
 export default function MediaKitPage() {
   return (
     <main className="font-sans bg-white text-[#2C2C2C] antialiased">
-      <AboutHeroSection
+      <HeroSection
         badge={{
           icon: "fa-solid fa-file-lines",
           text: "Informações para Imprensa e Parcerias",

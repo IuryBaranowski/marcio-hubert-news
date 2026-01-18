@@ -1,20 +1,20 @@
 "use client";
 
-import AboutHeroSection from "../../components/AboutHeroSection";
-import EventsIntroSection from "../../components/EventsIntroSection";
-import EventCoverageFormatSection from "../../components/EventCoverageFormatSection";
-import UpcomingEventsSection from "../../components/UpcomingEventsSection";
-import PastEventsSection from "../../components/PastEventsSection";
-import CoverageStructureSection from "../../components/CoverageStructureSection";
-import EventTypesSection from "../../components/EventTypesSection";
-import EventCommitmentSection from "../../components/EventCommitmentSection";
-import SimpleNewsletterCTA from "../../components/SimpleNewsletterCTA";
-import Footer from "../../components/Footer";
+import HeroSection from "../../components/shared/HeroSection";
+import EventsIntroSection from "../../components/eventos/EventsIntroSection";
+import EventCoverageFormatSection from "../../components/eventos/EventCoverageFormatSection";
+import UpcomingEventsSection from "../../components/eventos/UpcomingEventsSection";
+import PastEventsSection from "../../components/eventos/PastEventsSection";
+import CoverageStructureSection from "../../components/eventos/CoverageStructureSection";
+import EventTypesSection from "../../components/eventos/EventTypesSection";
+import EventCommitmentSection from "../../components/eventos/EventCommitmentSection";
+import SimpleNewsletterCTA from "../../components/shared/SimpleNewsletterCTA";
+import Footer from "../../components/shared/Footer";
 
 export default function EventosPage() {
   return (
     <main className="font-sans bg-white text-[#2C2C2C] antialiased">
-      <AboutHeroSection
+      <HeroSection
         badge={{
           icon: "fa-solid fa-calendar-days",
           text: "Cobertura de Eventos",

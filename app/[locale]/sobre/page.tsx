@@ -1,18 +1,18 @@
 "use client";
 
-import AboutHeroSection from "../../components/AboutHeroSection";
-import ProfessionalTrajectorySection from "../../components/ProfessionalTrajectorySection";
-import TimelineSection from "../../components/TimelineSection";
-import EditorialPrinciplesDetailSection from "../../components/EditorialPrinciplesDetailSection";
-import CoverageAreasSection from "../../components/CoverageAreasSection";
-import ClosingMissionSection from "../../components/ClosingMissionSection";
-import SimpleNewsletterCTA from "../../components/SimpleNewsletterCTA";
-import Footer from "../../components/Footer";
+import HeroSection from "../../components/shared/HeroSection";
+import ProfessionalTrajectorySection from "../../components/sobre/ProfessionalTrajectorySection";
+import TimelineSection from "../../components/sobre/TimelineSection";
+import EditorialPrinciplesDetailSection from "../../components/sobre/EditorialPrinciplesDetailSection";
+import CoverageAreasSection from "../../components/sobre/CoverageAreasSection";
+import ClosingMissionSection from "../../components/sobre/ClosingMissionSection";
+import SimpleNewsletterCTA from "../../components/shared/SimpleNewsletterCTA";
+import Footer from "../../components/shared/Footer";
 
 export default function SobrePage() {
   return (
     <main className="font-sans bg-white text-[#2C2C2C] antialiased">
-      <AboutHeroSection
+      <HeroSection
         badge={{
           icon: "fa-solid fa-user-tie",
           text: "Sobre o Editor",
