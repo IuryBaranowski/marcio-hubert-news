@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import HeroSection from "../../components/shared/HeroSection";
 import VideoIntroSection from "../../components/tv/VideoIntroSection";
 import VideoStyleSection from "../../components/tv/VideoStyleSection";
@@ -10,21 +11,23 @@ import SimpleNewsletterCTA from "../../components/shared/SimpleNewsletterCTA";
 import Footer from "../../components/shared/Footer";
 
 export default function TVPage() {
+  const t = useTranslations("tv.hero");
+  
   return (
     <main className="font-sans bg-white text-[#2C2C2C] antialiased">
       <HeroSection
         badge={{
           icon: "fa-brands fa-youtube",
-          text: "Marcio Hubert TV",
+          text: t("badge"),
         }}
         title={
           <>
-            Análise em Vídeo:
+            {t("title")}
             <br />
-            Contexto e Profundidade
+            {t("title2")}
           </>
         }
-        description="Conteúdo audiovisual exclusivo que vai além das manchetes. Análises estratégicas, entrevistas com especialistas e cobertura aprofundada dos temas que impactam o Brasil."
+        description={t("description")}
       />
       <VideoIntroSection />
       <VideoStyleSection />

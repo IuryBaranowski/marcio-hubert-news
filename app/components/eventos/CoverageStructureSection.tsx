@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface StructureItem {
   icon: string;
   title: string;
@@ -7,48 +9,44 @@ interface StructureItem {
   bgColor: string;
 }
 
-const structureItems: StructureItem[] = [
-  {
-    icon: "fa-solid fa-circle-info",
-    title: "O Contexto do Evento",
-    description:
-      "Por que este evento é relevante? Qual o cenário político, econômico ou setorial que justifica sua realização? Quem são os principais participantes e o que está em jogo? Esta seção contextualiza o evento dentro de um quadro estratégico mais amplo.",
-    bgColor: "bg-blue-600",
-  },
-  {
-    icon: "fa-solid fa-star",
-    title: "Momentos-Chave",
-    description:
-      "Registro dos principais painéis, declarações, anúncios e debates. Quais foram as mensagens mais relevantes? Quais posicionamentos chamaram atenção? Quais tendências foram apresentadas? Esta seção destaca o que realmente importa dentro da programação do evento.",
-    bgColor: "bg-green-600",
-  },
-  {
-    icon: "fa-solid fa-microscope",
-    title: "Análise e Impacto",
-    description:
-      "O que o evento revela sobre o setor? Quais são os impactos práticos das discussões para empresas, produtores rurais, investidores ou formuladores de políticas públicas? Esta seção oferece a perspectiva analítica que diferencia o Marcio Hubert News de uma cobertura meramente descritiva.",
-    bgColor: "bg-purple-600",
-  },
-  {
-    icon: "fa-solid fa-photo-film",
-    title: "Registro Multimídia",
-    description:
-      "Galeria de fotos profissionais, vídeos de entrevistas exclusivas e trechos de painéis estratégicos. O conteúdo multimídia complementa a análise textual e oferece ao leitor uma experiência completa do evento.",
-    bgColor: "bg-red-600",
-  },
-];
-
 export default function CoverageStructureSection() {
+  const t = useTranslations("eventos.coverageStructure");
+  
+  const structureItems: StructureItem[] = [
+    {
+      icon: "fa-solid fa-circle-info",
+      title: t("context.title"),
+      description: t("context.description"),
+      bgColor: "bg-blue-600",
+    },
+    {
+      icon: "fa-solid fa-star",
+      title: t("keyMoments.title"),
+      description: t("keyMoments.description"),
+      bgColor: "bg-green-600",
+    },
+    {
+      icon: "fa-solid fa-microscope",
+      title: t("analysis.title"),
+      description: t("analysis.description"),
+      bgColor: "bg-purple-600",
+    },
+    {
+      icon: "fa-solid fa-photo-film",
+      title: t("multimedia.title"),
+      description: t("multimedia.description"),
+      bgColor: "bg-red-600",
+    },
+  ];
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            Estrutura de Cobertura
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-            Cada evento coberto segue uma metodologia editorial que garante
-            profundidade, contexto e utilidade estratégica
+            {t("subtitle")}
           </p>
         </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import VideoCard from "./VideoCard";
 
 const videos = [
@@ -48,6 +49,8 @@ const videos = [
 ];
 
 export default function TVSection() {
+  const t = useTranslations("home.tv");
+  
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -56,14 +59,14 @@ export default function TVSection() {
             <div className="inline-flex items-center space-x-2 px-3 md:px-4 py-1.5 md:py-2 bg-red-50 rounded-full mb-3 md:mb-4">
               <i className="fa-brands fa-youtube text-[#C8102E] text-sm md:text-base"></i>
               <span className="text-[#C8102E] text-xs md:text-sm font-semibold">
-                MarcioHubertNews
+                {t("badge")}
               </span>
             </div>
             <h2 className="font-serif font-bold text-2xl md:text-4xl text-[#0A1628] mb-2 md:mb-3">
-              Posicionamento institucional
+              {t("title")}
             </h2>
             <p className="text-gray-600 text-sm md:text-lg">
-              Conteúdo com análises e entrevistas
+              {t("subtitle")}
             </p>
           </div>
           <Link
@@ -74,7 +77,7 @@ export default function TVSection() {
           >
             <i 
             className="fa-brands fa-youtube"></i>
-            <span className="text-sm md:text-base">Acesse o Canal</span>
+            <span className="text-sm md:text-base">{t("cta")}</span>
           </Link>
         </div>
 

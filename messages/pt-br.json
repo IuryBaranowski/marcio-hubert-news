@@ -1,13 +1,917 @@
 {
-  "Home": {
-    "title": "Marcio Hubert News",
-    "subtitle": "Em construção."
+  "common": {
+    "brandName": "Marcio Hubert",
+    "brandSubtitle": "NEWS",
+    "newsletter": "Newsletter",
+    "readMore": "Ler mais",
+    "seeAll": "Ver todos",
+    "seeAllShort": "Ver todos →",
+    "contact": "Contato",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "location": "Localização",
+    "press": "Imprensa",
+    "headquarters": "Sede",
+    "subscribe": "Inscrever-se",
+    "subscribeFree": "Inscrever-se Grátis",
+    "download": "Baixar",
+    "downloadPDF": "Baixar PDF",
+    "enterContact": "Entrar em Contato",
+    "send": "Enviar",
+    "name": "Nome",
+    "message": "Mensagem",
+    "subject": "Assunto",
+    "yourEmail": "Seu melhor e-mail",
+    "yourName": "Seu nome",
+    "allRightsReserved": "© 2026 Marcio Hubert News. Todos os direitos reservados.",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfUse": "Termos de Uso",
+    "codeOfEthics": "Código de Ética"
   },
-  "Header": {
-    "home": "Início",
+  "header": {
+    "home": "Home",
+    "about": "Sobre",
+    "consulting": "Consultoria",
+    "lecture": "Palestra",
+    "mentoring": "Mentoria",
+    "mediaTraining": "Media Training",
+    "crisisManagement": "Gestão de Crise",
+    "contact": "Contato"
+  },
+  "footer": {
+    "navigation": "Navegação",
+    "categories": "Categories",
+    "contact": "Contato",
+    "description": "Leitura institucional e estratégica dos Estados Unidos para líderes e empresas.",
+    "agribusiness": "Agronegócio",
     "politics": "Política",
     "economy": "Economia",
-    "usbr": "EUA x Brasil",
-    "contact": "Contato"
+    "unitedStates": "Estados Unidos"
+  },
+  "home": {
+    "hero": {
+      "badge": "Consultoria • Palestra • Mentoria • Media Training • Gestão de Crise",
+      "title": "• Jornalista Internacional",
+      "title2": "• Comunicação Estratégica",
+      "countries": "🇧🇷 Brasil   🇺🇸 EUA   🌎 LatAm   🇦🇪 EAU",
+      "description": "Especialista no ambiente político, econômico e midiático dos EUA.",
+      "description2": "Ajudo empresas na tomada de decisão.",
+      "ctaSchedule": "Agendar Diagnóstico",
+      "ctaSubscribe": "Inscreva-se",
+      "ctaSubscribeMobile": "Nosso Canal",
+      "stats": {
+        "events": "Eventos",
+        "viewers": "Telespectadores",
+        "newscasts": "Telejornais"
+      }
+    },
+    "aboutMarcio": {
+      "badge": "SOBRE O EDITOR",
+      "title": "Comunicação Estratégica para Redução de Risco e Crescimento",
+      "description1": "Em ambientes marcados por instabilidade política, ruído informacional e decisões de alto impacto, empresas e empresários não precisam apenas de informação precisam de clareza estratégica, previsibilidade e proteção. Minha atuação vai além da análise ou observação do cenário. Sou jornalista internacional baseado nos Estados Unidos, empresário com operações ativas no país e profissional inserido no ecossistema da mídia americana. Isso me permite atuar diretamente no jogo, compreendendo como decisões institucionais, narrativas públicas e movimentos de poder afetam negócios, reputações e resultados financeiros.",
+      "description2": "Ajudo empresas e líderes a reduzir riscos de exposição pública, regulatória e reputacional; Blindar o negócio contra crises, ruídos e narrativas desfavoráveis; Ganhar escala com posicionamento claro e comunicação estratégica; Aumentar previsibilidade em cenários complexos e voláteis; Gerar valor e lucro por meio de decisões mais informadas e seguras. Não entrego discursos genéricos nem soluções teóricas. Estruturo narrativas, estratégias e decisões baseadas em fatos, dados oficiais e vivência direta nos bastidores.",
+      "description3": "Não atuo como comentarista externo, mas como parceiro estratégico de empresas e empresários que precisam se posicionar, se proteger e crescer em mercados altamente expostos, especialmente na relação entre Brasil, Estados Unidos, Emirados Árabes Unidos e América Latina.",
+      "expertise1": "Especialista em Agronegócio, Economia e Política.",
+      "expertise2": "Palestrante e mediador de eventos.",
+      "expertise3": "Membro da Society of Professional Journalists / USA.",
+      "cta": "Conheça a Trajetória",
+      "quote": "Nosso trabalho é diagnosticar cenários, estruturar posicionamento, preparar porta-vozes e gerir riscos. A compreensão prática de como funcionam as instituições, as leis e o ecossistema de poder nos Estados Unidos é usada como ferramenta para tomada de decisão, gestão de crise e crescimento sustentável. Ajudamos empresas e líderes a ganhar previsibilidade, bater metas e se posicionar com clareza em mercados complexos."
+    },
+    "latestNews": {
+      "title": "Últimas Notícias",
+      "subtitle": "Cobertura atualizada dos principais acontecimentos",
+      "seeAll": "Ver todas as notícias"
+    },
+    "tv": {
+      "badge": "MarcioHubertNews",
+      "title": "Posicionamento institucional",
+      "subtitle": "Conteúdo com análises e entrevistas",
+      "cta": "Acesse o Canal"
+    },
+    "events": {
+      "title": "Cobertura de Eventos",
+      "subtitle": "Presença nos principais eventos do agronegócio e política nacional",
+      "seeAll": "Ver todos os eventos"
+    },
+    "editorialPrinciples": {
+      "title": "Ecossistema",
+      "subtitle": "Parcerias institucionais e estratégicas no Brasil, Estados Unidos e mercados globais.",
+      "principles": {
+        "impartial": {
+          "title": "Análise Imparcial",
+          "description": "Cobertura equilibrada e isenta, sem viés político ou ideológico. Nosso compromisso é com os fatos e o contexto necessário para compreendê-los."
+        },
+        "strategic": {
+          "title": "Foco Estratégico",
+          "description": "Vamos além das manchetes para oferecer análises que ajudam profissionais e empresários a tomar decisões informadas e estratégicas."
+        },
+        "credibility": {
+          "title": "Credibilidade Comprovada",
+          "description": "Mais de 15 anos de jornalismo profissional, com fontes verificadas e metodologia rigorosa de apuração e checagem de informações."
+        }
+      }
+    },
+    "categoryHighlights": {
+      "agribusiness": {
+        "title": "Agronegócio",
+        "description": "Mediador em painéis, fóruns e debates técnicos no agro."
+      },
+      "politics": {
+        "title": "Política",
+        "description": "Cobertura de eventos políticos, entrevistas e debates nacionais."
+      },
+      "economy": {
+        "title": "Economia",
+        "description": "Eventos de economia estratégica para o agronegócio Brasileiro."
+      },
+      "unitedStates": {
+        "title": "Estados Unidos",
+        "description": "Editor, produtor e âncora do Headlines na CBS TV - News 12."
+      }
+    }
+  },
+  "sobre": {
+    "hero": {
+      "badge": "Sobre o Editor",
+      "title": "Jornalismo de Credibilidade",
+      "title2": "ao Serviço da Informação",
+      "description": "Marcio Hubert é jornalista especializado em agronegócio, política e relações internacionais, com mais de 15 anos de experiência na cobertura dos principais temas que impactam o Brasil e suas relações com o mundo."
+    },
+    "trajectory": {
+      "title": "Uma Trajetória Dedicada à Análise e ao Interesse Público",
+      "description1": "A carreira de Marcio Hubert começou nas redações de grandes veículos de comunicação brasileiros, onde desenvolveu habilidades de apuração rigorosa, checagem de fatos e construção narrativa baseada em contexto e profundidade analítica.",
+      "description2": "Ao longo dos anos, especializou-se em temas estratégicos: o agronegócio como motor econômico do país, a dinâmica política nacional, as relações bilaterais entre Brasil e Estados Unidos, e os impactos da economia global nos mercados domésticos.",
+      "description3": "Entre 2018 e 2021, atuou como correspondente em Washington D.C., onde acompanhou de perto negociações comerciais, debates no Congresso americano e a formulação de políticas que afetam diretamente o Brasil. Essa experiência internacional consolidou sua visão estratégica e ampliou sua rede de fontes em ambos os países.",
+      "description4": "De volta ao Brasil, fundou o Marcio Hubert News com o objetivo de oferecer um jornalismo que vai além da manchete: um portal que entrega contexto, análise e perspectivas fundamentadas para profissionais que precisam tomar decisões informadas.",
+      "highlights": {
+        "title": "Destaques da Trajetória",
+        "items": [
+          "Correspondente em Washington D.C. (2018-2021)",
+          "Cobertura de 12 edições da Agrishow",
+          "Entrevistas com ministros, senadores e CEOs",
+          "Palestrante em eventos nacionais e internacionais",
+          "Mais de 500 análises publicadas"
+        ]
+      }
+    },
+    "coverageAreas": {
+      "title": "Áreas de Cobertura",
+      "subtitle": "O Marcio Hubert News concentra sua atuação em temas estratégicos que impactam diretamente o Brasil e suas relações internacionais",
+      "agribusiness": {
+        "title": "Agronegócio",
+        "description1": "Cobertura completa do setor que representa mais de 25% do PIB brasileiro. Análises sobre produção, exportação, políticas públicas, tecnologias agrícolas, mercado de commodities e impactos climáticos.",
+        "description2": "O foco está em oferecer ao produtor rural, ao empresário do agro e ao investidor informações estratégicas que orientem decisões de curto, médio e longo prazo."
+      },
+      "politics": {
+        "title": "Política",
+        "description1": "Análise dos principais debates políticos nacionais, com foco nos temas que impactam a economia, o agronegócio e as relações internacionais. Cobertura do Congresso, Executivo e Judiciário.",
+        "description2": "O objetivo é ir além da polarização e oferecer ao leitor uma visão equilibrada, contextualizada e focada nos impactos práticos das decisões políticas."
+      },
+      "economy": {
+        "title": "Economia",
+        "description1": "Cobertura de mercados financeiros, política monetária, inflação, câmbio, investimentos e perspectivas econômicas. Análise de indicadores e tendências que afetam empresas, consumidores e investidores.",
+        "description2": "A abordagem combina dados técnicos com explicações acessíveis, permitindo que o leitor compreenda os movimentos econômicos e suas implicações práticas."
+      },
+      "brazilUsa": {
+        "title": "Brasil–EUA",
+        "description1": "Análise especializada das relações bilaterais entre Brasil e Estados Unidos, incluindo comércio, investimentos, política externa, acordos setoriais e impactos das decisões americanas no Brasil.",
+        "description2": "A experiência como correspondente em Washington D.C. garante uma visão privilegiada e fontes estratégicas em ambos os países."
+      },
+      "world": {
+        "title": "Notícias Internacionais com Impacto Estratégico",
+        "description1": "Cobertura seletiva de eventos globais que possuem impacto direto ou indireto no Brasil: decisões de bancos centrais internacionais, conflitos geopolíticos que afetam commodities, mudanças regulatórias em mercados relevantes e tendências tecnológicas globais.",
+        "description2": "O critério editorial é claro: só entra na pauta internacional o que tem relevância estratégica para o público brasileiro."
+      }
+    },
+    "timeline": {
+      "title": "Marcos da Trajetória Profissional",
+      "subtitle": "Uma linha do tempo que reflete compromisso, evolução e dedicação ao jornalismo de qualidade",
+      "events": {
+        "2008": {
+          "title": "Início da Carreira",
+          "description": "Primeiros passos no jornalismo econômico em grandes redações brasileiras, cobrindo mercados e política nacional."
+        },
+        "2012": {
+          "title": "Especialização em Agronegócio",
+          "description": "Foco estratégico na cobertura do setor agrícola, participando de eventos como Agrishow e desenvolvendo rede de fontes no campo."
+        },
+        "2018-2021": {
+          "title": "Correspondente em Washington D.C.",
+          "description": "Cobertura das relações Brasil-EUA, negociações comerciais e política americana com impacto direto no Brasil."
+        },
+        "2022": {
+          "title": "Lançamento do Canal no YouTube",
+          "description": "Expansão para conteúdo em vídeo, trazendo análises aprofundadas e entrevistas exclusivas em formato audiovisual."
+        },
+        "2024": {
+          "title": "Fundação do Marcio Hubert News",
+          "description": "Criação do portal independente dedicado a jornalismo analítico e estratégico, consolidando 15 anos de experiência."
+        }
+      }
+    },
+    "editorialPrinciples": {
+      "title": "Princípios Editoriais",
+      "subtitle": "Os pilares que orientam cada publicação, análise e conteúdo produzido pelo Marcio Hubert News",
+      "independence": {
+        "title": "Independência Editorial",
+        "description1": "O Marcio Hubert News não possui vínculos políticos, partidários ou corporativos que comprometam a imparcialidade da cobertura. A linha editorial é construída com base em critérios jornalísticos, não em agendas externas.",
+        "description2": "Essa independência garante que as análises reflitam os fatos e contextos relevantes, sem distorções ou omissões motivadas por interesses de terceiros."
+      },
+      "truth": {
+        "title": "Responsabilidade com a Verdade",
+        "description1": "Cada informação publicada passa por rigorosa checagem de fatos e verificação de fontes. O compromisso com a precisão é inegociável, e eventuais erros são corrigidos de forma transparente e imediata.",
+        "description2": "Não há espaço para sensacionalismo, desinformação ou conteúdos que comprometam a confiança do leitor na qualidade da informação."
+      },
+      "context": {
+        "title": "Contexto Acima do Imediatismo",
+        "description1": "O jornalismo de qualidade não se resume à velocidade de publicação. O diferencial do Marcio Hubert News está na capacidade de oferecer contexto, explicar causas e consequências, e apresentar múltiplas perspectivas.",
+        "description2": "O leitor não precisa apenas saber o que aconteceu, mas entender por que aconteceu e o que isso significa para o futuro."
+      },
+      "commitment": {
+        "title": "Compromisso com o Leitor",
+        "description1": "O público do Marcio Hubert News é composto por profissionais exigentes que buscam informação estratégica. Por isso, o portal compromete-se a respeitar a inteligência do leitor, oferecendo conteúdo denso, bem fundamentado e útil.",
+        "description2": "A relação com a audiência é baseada em transparência, responsabilidade e entrega consistente de valor informativo."
+      },
+      "quote": "O jornalismo não pode ser neutro diante da verdade. Nosso compromisso é com os fatos, com o contexto e com a responsabilidade de informar com clareza e profundidade. Não basta noticiar: é preciso explicar, contextualizar e oferecer ao leitor as ferramentas para que ele tome decisões estratégicas bem fundamentadas."
+    },
+    "closingMission": {
+      "title": "Missão de Longo Prazo",
+      "description1": "O Marcio Hubert News foi criado para preencher uma lacuna no jornalismo brasileiro: a falta de veículos que combinem profundidade analítica, imparcialidade editorial e foco em temas estratégicos como agronegócio, política e relações internacionais.",
+      "description2": "A missão de longo prazo é consolidar o portal como referência nacional em jornalismo analítico, oferecendo ao público profissional uma fonte confiável de informação que vai além do imediatismo e do sensacionalismo.",
+      "description3": "O compromisso é com a construção de um jornalismo que respeita a inteligência do leitor, que valoriza o contexto e que contribui para um debate público mais informado, equilibrado e construtivo.",
+      "vision": {
+        "title": "Visão de Futuro",
+        "description": "Expandir a cobertura editorial, ampliar a produção de conteúdo em vídeo, fortalecer a presença em eventos estratégicos e consolidar o Marcio Hubert News como a principal fonte de análise estratégica para profissionais do agronegócio, empresários, investidores e formuladores de políticas públicas."
+      },
+      "cta": "Acompanhe Nossa Cobertura"
+    },
+    "newsletter": {
+      "title": "Receba Análises Diárias no Seu E-mail",
+      "description": "Não fique apenas na manchete. Entenda o contexto com análises exclusivas sobre agronegócio, política, economia e relações Brasil-EUA."
+    }
+  },
+  "noticias": {
+    "hero": {
+      "badge": "Central de Notícias",
+      "title": "Notícias com Análise",
+      "title2": "e Contexto Estratégico",
+      "description": "Acompanhe a cobertura completa dos principais acontecimentos em agronegócio, política, economia e relações internacionais. Cada notícia é acompanhada de contexto, análise e perspectivas que vão além da manchete."
+    },
+    "intro": {
+      "title": "O que você encontra nesta página",
+      "description1": "Esta é a central de notícias do Marcio Hubert News, onde você encontra cobertura atualizada dos principais acontecimentos que impactam o Brasil e suas relações estratégicas. Diferente de portais convencionais, cada publicação aqui vai além do fato isolado.",
+      "description2": "Nosso compromisso é oferecer análise aprofundada, contexto histórico e perspectivas fundamentadas que ajudam profissionais, empresários e tomadores de decisão a compreenderem não apenas o que aconteceu, mas por que aconteceu e o que isso significa para o futuro."
+    },
+    "categories": {
+      "title": "Categorias de Cobertura",
+      "subtitle": "Navegue pelas áreas temáticas que compõem nossa linha editorial",
+      "agribusiness": {
+        "title": "Agronegócio",
+        "description": "Cobertura completa do setor que move mais de 25% do PIB brasileiro. Análises sobre produção, exportação, tecnologias agrícolas, mercado de commodities, políticas públicas e impactos climáticos.",
+        "italicText": "Informação estratégica para produtores rurais, empresários do agro, investidores e profissionais do setor."
+      },
+      "politics": {
+        "title": "Política",
+        "description": "Análise dos principais debates políticos nacionais, com foco nos temas que impactam a economia, o agronegócio e as relações internacionais. Cobertura equilibrada do Congresso, Executivo e Judiciário.",
+        "italicText": "Contexto e imparcialidade para entender as decisões políticas além da polarização."
+      },
+      "economy": {
+        "title": "Economia",
+        "description": "Mercados financeiros, política monetária, inflação, câmbio, investimentos e perspectivas econômicas. Análise de indicadores e tendências que afetam empresas, consumidores e investidores no Brasil.",
+        "italicText": "Dados técnicos explicados de forma acessível para decisões estratégicas."
+      },
+      "brazilUsa": {
+        "title": "Brasil & Estados Unidos",
+        "description": "Análise especializada das relações bilaterais entre Brasil e Estados Unidos: comércio, investimentos, política externa, acordos setoriais e impactos das decisões americanas no Brasil.",
+        "italicText": "Visão privilegiada com fontes estratégicas em ambos os países."
+      },
+      "world": {
+        "title": "Mundo",
+        "description": "Cobertura seletiva de eventos globais com impacto estratégico no Brasil: decisões de bancos centrais internacionais, conflitos geopolíticos que afetam commodities, mudanças regulatórias em mercados relevantes e tendências tecnológicas globais.",
+        "italicText": "Apenas notícias internacionais com relevância estratégica para o público brasileiro."
+      }
+    },
+    "articlesGrid": {
+      "badge": "ATUALIZAÇÃO EM TEMPO REAL",
+      "title": "Conteúdo Sempre Atualizado",
+      "description1": "Os artigos abaixo são atualizados continuamente à medida que novos acontecimentos surgem e análises são produzidas. Nosso sistema de publicação garante que você tenha acesso às informações mais recentes assim que elas são verificadas e contextualizadas.",
+      "description2": "Cada artigo passa por rigorosa checagem editorial antes de ser publicado, garantindo precisão, contexto e análise de qualidade. Não publicamos conteúdo apenas por velocidade — publicamos quando temos algo relevante a dizer."
+    },
+    "filter": {
+      "filterBy": "Filtrar por categoria:",
+      "sortBy": "Ordenar por:",
+      "all": "Todas",
+      "agribusiness": "Agronegócio",
+      "politics": "Política",
+      "economy": "Economia",
+      "brazilUsa": "Brasil-EUA",
+      "world": "Mundo",
+      "sortOptions": {
+        "mostRecent": "Mais Recentes",
+        "mostRead": "Mais Lidas",
+        "featured": "Análises em Destaque"
+      }
+    },
+    "readingExperience": {
+      "title": "Uma Experiência de Leitura Diferenciada",
+      "description1": "No Marcio Hubert News, cada artigo é estruturado para oferecer não apenas informação, mas **compreensão estratégica**. Nosso formato editorial divide o conteúdo em seções claras: **O Fato**, **O Contexto**, **A Análise** e **Próximos Passos**.",
+      "description2": "Essa estrutura garante que o leitor tenha acesso ao acontecimento, entenda suas causas históricas e políticas, compreenda as implicações práticas e saiba quais desdobramentos esperar. É jornalismo que empodera o leitor a tomar decisões informadas.",
+      "description3": "Além disso, priorizamos **clareza na escrita**, **profundidade analítica** e **acessibilidade**. Mesmo temas técnicos são explicados de forma que profissionais de diferentes áreas possam compreender e aplicar as informações em seus contextos estratégicos.",
+      "stats": {
+        "factChecking": "Checagem de Fatos",
+        "sensationalism": "Sensacionalismo",
+        "impartiality": "Imparcialidade"
+      }
+    },
+    "newsletter": {
+      "title": "Não Fique Apenas na Manchete.",
+      "title2": "Entenda o Contexto.",
+      "description": "Receba diariamente as principais notícias do agronegócio, política e economia com análises exclusivas direto no seu e-mail. Conteúdo gratuito para profissionais que buscam decisões estratégicas."
+    }
+  },
+  "tv": {
+    "hero": {
+      "badge": "Marcio Hubert TV",
+      "title": "Análise em Vídeo:",
+      "title2": "Contexto e Profundidade",
+      "description": "Conteúdo audiovisual exclusivo que vai além das manchetes. Análises estratégicas, entrevistas com especialistas e cobertura aprofundada dos temas que impactam o Brasil."
+    },
+    "intro": {
+      "badge": "PUBLICADO NO YOUTUBE",
+      "title": "Por Que Consumir Conteúdo em Vídeo?",
+      "description1": "Todo o conteúdo audiovisual do Marcio Hubert News é publicado no YouTube, garantindo acesso fácil, gratuito e multiplataforma. Os vídeos são otimizados para consumo em desktop, mobile e TV, permitindo que você acompanhe as análises no formato que preferir.",
+      "description2": "O formato em vídeo oferece uma experiência mais rica e dinâmica: você não apenas lê sobre os fatos, mas acompanha análises ao vivo, vê entrevistas exclusivas e compreende o contexto através de elementos visuais, gráficos e infográficos explicativos.",
+      "description3": "É o complemento perfeito para quem busca profundidade analítica sem abrir mão da praticidade e da imersão que o audiovisual proporciona."
+    },
+    "style": {
+      "title": "O Estilo dos Nossos Vídeos",
+      "subtitle": "Conteúdo direto, analítico e contextualizado, sem sensacionalismo ou superficialidade",
+      "direct": {
+        "title": "Tom Direto",
+        "description": "Sem rodeios ou enrolação. Cada vídeo vai direto ao ponto, apresentando os fatos, o contexto e a análise de forma clara e objetiva. Respeitamos o tempo do espectador oferecendo conteúdo denso e bem estruturado."
+      },
+      "analytical": {
+        "title": "Abordagem Analítica",
+        "description": "Não basta relatar o que aconteceu. Explicamos o porquê, exploramos as causas, apresentamos múltiplas perspectivas e projetamos possíveis desdobramentos. Análise estratégica é o diferencial de cada vídeo."
+      },
+      "contextual": {
+        "title": "Contexto Sempre Presente",
+        "description": "Cada tema é contextualizado historicamente, politicamente e economicamente. O espectador não fica apenas com a notícia, mas compreende o panorama completo que permite decisões informadas."
+      },
+      "quote": "Nosso compromisso é oferecer análises que vão além da superfície, explorando as nuances, as conexões e as implicações estratégicas de cada tema abordado."
+    },
+    "latestVideos": {
+      "title": "Vídeos Recentes",
+      "subtitle": "Análises atualizadas sobre os principais temas do momento",
+      "cta": "Ver Todos no YouTube"
+    },
+    "subscribe": {
+      "badge": "INSCREVA-SE NO CANAL",
+      "title": "Não Perca Nenhuma Análise.",
+      "title2": "Inscreva-se no Canal.",
+      "description": "Receba notificações sempre que um novo vídeo for publicado. Análises estratégicas, entrevistas exclusivas e cobertura aprofundada dos temas que impactam o Brasil e o mundo.",
+      "ctaSubscribe": "Inscrever-se no YouTube",
+      "ctaNotifications": "Ativar Notificações",
+      "stats": {
+        "videos": "Vídeos Publicados",
+        "subscribers": "Inscritos no Canal",
+        "views": "Visualizações Totais"
+      }
+    },
+    "videoCategories": {
+      "title": "Categorias de Vídeos",
+      "subtitle": "Conteúdo organizado por tema para facilitar sua busca por análises específicas",
+      "agribusiness": {
+        "title": "Agronegócio",
+        "description": "Análises do setor agrícola brasileiro",
+        "count": "48 vídeos"
+      },
+      "politics": {
+        "title": "Política",
+        "description": "Contexto dos debates políticos nacionais",
+        "count": "62 vídeos"
+      },
+      "economy": {
+        "title": "Economia",
+        "description": "Mercados, indicadores e perspectivas",
+        "count": "55 vídeos"
+      },
+      "brazilUsa": {
+        "title": "Brasil-EUA",
+        "description": "Relações bilaterais e impactos estratégicos",
+        "count": "35 vídeos"
+      }
+    },
+    "newsletter": {
+      "title": "Receba Análises Diárias no Seu E-mail",
+      "description": "Não fique apenas na manchete. Entenda o contexto com análises exclusivas sobre agronegócio, política, economia e relações Brasil-EUA."
+    }
+  },
+  "eventos": {
+    "hero": {
+      "badge": "Cobertura de Eventos",
+      "title": "Jornalismo Além das",
+      "title2": "Manchetes dos Eventos",
+      "description": "A presença do Marcio Hubert News nos principais eventos do agronegócio, política e economia garante cobertura aprofundada, análise contextualizada e registro completo dos momentos que movem o Brasil."
+    },
+    "newsletter": {
+      "title": "Receba Cobertura Exclusiva de Eventos",
+      "description": "Seja o primeiro a receber análises, entrevistas e bastidores dos principais eventos do agronegócio, política e economia brasileira."
+    },
+    "intro": {
+      "title": "Por Que Cobrimos Eventos?",
+      "description1": "Eventos são momentos estratégicos onde decisões são tomadas, tendências são reveladas e lideranças se posicionam. A cobertura jornalística de eventos vai além do registro superficial: exige presença, escuta ativa, capacidade de identificar o que é relevante e habilidade de contextualizar cada declaração, anúncio ou debate.",
+      "description2": "O Marcio Hubert News não se limita a reproduzir releases ou cobrir apenas as palestras principais. Nossa metodologia envolve entrevistas exclusivas com participantes-chave, análise dos bastidores, cruzamento de informações e produção de conteúdo que oferece ao leitor uma visão completa e estratégica do evento.",
+      "description3": "Cobrimos eventos que reúnem decisores do agronegócio, formuladores de políticas públicas, lideranças empresariais e especialistas internacionais. São feiras, congressos, fóruns, seminários e encontros bilaterais que impactam diretamente o futuro do Brasil."
+    },
+    "coverageFormat": {
+      "title": "Como Documentamos Cada Evento",
+      "subtitle": "Nossa cobertura combina diferentes formatos para garantir que o leitor tenha acesso completo ao que aconteceu, por que aconteceu e o que isso significa",
+      "articles": {
+        "title": "Artigos Analíticos",
+        "description": "Textos aprofundados que contextualizam o evento, destacam os principais temas debatidos, analisam declarações de lideranças e projetam impactos futuros. Cada artigo segue a metodologia editorial do portal: fato, contexto, análise e próximos passos."
+      },
+      "photos": {
+        "title": "Registro Fotográfico",
+        "description": "Fotos profissionais que capturam momentos estratégicos: painéis, entrevistas, bastidores, networking e reações. O registro visual complementa a narrativa textual e oferece ao leitor uma experiência mais rica da cobertura."
+      },
+      "video": {
+        "title": "Conteúdo em Vídeo",
+        "description": "Entrevistas exclusivas, análises ao vivo e resumos em vídeo publicados no canal Marcio Hubert TV. O formato audiovisual permite que o leitor acompanhe declarações completas e perceba nuances que o texto escrito não captura."
+      }
+    },
+    "eventTypes": {
+      "title": "Tipos de Eventos Cobertos",
+      "subtitle": "O Marcio Hubert News está presente nos principais eventos estratégicos que movem o Brasil",
+      "fairs": {
+        "title": "Feiras e Exposições do Agronegócio",
+        "description": "Agrishow, Tecnoshow, Expointer e outras grandes feiras que reúnem produtores, fornecedores de tecnologia, representantes de cooperativas e lideranças do setor."
+      },
+      "forums": {
+        "title": "Fóruns e Congressos Políticos",
+        "description": "Encontros de parlamentares, debates sobre políticas públicas, discussões sobre reformas estruturais e articulação de bancadas temáticas no Congresso Nacional."
+      },
+      "seminars": {
+        "title": "Seminários Econômicos e Financeiros",
+        "description": "Encontros de investidores, apresentação de perspectivas econômicas, análise de mercados financeiros e discussões sobre políticas monetárias e fiscais."
+      },
+      "bilateral": {
+        "title": "Encontros Bilaterais Brasil-EUA",
+        "description": "Reuniões comerciais, rodadas de negociação, missões empresariais e eventos diplomáticos que discutem a relação estratégica entre os dois países."
+      }
+    },
+    "commitment": {
+      "title": "Presença e Credibilidade",
+      "description1": "A cobertura de eventos exige mais do que presença física: exige conhecimento prévio do setor, capacidade de identificar o que é relevante, habilidade de fazer as perguntas certas e compromisso com a entrega de conteúdo útil ao leitor.",
+      "description2": "O Marcio Hubert News não participa de eventos apenas para registrar palestras. Participamos para construir narrativas estratégicas, para entrevistar quem realmente decide, para capturar bastidores e para oferecer ao nosso público uma visão que vai além do que está na programação oficial.",
+      "description3": "Nosso compromisso é transformar cada evento coberto em conteúdo que ajude profissionais a entender tendências, antecipar movimentos de mercado e tomar decisões mais informadas.",
+      "quote": "Estar presente nos eventos certos, com as perguntas certas e o olhar estratégico necessário é o que diferencia uma cobertura jornalística de um simples registro burocrático.",
+      "cta": "Acompanhe Nossa Cobertura de Eventos"
+    },
+    "coverageStructure": {
+      "title": "Estrutura de Cobertura",
+      "subtitle": "Cada evento coberto segue uma metodologia editorial que garante profundidade, contexto e utilidade estratégica",
+      "context": {
+        "title": "O Contexto do Evento",
+        "description": "Por que este evento é relevante? Qual o cenário político, econômico ou setorial que justifica sua realização? Quem são os principais participantes e o que está em jogo? Esta seção contextualiza o evento dentro de um quadro estratégico mais amplo."
+      },
+      "keyMoments": {
+        "title": "Momentos-Chave",
+        "description": "Registro dos principais painéis, declarações, anúncios e debates. Quais foram as mensagens mais relevantes? Quais posicionamentos chamaram atenção? Quais tendências foram apresentadas? Esta seção destaca o que realmente importa dentro da programação do evento."
+      },
+      "analysis": {
+        "title": "Análise e Impacto",
+        "description": "O que o evento revela sobre o setor? Quais são os impactos práticos das discussões para empresas, produtores rurais, investidores ou formuladores de políticas públicas? Esta seção oferece a perspectiva analítica que diferencia o Marcio Hubert News de uma cobertura meramente descritiva."
+      },
+      "multimedia": {
+        "title": "Registro Multimídia",
+        "description": "Galeria de fotos profissionais, vídeos de entrevistas exclusivas e trechos de painéis estratégicos. O conteúdo multimídia complementa a análise textual e oferece ao leitor uma experiência completa do evento."
+      }
+    },
+    "upcomingEvents": {
+      "title": "Próximos Eventos",
+      "subtitle": "Agenda de eventos com cobertura confirmada do Marcio Hubert News",
+      "filter": "Filtrar"
+    },
+    "pastEvents": {
+      "title": "Eventos Cobertos",
+      "subtitle": "Acesse a cobertura completa de eventos anteriores",
+      "seeAll": "Ver todos os eventos"
+    }
+  },
+  "mediaKit": {
+    "hero": {
+      "badge": "Informações para Imprensa e Parcerias",
+      "title": "Media Kit",
+      "title2": "Marcio Hubert News",
+      "description": "Informações institucionais, dados de audiência, perfil editorial e contatos para parcerias estratégicas, assessoria de imprensa e oportunidades de colaboração.",
+      "ctaDownload": "Baixar Media Kit Completo (PDF)",
+      "ctaContact": "Entrar em Contato"
+    },
+    "newsletter": {
+      "title": "Receba Análises Diárias no Seu E-mail",
+      "description": "Não fique apenas na manchete. Entenda o contexto com análises exclusivas sobre agronegócio, política, economia e relações Brasil-EUA."
+    },
+    "intro": {
+      "title": "Sobre Este Media Kit",
+      "description": "Este documento reúne informações estratégicas sobre o Marcio Hubert News, seu perfil editorial, audiência, formatos de conteúdo e canais de comunicação. Desenvolvido para facilitar o trabalho de assessorias de imprensa, parceiros comerciais, patrocinadores e veículos de comunicação interessados em estabelecer colaborações.",
+      "purpose": {
+        "title": "Propósito do Media Kit",
+        "description1": "O Marcio Hubert News é um portal de jornalismo analítico especializado em agronegócio, política, economia e relações Brasil-EUA. Criado para atender profissionais que buscam informação estratégica, o veículo se diferencia pela profundidade editorial, imparcialidade e compromisso com o contexto.",
+        "description2": "Este Media Kit oferece uma visão completa sobre a identidade editorial do portal, perfil de audiência, principais formatos de conteúdo e oportunidades de parceria. É um recurso essencial para jornalistas, assessores de comunicação, empresas do agronegócio, instituições políticas e organizações que desejam estabelecer contato ou colaboração com o Marcio Hubert News."
+      }
+    },
+    "professionalProfile": {
+      "title": "Perfil Profissional",
+      "subtitle": "Marcio Hubert: experiência, credibilidade e especialização em jornalismo estratégico",
+      "name": "Marcio Hubert",
+      "role": "Jornalista, Editor-Chefe e Fundador do Marcio Hubert News",
+      "credentials": {
+        "title": "Principais Credenciais",
+        "items": [
+          "Mais de 15 anos de experiência em jornalismo econômico e político",
+          "Correspondente em Washington D.C. (2018-2021)",
+          "Especialista em Agronegócio e Relações Brasil-EUA",
+          "Cobertura de mais de 50 eventos estratégicos nacionais e internacionais",
+          "Palestrante e comentarista em fóruns de agronegócio e economia"
+        ]
+      },
+      "biography": {
+        "title": "Biografia Institucional",
+        "paragraph1": "Marcio Hubert é jornalista com formação acadêmica em Comunicação Social e especialização em Economia e Relações Internacionais. Iniciou sua carreira em grandes redações brasileiras, onde desenvolveu expertise em cobertura política e econômica.",
+        "paragraph2": "Entre 2018 e 2021, atuou como correspondente em Washington D.C., cobrindo as relações bilaterais entre Brasil e Estados Unidos, negociações comerciais e política externa americana. Essa experiência internacional consolidou sua visão estratégica sobre os impactos globais no Brasil.",
+        "paragraph3": "De volta ao país, especializou-se na cobertura do agronegócio, reconhecendo o setor como motor econômico nacional e tema estratégico para o desenvolvimento brasileiro. Participou de dezenas de eventos como Agrishow, Congresso Brasileiro do Agronegócio e fóruns setoriais.",
+        "paragraph4": "Em 2024, fundou o Marcio Hubert News, portal dedicado a oferecer jornalismo analítico, imparcial e focado em profissionais que buscam decisões estratégicas baseadas em informação de qualidade."
+      },
+      "specializations": {
+        "title": "Áreas de Especialização",
+        "agribusiness": {
+          "title": "Agronegócio",
+          "description": "Produção, exportação, políticas públicas, tecnologia agrícola"
+        },
+        "politics": {
+          "title": "Política",
+          "description": "Análise política nacional, Congresso, Executivo, Judiciário"
+        },
+        "economy": {
+          "title": "Economia",
+          "description": "Mercados, política monetária, investimentos, indicadores"
+        },
+        "brazilUsa": {
+          "title": "Brasil-EUA",
+          "description": "Relações bilaterais, comércio, política externa"
+        }
+      }
+    },
+    "contentFormats": {
+      "title": "Formatos de Conteúdo",
+      "subtitle": "O Marcio Hubert News produz conteúdo em múltiplos formatos para atender diferentes perfis de consumo de informação",
+      "articles": {
+        "title": "Artigos Analíticos",
+        "description": "Textos aprofundados que vão além da notícia factual. Cada artigo é estruturado em seções claras: O Fato, O Contexto, A Análise e Próximos Passos. Esse formato oferece ao leitor uma compreensão completa do tema, com dados verificados, múltiplas fontes e perspectivas equilibradas.",
+        "features": [
+          "Publicação diária de análises",
+          "Média de 800 a 1.500 palavras por artigo",
+          "Estrutura editorial padronizada",
+          "Checagem rigorosa de fatos e fontes"
+        ]
+      },
+      "videos": {
+        "title": "Vídeos no YouTube",
+        "description": "Canal no YouTube com análises em vídeo, entrevistas exclusivas e comentários sobre os principais temas da semana. Os vídeos complementam o conteúdo escrito e oferecem uma experiência audiovisual para quem prefere consumir informação em formato dinâmico.",
+        "features": [
+          "Publicação semanal de vídeos",
+          "Duração média de 15 a 25 minutos",
+          "Entrevistas com especialistas e autoridades",
+          "Produção profissional de estúdio"
+        ]
+      },
+      "events": {
+        "title": "Cobertura de Eventos",
+        "description": "Presença estratégica nos principais eventos do agronegócio, política e economia. A cobertura inclui entrevistas ao vivo, análises de bastidores, resumos executivos e registro fotográfico e audiovisual dos momentos mais relevantes.",
+        "features": [
+          "Cobertura de Agrishow, fóruns setoriais e eventos políticos",
+          "Entrevistas exclusivas com palestrantes e autoridades",
+          "Resumos executivos pós-evento",
+          "Análise de impactos e desdobramentos"
+        ]
+      },
+      "interviews": {
+        "title": "Entrevistas Exclusivas",
+        "description": "Conversas aprofundadas com ministros, parlamentares, CEOs do agronegócio, economistas e especialistas em política internacional. As entrevistas são conduzidas com rigor jornalístico, buscando respostas claras e contextualizadas sobre temas estratégicos.",
+        "features": [
+          "Publicação quinzenal de entrevistas",
+          "Formato escrito e em vídeo",
+          "Foco em temas estratégicos e decisões de impacto",
+          "Acesso a fontes de alto nível"
+        ]
+      }
+    },
+    "audienceProfile": {
+      "title": "Perfil de Audiência",
+      "subtitle": "O Marcio Hubert News atende um público profissional, qualificado e tomador de decisões estratégicas",
+      "metrics": {
+        "readers": {
+          "value": "50K+",
+          "title": "Leitores Mensais",
+          "description": "Audiência qualificada e engajada com o conteúdo editorial"
+        },
+        "subscribers": {
+          "value": "25K+",
+          "title": "Assinantes Newsletter",
+          "description": "Profissionais que recebem análises diárias por e-mail"
+        },
+        "engagement": {
+          "value": "85%",
+          "title": "Taxa de Engajamento",
+          "description": "Alto índice de leitura completa e compartilhamento"
+        }
+      },
+      "segments": {
+        "title": "Segmentos de Audiência",
+        "professional": {
+          "title": "Perfil Profissional",
+          "items": [
+            "Executivos do agronegócio (produtores, cooperativas, tradings)",
+            "Empresários e empreendedores",
+            "Investidores e analistas de mercado",
+            "Gestores públicos e formuladores de políticas",
+            "Assessores de comunicação e relações institucionais",
+            "Jornalistas e profissionais de mídia"
+          ]
+        },
+        "demographic": {
+          "title": "Perfil Demográfico",
+          "items": [
+            "Faixa etária predominante: 35 a 55 anos",
+            "Escolaridade: Superior completo (85%)",
+            "Renda: Classe A e B",
+            "Localização: Concentração em São Paulo, Brasília, Mato Grosso, Goiás e Rio Grande do Sul",
+            "Interesse: Informação estratégica para tomada de decisão"
+          ]
+        }
+      }
+    },
+    "pressContact": {
+      "title": "Contato para Imprensa e Parcerias",
+      "subtitle": "Para entrevistas, solicitações de informações adicionais, parcerias estratégicas ou colaborações editoriais, entre em contato através dos canais abaixo",
+      "cards": {
+        "press": {
+          "title": "Assessoria de Imprensa",
+          "description": "Para solicitações de entrevistas e informações editoriais"
+        },
+        "partnerships": {
+          "title": "Parcerias Estratégicas",
+          "description": "Para oportunidades de colaboração institucional"
+        },
+        "advertising": {
+          "title": "Publicidade e Mídia",
+          "description": "Para oportunidades comerciais e patrocínios"
+        }
+      },
+      "form": {
+        "title": "Solicite Informações Adicionais",
+        "subtitle": "Preencha o formulário abaixo e nossa equipe entrará em contato em até 24 horas úteis",
+        "fullName": "Nome Completo",
+        "company": "Empresa / Veículo",
+        "professionalEmail": "E-mail Profissional",
+        "phone": "Telefone",
+        "requestType": "Tipo de Solicitação",
+        "message": "Mensagem",
+        "placeholders": {
+          "name": "Seu nome",
+          "company": "Nome da empresa",
+          "email": "seu@email.com",
+          "phone": "(00) 00000-0000",
+          "message": "Descreva sua solicitação"
+        },
+        "requestTypes": {
+          "interview": "Entrevista com Marcio Hubert",
+          "audience": "Informações sobre audiência",
+          "editorial": "Parceria editorial",
+          "commercial": "Oportunidade comercial",
+          "event": "Cobertura de evento",
+          "other": "Outro assunto"
+        },
+        "submit": "Enviar Solicitação"
+      }
+    },
+    "downloadCTA": {
+      "badge": "DOCUMENTO COMPLETO",
+      "title": "Baixe o Media Kit Completo em PDF",
+      "description": "Documento institucional com todas as informações sobre o Marcio Hubert News: perfil editorial, dados de audiência, formatos de conteúdo, contatos e oportunidades de parceria.",
+      "download": "Baixar Media Kit (PDF)",
+      "requestEmail": "Solicitar por E-mail",
+      "info": {
+        "title": "Media Kit 2025",
+        "description": "Documento institucional oficial • 12 páginas • PDF",
+        "size": "2.4 MB",
+        "updated": "Atualizado em Jan/2025"
+      }
+    }
+  },
+  "contato": {
+    "hero": {
+      "badge": "Entre em Contato",
+      "title": "Estamos Prontos para",
+      "title2": "Ouvir Você",
+      "description": "Seja você um leitor, jornalista, parceiro comercial ou representante de imprensa, valorizamos sua mensagem. Entre em contato conosco para sugestões de pauta, parcerias estratégicas, solicitações de entrevista ou qualquer outra questão profissional."
+    },
+    "intro": {
+      "title": "Conecte-se com o Marcio Hubert News",
+      "description": "Nossa equipe está disponível para atender leitores, profissionais de imprensa, parceiros institucionais e empresas que buscam colaboração editorial, patrocínio de conteúdo ou entrevistas exclusivas. Valorizamos o diálogo aberto e respondemos a todas as mensagens com seriedade e profissionalismo.",
+      "readers": {
+        "title": "Leitores e Audiência",
+        "description": "Sugestões de pauta, dúvidas sobre conteúdo publicado, feedback editorial ou solicitações de análises específicas."
+      },
+      "press": {
+        "title": "Imprensa e Mídia",
+        "description": "Solicitações de entrevistas com Marcio Hubert, pedidos de comentários sobre temas estratégicos ou parcerias editoriais."
+      },
+      "partners": {
+        "title": "Parceiros Comerciais",
+        "description": "Propostas de patrocínio, branded content, participação em eventos ou colaborações estratégicas com empresas do setor."
+      }
+    },
+    "form": {
+      "title": "Envie Sua Mensagem",
+      "description": "Preencha o formulário ao lado e nossa equipe responderá em até 48 horas úteis. Todas as mensagens são tratadas com confidencialidade e profissionalismo.",
+      "responseTime": "Tempo de Resposta",
+      "responseTimeValue": "Até 48 horas úteis",
+      "privacy": "Privacidade Garantida",
+      "privacyValue": "Seus dados são protegidos",
+      "professional": "Atendimento Profissional",
+      "professionalValue": "Equipe especializada",
+      "preferOtherChannel": "Preferiu outro canal? Veja as informações de contato direto abaixo do formulário.",
+      "fullName": "Nome Completo",
+      "required": "*",
+      "phone": "Telefone",
+      "phonePlaceholder": "+55 (11) 99999-9999",
+      "company": "Empresa / Organização",
+      "companyPlaceholder": "Nome da empresa (opcional)",
+      "subject": "Assunto",
+      "subjectSelect": "Selecione um assunto",
+      "subjectOptions": {
+        "suggestion": "Sugestão de Pauta",
+        "interview": "Solicitação de Entrevista",
+        "partnership": "Parceria Comercial",
+        "pressOffice": "Assessoria de Imprensa",
+        "contentQuestion": "Dúvida sobre Conteúdo",
+        "feedback": "Feedback Editorial",
+        "other": "Outro Assunto"
+      },
+      "message": "Mensagem",
+      "messagePlaceholder": "Descreva sua solicitação, sugestão ou dúvida de forma clara e objetiva...",
+      "privacyCheck": "Concordo com a Política de Privacidade e autorizo o uso dos meus dados para responder esta solicitação.",
+      "requiredFields": "Campos marcados com * são obrigatórios",
+      "submit": "Enviar Mensagem"
+    },
+    "directChannels": {
+      "title": "Canais de Contato Direto",
+      "subtitle": "Prefere falar diretamente? Utilize um dos nossos canais oficiais de comunicação",
+      "generalEmail": {
+        "title": "E-mail Geral",
+        "description": "Para sugestões, dúvidas e feedback editorial",
+        "response": "Resposta em até 48 horas úteis"
+      },
+      "pressOffice": {
+        "title": "Assessoria de Imprensa",
+        "description": "Solicitações de entrevistas e comentários à imprensa",
+        "response": "Atendimento prioritário"
+      },
+      "commercial": {
+        "title": "Parcerias Comerciais",
+        "description": "Propostas de patrocínio e colaboração estratégica",
+        "response": "Análise de propostas em 5 dias úteis"
+      },
+      "phone": {
+        "title": "Telefone de Contato",
+        "description": "Para assuntos urgentes relacionados à imprensa ou parcerias estratégicas, entre em contato via telefone.",
+        "schedule": "Segunda a sexta, 9h às 18h (horário de Brasília)"
+      },
+      "address": {
+        "title": "Endereço da Redação",
+        "description": "Atendimento presencial mediante agendamento prévio"
+      }
+    },
+    "expectations": {
+      "title": "O Que Você Pode Esperar de Nós",
+      "subtitle": "Nosso compromisso com transparência e profissionalismo se estende ao atendimento",
+      "responseTime": {
+        "title": "Tempo de Resposta",
+        "description": "Todas as mensagens recebidas via formulário ou e-mail são respondidas em até 48 horas úteis. Solicitações urgentes de imprensa recebem prioridade e podem ser atendidas no mesmo dia, dependendo da disponibilidade da equipe."
+      },
+      "messageTypes": {
+        "title": "Tipos de Mensagem Aceitas",
+        "subtitle": "Estamos abertos a receber:",
+        "suggestions": "Sugestões de pautas e temas relevantes para cobertura",
+        "interviews": "Solicitações de entrevistas com Marcio Hubert",
+        "partnerships": "Propostas de parcerias comerciais e colaborações",
+        "questions": "Dúvidas sobre conteúdo publicado ou metodologia editorial",
+        "feedback": "Feedback editorial e sugestões de melhoria"
+      },
+      "privacy": {
+        "title": "Privacidade e Confidencialidade",
+        "description": "Todas as informações compartilhadas conosco são tratadas com absoluta confidencialidade. Não compartilhamos dados pessoais, e-mails ou mensagens com terceiros. Nossa política de privacidade está em conformidade com a LGPD (Lei Geral de Proteção de Dados)."
+      },
+      "professional": {
+        "title": "Abordagem Profissional",
+        "description": "Nossa equipe trata todas as solicitações com seriedade, respeito e profissionalismo. Mesmo que não possamos atender imediatamente a todas as demandas, garantimos uma resposta clara, objetiva e cortês. Valorizamos o diálogo aberto e a construção de relações de longo prazo baseadas em confiança mútua."
+      }
+    },
+    "contactInfo": {
+      "title": "Informações de Contato Direto",
+      "subtitle": "Para questões urgentes ou preferência por comunicação direta, utilize os canais abaixo",
+      "email": {
+        "title": "E-mail Institucional",
+        "value": "contato@marciohubertnews.com",
+        "description": "Resposta em até 48 horas úteis"
+      },
+      "responseTime": {
+        "title": "Tempo de Resposta",
+        "description": "Todas as mensagens recebidas via formulário ou e-mail são respondidas em até 48 horas úteis. Solicitações urgentes de imprensa recebem prioridade e podem ser atendidas no mesmo dia, dependendo da disponibilidade da equipe."
+      },
+      "messageTypes": {
+        "title": "Tipos de Mensagem Aceitas",
+        "subtitle": "Estamos abertos a receber:",
+        "suggestions": "Sugestões de pautas e temas relevantes para cobertura",
+        "interviews": "Solicitações de entrevistas com Marcio Hubert",
+        "partnerships": "Propostas de parcerias comerciais e colaborações",
+        "feedback": "Feedback editorial e sugestões de melhoria",
+        "questions": "Dúvidas sobre conteúdo publicado ou metodologia editorial"
+      },
+      "privacy": {
+        "title": "Privacidade e Confidencialidade",
+        "description": "Todas as informações compartilhadas conosco são tratadas com absoluta confidencialidade. Não compartilhamos dados pessoais, e-mails ou mensagens com terceiros. Nossa política de privacidade está em conformidade com a LGPD (Lei Geral de Proteção de Dados)."
+      },
+      "professional": {
+        "title": "Abordagem Profissional",
+        "description": "Nossa equipe trata todas as solicitações com seriedade, respeito e profissionalismo. Mesmo que não possamos atender imediatamente a todas as demandas, garantimos uma resposta clara, objetiva e cortês. Valorizamos o diálogo aberto e a construção de relações de longo prazo baseadas em confiança mútua."
+      }
+    },
+    "socialMedia": {
+      "title": "Acompanhe Nossas Redes Sociais",
+      "subtitle": "Fique por dentro das últimas notícias, análises e conteúdos exclusivos em tempo real",
+      "youtube": {
+        "name": "YouTube",
+        "description": "Análises em vídeo e entrevistas exclusivas",
+        "handle": "@MarcioHubertNews"
+      },
+      "linkedin": {
+        "name": "LinkedIn",
+        "description": "Networking profissional e insights estratégicos",
+        "handle": "Marcio Hubert"
+      },
+      "twitter": {
+        "name": "X / Twitter",
+        "description": "Notícias em tempo real e comentários rápidos",
+        "handle": "@MarcioHubertNews"
+      },
+      "instagram": {
+        "name": "Instagram",
+        "description": "Bastidores, eventos e conteúdo visual",
+        "handle": "@MarcioHubertNews"
+      },
+      "note": "Mensagens diretas nas redes sociais não substituem os canais oficiais de contato profissional listados acima."
+    },
+    "closing": {
+      "title": "Estamos Abertos ao Diálogo",
+      "description1": "O Marcio Hubert News valoriza a relação com seus leitores, parceiros e com a comunidade jornalística. Acreditamos que o jornalismo de qualidade se constrói com transparência, responsabilidade e abertura ao diálogo.",
+      "description2": "Seja para sugerir uma pauta, propor uma parceria estratégica, solicitar uma entrevista ou simplesmente compartilhar sua opinião sobre nosso trabalho, estamos prontos para ouvir e responder com profissionalismo.",
+      "promise": {
+        "title": "Nossa Promessa",
+        "description": "Comprometemo-nos a responder todas as mensagens recebidas com atenção, respeito e clareza. Mesmo que não possamos atender a todas as solicitações imediatamente, garantimos uma resposta profissional e transparente. Sua mensagem é importante para nós."
+      },
+      "cta": "Envie Sua Mensagem Agora"
+    }
+  },
+  "newsletter": {
+    "badge": "NEWSLETTER EXCLUSIVA",
+    "defaultTitle": "Receba Análises Diárias no Seu E-mail",
+    "defaultDescription": "Não fique apenas na manchete. Entenda o contexto com análises exclusivas sobre agronegócio, política, economia e relações Brasil-EUA.",
+    "joinText": "Junte-se a mais de 50 mil profissionais que confiam no Marcio Hubert News",
+    "title": "Não Fique Apenas na Manchete.",
+    "title2": "Entenda o Contexto.",
+    "description": "Receba diariamente as principais notícias do agronegócio, política e economia com análises exclusivas direto no seu e-mail. Conteúdo gratuito para profissionais que buscam decisões estratégicas.",
+    "form": {
+      "fullName": "Nome Completo",
+      "professionalEmail": "E-mail Profissional",
+      "interestArea": "Área de Interesse",
+      "yourName": "Seu nome",
+      "emailPlaceholder": "seu@email.com",
+      "agribusiness": "Agronegócio",
+      "politics": "Política",
+      "economy": "Economia",
+      "brazilUsa": "Brasil-EUA",
+      "allAreas": "Todas as áreas",
+      "terms": "Concordo em receber comunicações do Marcio Hubert News e aceito a política de privacidade. Posso cancelar a qualquer momento.",
+      "submit": "Quero Receber Análises Exclusivas",
+      "stats": {
+        "subscribers": "Assinantes Ativos",
+        "free": "Gratuito",
+        "daily": "Análises Exclusivas"
+      },
+      "joinThousands": "Junte-se a milhares de profissionais que confiam no Marcio Hubert News para se manterem informados"
+    }
   }
 }

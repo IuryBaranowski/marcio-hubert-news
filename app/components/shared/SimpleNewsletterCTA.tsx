@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 interface SimpleNewsletterCTAProps {
   title?: string;
@@ -9,10 +10,15 @@ interface SimpleNewsletterCTAProps {
 }
 
 export default function SimpleNewsletterCTA({
-  title = "Receba Análises Diárias no Seu E-mail",
-  description = "Não fique apenas na manchete. Entenda o contexto com análises exclusivas sobre agronegócio, política, economia e relações Brasil-EUA.",
+  title,
+  description,
   source,
 }: SimpleNewsletterCTAProps) {
+  const t = useTranslations("newsletter");
+  const tCommon = useTranslations("common");
+  
+  const finalTitle = title || t("defaultTitle");
+  const finalDescription = description || t("defaultDescription");
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -31,16 +37,16 @@ export default function SimpleNewsletterCTA({
             <div className="inline-flex items-center space-x-2 px-3 md:px-4 py-1.5 md:py-2 bg-white/10 backdrop-blur-sm rounded-full mb-4 md:mb-6">
               <i className="fa-solid fa-envelope text-[#C8102E]"></i>
               <span className="text-white text-xs md:text-sm font-semibold">
-                NEWSLETTER EXCLUSIVA
+                {t("badge")}
               </span>
             </div>
 
             <h2 className="font-serif font-bold text-2xl md:text-4xl text-white mb-4 md:mb-6 leading-tight">
-              {title}
+              {finalTitle}
             </h2>
 
             <p className="text-base md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-6 md:mb-10">
-              {description}
+              {finalDescription}
             </p>
 
             <form
@@ -49,7 +55,7 @@ export default function SimpleNewsletterCTA({
             >
               <input
                 type="email"
-                placeholder="Seu melhor e-mail"
+                placeholder={tCommon("yourEmail")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full md:flex-1 px-4 md:px-6 py-3 md:py-4 bg-white rounded-lg text-[#0A1628] placeholder:text-gray-400 font-medium focus:outline-none focus:ring-2 focus:ring-[#C8102E] text-sm md:text-base"
@@ -59,13 +65,12 @@ export default function SimpleNewsletterCTA({
                 type="submit"
                 className="w-full md:w-auto px-6 md:px-8 py-3 md:py-4 bg-[#C8102E] text-white font-bold rounded-lg hover:bg-red-700 transition-colors whitespace-nowrap text-sm md:text-base"
               >
-                Inscrever-se Grátis
+                {tCommon("subscribeFree")}
               </button>
             </form>
 
             <p className="text-gray-400 text-xs md:text-sm mt-4 md:mt-6">
-              Junte-se a mais de 50 mil profissionais que confiam no Marcio Hubert
-              News
+              {t("joinText")}
             </p>
           </div>
         </div>

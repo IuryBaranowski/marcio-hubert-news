@@ -1,13 +1,11 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export default function ProfessionalTrajectorySection() {
-  const highlights = [
-    "Correspondente em Washington D.C. (2018-2021)",
-    "Cobertura de 12 edições da Agrishow",
-    "Entrevistas com ministros, senadores e CEOs",
-    "Palestrante em eventos nacionais e internacionais",
-    "Mais de 500 análises publicadas",
-  ];
+  const t = useTranslations("sobre.trajectory");
+  
+  const highlights = t.raw("highlights.items") as string[];
 
   return (
     <section className="py-12 md:py-20 bg-white">
@@ -15,34 +13,20 @@ export default function ProfessionalTrajectorySection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           <div>
             <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-6 leading-tight">
-              Uma Trajetória Dedicada à Análise e ao Interesse Público
+              {t("title")}
             </h2>
             <div className="space-y-6 text-gray-700 text-base md:text-lg leading-relaxed">
               <p>
-                A carreira de Marcio Hubert começou nas redações de grandes
-                veículos de comunicação brasileiros, onde desenvolveu habilidades
-                de apuração rigorosa, checagem de fatos e construção narrativa
-                baseada em contexto e profundidade analítica.
+                {t("description1")}
               </p>
               <p>
-                Ao longo dos anos, especializou-se em temas estratégicos: o
-                agronegócio como motor econômico do país, a dinâmica política
-                nacional, as relações bilaterais entre Brasil e Estados Unidos, e
-                os impactos da economia global nos mercados domésticos.
+                {t("description2")}
               </p>
               <p>
-                Entre 2018 e 2021, atuou como correspondente em Washington D.C.,
-                onde acompanhou de perto negociações comerciais, debates no
-                Congresso americano e a formulação de políticas que afetam
-                diretamente o Brasil. Essa experiência internacional consolidou sua
-                visão estratégica e ampliou sua rede de fontes em ambos os países.
+                {t("description3")}
               </p>
               <p>
-                De volta ao Brasil, fundou o{" "}
-                <strong>Marcio Hubert News</strong> com o objetivo de oferecer um
-                jornalismo que vai além da manchete: um portal que entrega contexto,
-                análise e perspectivas fundamentadas para profissionais que precisam
-                tomar decisões informadas.
+                {t("description4")}
               </p>
             </div>
           </div>
@@ -58,7 +42,7 @@ export default function ProfessionalTrajectorySection() {
 
             <div className="bg-[#F5F5F5] rounded-xl p-6 md:p-8">
               <h3 className="font-serif font-bold text-xl md:text-2xl text-[#0A1628] mb-6">
-                Destaques da Carreira
+                {t("highlights.title")}
               </h3>
               <ul className="space-y-4">
                 {highlights.map((highlight, index) => (

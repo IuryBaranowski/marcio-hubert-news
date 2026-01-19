@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import HeroSection from "../../components/shared/HeroSection";
 import ProfessionalTrajectorySection from "../../components/sobre/ProfessionalTrajectorySection";
 import TimelineSection from "../../components/sobre/TimelineSection";
@@ -10,21 +11,23 @@ import SimpleNewsletterCTA from "../../components/shared/SimpleNewsletterCTA";
 import Footer from "../../components/shared/Footer";
 
 export default function SobrePage() {
+  const t = useTranslations("sobre.hero");
+  
   return (
     <main className="font-sans bg-white text-[#2C2C2C] antialiased">
       <HeroSection
         badge={{
           icon: "fa-solid fa-user-tie",
-          text: "Sobre o Editor",
+          text: t("badge"),
         }}
         title={
           <>
-            Jornalismo de Credibilidade
+            {t("title")}
             <br />
-            ao Serviço da Informação
+            {t("title2")}
           </>
         }
-        description="Marcio Hubert é jornalista especializado em agronegócio, política e relações internacionais, com mais de 15 anos de experiência na cobertura dos principais temas que impactam o Brasil e suas relações com o mundo."
+        description={t("description")}
       />
       <ProfessionalTrajectorySection />
       <TimelineSection />

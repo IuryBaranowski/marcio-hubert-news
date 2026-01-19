@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface CoverageArea {
   icon: string;
   title: string;
@@ -10,76 +12,76 @@ interface CoverageArea {
   spanFull?: boolean;
 }
 
-const coverageAreas: CoverageArea[] = [
-  {
-    icon: "fa-solid fa-seedling",
-    title: "Agronegócio",
-    description: [
-      "Cobertura completa do setor que representa mais de 25% do PIB brasileiro. Análises sobre produção, exportação, políticas públicas, tecnologias agrícolas, mercado de commodities e impactos climáticos.",
-      "O foco está em oferecer ao produtor rural, ao empresário do agro e ao investidor informações estratégicas que orientem decisões de curto, médio e longo prazo.",
-    ],
-    borderColor: "border-green-600",
-    iconBgColor: "bg-green-100",
-    iconColor: "text-green-600",
-  },
-  {
-    icon: "fa-solid fa-landmark",
-    title: "Política",
-    description: [
-      "Análise dos principais debates políticos nacionais, com foco nos temas que impactam a economia, o agronegócio e as relações internacionais. Cobertura do Congresso, Executivo e Judiciário.",
-      "O objetivo é ir além da polarização e oferecer ao leitor uma visão equilibrada, contextualizada e focada nos impactos práticos das decisões políticas.",
-    ],
-    borderColor: "border-blue-600",
-    iconBgColor: "bg-blue-100",
-    iconColor: "text-blue-600",
-  },
-  {
-    icon: "fa-solid fa-chart-line",
-    title: "Economia",
-    description: [
-      "Cobertura de mercados financeiros, política monetária, inflação, câmbio, investimentos e perspectivas econômicas. Análise de indicadores e tendências que afetam empresas, consumidores e investidores.",
-      "A abordagem combina dados técnicos com explicações acessíveis, permitindo que o leitor compreenda os movimentos econômicos e suas implicações práticas.",
-    ],
-    borderColor: "border-purple-600",
-    iconBgColor: "bg-purple-100",
-    iconColor: "text-purple-600",
-  },
-  {
-    icon: "fa-solid fa-globe-americas",
-    title: "Brasil–EUA",
-    description: [
-      "Análise especializada das relações bilaterais entre Brasil e Estados Unidos, incluindo comércio, investimentos, política externa, acordos setoriais e impactos das decisões americanas no Brasil.",
-      "A experiência como correspondente em Washington D.C. garante uma visão privilegiada e fontes estratégicas em ambos os países.",
-    ],
-    borderColor: "border-red-600",
-    iconBgColor: "bg-red-100",
-    iconColor: "text-red-600",
-  },
-  {
-    icon: "fa-solid fa-earth-americas",
-    title: "Notícias Internacionais com Impacto Estratégico",
-    description: [
-      "Cobertura seletiva de eventos globais que possuem impacto direto ou indireto no Brasil: decisões de bancos centrais internacionais, conflitos geopolíticos que afetam commodities, mudanças regulatórias em mercados relevantes e tendências tecnológicas globais.",
-      "O critério editorial é claro: só entra na pauta internacional o que tem relevância estratégica para o público brasileiro.",
-    ],
-    borderColor: "border-orange-600",
-    iconBgColor: "bg-orange-100",
-    iconColor: "text-orange-600",
-    spanFull: true,
-  },
-];
-
 export default function CoverageAreasSection() {
+  const t = useTranslations("sobre.coverageAreas");
+  
+  const coverageAreas: CoverageArea[] = [
+    {
+      icon: "fa-solid fa-seedling",
+      title: t("agribusiness.title"),
+      description: [
+        t("agribusiness.description1"),
+        t("agribusiness.description2"),
+      ],
+      borderColor: "border-green-600",
+      iconBgColor: "bg-green-100",
+      iconColor: "text-green-600",
+    },
+    {
+      icon: "fa-solid fa-landmark",
+      title: t("politics.title"),
+      description: [
+        t("politics.description1"),
+        t("politics.description2"),
+      ],
+      borderColor: "border-blue-600",
+      iconBgColor: "bg-blue-100",
+      iconColor: "text-blue-600",
+    },
+    {
+      icon: "fa-solid fa-chart-line",
+      title: t("economy.title"),
+      description: [
+        t("economy.description1"),
+        t("economy.description2"),
+      ],
+      borderColor: "border-purple-600",
+      iconBgColor: "bg-purple-100",
+      iconColor: "text-purple-600",
+    },
+    {
+      icon: "fa-solid fa-globe-americas",
+      title: t("brazilUsa.title"),
+      description: [
+        t("brazilUsa.description1"),
+        t("brazilUsa.description2"),
+      ],
+      borderColor: "border-red-600",
+      iconBgColor: "bg-red-100",
+      iconColor: "text-red-600",
+    },
+    {
+      icon: "fa-solid fa-earth-americas",
+      title: t("world.title"),
+      description: [
+        t("world.description1"),
+        t("world.description2"),
+      ],
+      borderColor: "border-orange-600",
+      iconBgColor: "bg-orange-100",
+      iconColor: "text-orange-600",
+      spanFull: true,
+    },
+  ];
   return (
     <section className="py-12 md:py-20 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            Áreas de Cobertura
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-            O Marcio Hubert News concentra sua atuação em temas estratégicos que
-            impactam diretamente o Brasil e suas relações internacionais
+            {t("subtitle")}
           </p>
         </div>
 

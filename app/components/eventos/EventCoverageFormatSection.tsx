@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface CoverageFormat {
   icon: string;
   title: string;
@@ -8,45 +10,41 @@ interface CoverageFormat {
   iconColor: string;
 }
 
-const coverageFormats: CoverageFormat[] = [
-  {
-    icon: "fa-solid fa-newspaper",
-    title: "Artigos Analíticos",
-    description:
-      "Textos aprofundados que contextualizam o evento, destacam os principais temas debatidos, analisam declarações de lideranças e projetam impactos futuros. Cada artigo segue a metodologia editorial do portal: fato, contexto, análise e próximos passos.",
-    bgColor: "bg-blue-100",
-    iconColor: "text-blue-600",
-  },
-  {
-    icon: "fa-solid fa-camera",
-    title: "Registro Fotográfico",
-    description:
-      "Fotos profissionais que capturam momentos estratégicos: painéis, entrevistas, bastidores, networking e reações. O registro visual complementa a narrativa textual e oferece ao leitor uma experiência mais rica da cobertura.",
-    bgColor: "bg-green-100",
-    iconColor: "text-green-600",
-  },
-  {
-    icon: "fa-solid fa-video",
-    title: "Conteúdo em Vídeo",
-    description:
-      "Entrevistas exclusivas, análises ao vivo e resumos em vídeo publicados no canal Marcio Hubert TV. O formato audiovisual permite que o leitor acompanhe declarações completas e perceba nuances que o texto escrito não captura.",
-    bgColor: "bg-red-100",
-    iconColor: "text-red-600",
-  },
-];
-
 export default function EventCoverageFormatSection() {
+  const t = useTranslations("eventos.coverageFormat");
+  
+  const coverageFormats: CoverageFormat[] = [
+    {
+      icon: "fa-solid fa-newspaper",
+      title: t("articles.title"),
+      description: t("articles.description"),
+      bgColor: "bg-blue-100",
+      iconColor: "text-blue-600",
+    },
+    {
+      icon: "fa-solid fa-camera",
+      title: t("photos.title"),
+      description: t("photos.description"),
+      bgColor: "bg-green-100",
+      iconColor: "text-green-600",
+    },
+    {
+      icon: "fa-solid fa-video",
+      title: t("video.title"),
+      description: t("video.description"),
+      bgColor: "bg-red-100",
+      iconColor: "text-red-600",
+    },
+  ];
   return (
     <section className="py-12 md:py-20 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            Como Documentamos Cada Evento
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-            Nossa cobertura combina diferentes formatos para garantir que o leitor
-            tenha acesso completo ao que aconteceu, por que aconteceu e o que isso
-            significa
+            {t("subtitle")}
           </p>
         </div>
 

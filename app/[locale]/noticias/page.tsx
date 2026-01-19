@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import HeroSection from "../../components/shared/HeroSection";
 import NewsIntroSection from "../../components/noticias/NewsIntroSection";
 import NewsCategoriesSection from "../../components/noticias/NewsCategoriesSection";
@@ -11,21 +12,23 @@ import NewsletterCTA from "../../components/home/NewsletterCTA";
 import Footer from "../../components/shared/Footer";
 
 export default function NoticiasPage() {
+  const t = useTranslations("noticias.hero");
+  
   return (
     <main className="font-sans bg-white text-[#2C2C2C] antialiased">
       <HeroSection
         badge={{
           icon: "fa-solid fa-newspaper",
-          text: "Central de Notícias",
+          text: t("badge"),
         }}
         title={
           <>
-            Notícias com Análise
+            {t("title")}
             <br />
-            e Contexto Estratégico
+            {t("title2")}
           </>
         }
-        description="Acompanhe a cobertura completa dos principais acontecimentos em agronegócio, política, economia e relações internacionais. Cada notícia é acompanhada de contexto, análise e perspectivas que vão além da manchete."
+        description={t("description")}
       />
       <NewsIntroSection />
       <NewsCategoriesSection />

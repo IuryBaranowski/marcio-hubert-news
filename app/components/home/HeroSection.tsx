@@ -1,8 +1,10 @@
 "use client";
 
 import { Link } from "../../../i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
+  const t = useTranslations("home.hero");
   return (
     <section className="bg-gradient-to-br from-[#0A1628] via-[#1E3A5F] to-[#0A1628] h-[700px] flex items-center relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -15,22 +17,22 @@ export default function HeroSection() {
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6">
             <div className="w-2 h-2 bg-[#C8102E] rounded-full animate-pulse"></div>
             <span className="text-white text-sm font-medium">
-              Consultoria • Palestra • Mentoria • Media Training • Gestão de Crise
+              {t("badge")}
             </span>
           </div>
 
           <h1 className="font-serif font-bold text-4xl md:text-6xl text-white leading-tight mb-6">
-            • Jornalista Internacional <br />
-            • Comunicação Estratégica <br />
+            • {t("title")} <br />
+            • {t("title2")} <br />
           </h1>
           <h6 className="font-serif font-bold text-1xl md:text-2xl text-white leading-tight mb-6">
-            🇧🇷 Brasil &nbsp;&nbsp; 🇺🇸 EUA &nbsp;&nbsp; 🌎 LatAm &nbsp;&nbsp; 🇦🇪 EAU
+            {t("countries")}
           </h6>
 
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-3xl">
-            Especialista no ambiente político, econômico e midiático dos EUA.
+            {t("description")}
             <br />
-            Ajudo empresas na tomada de decisão.
+            {t("description2")}
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -38,7 +40,7 @@ export default function HeroSection() {
               href="/noticias"
               className="inline-flex items-center space-x-2 px-6 md:px-8 py-3 md:py-4 bg-[#C8102E] text-white font-semibold rounded-lg hover:bg-red-700 transition-all transform hover:scale-105 shadow-xl"
             >
-              <span>Agendar Diagnóstico</span>
+              <span>{t("ctaSchedule")}</span>
               <i className="fa-solid fa-arrow-right"></i>
             </Link>
             <Link
@@ -50,9 +52,9 @@ export default function HeroSection() {
               <i className="fa-brands fa-youtube"
                 style={{ color: "#ff0000b6" }}></i>
               <span className="hidden md:inline">
-                Inscreva-se
+                {t("ctaSubscribe")}
               </span>
-              <span className="md:hidden">Nosso Canal</span>
+              <span className="md:hidden">{t("ctaSubscribeMobile")}</span>
             </Link>
           </div>
 
@@ -64,7 +66,7 @@ export default function HeroSection() {
                   200+
                 </div>
                 <div className="text-gray-400 text-xs md:text-sm">
-                  Eventos
+                  {t("stats.events")}
                 </div>
               </div>
             </div>
@@ -75,7 +77,7 @@ export default function HeroSection() {
                   40M+
                 </div>
                 <div className="text-gray-400 text-xs md:text-sm">
-                  Telespectadores
+                  {t("stats.viewers")}
                 </div>
               </div>
             </div>
@@ -86,7 +88,7 @@ export default function HeroSection() {
                   7K+
                 </div>
                 <div className="text-gray-400 text-xs md:text-sm">
-                  Telejornais
+                  {t("stats.newscasts")}
                 </div>
               </div>
             </div>

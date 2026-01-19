@@ -1,15 +1,18 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export default function ContactExpectationsSection() {
+  const t = useTranslations("contato.expectations");
   return (
     <section className="py-12 md:py-20 bg-[#F5F5F5]">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            O Que Você Pode Esperar de Nós
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-            Nosso compromisso com transparência e profissionalismo se estende ao atendimento
+            {t("subtitle")}
           </p>
         </div>
 
@@ -21,13 +24,10 @@ export default function ContactExpectationsSection() {
               </div>
               <div>
                 <h3 className="font-serif font-bold text-lg md:text-xl text-[#0A1628] mb-2 md:mb-3">
-                  Tempo de Resposta
+                  {t("responseTime.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                  Todas as mensagens recebidas via formulário ou e-mail são respondidas em
-                  até <strong>48 horas úteis</strong>. Solicitações urgentes de imprensa
-                  recebem prioridade e podem ser atendidas no mesmo dia, dependendo da
-                  disponibilidade da equipe.
+                  {t("responseTime.description")}
                 </p>
               </div>
             </div>
@@ -40,39 +40,35 @@ export default function ContactExpectationsSection() {
               </div>
               <div>
                 <h3 className="font-serif font-bold text-lg md:text-xl text-[#0A1628] mb-2 md:mb-3">
-                  Tipos de Mensagem Aceitas
+                  {t("messageTypes.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-2 md:mb-3 text-sm md:text-base">
-                  Estamos abertos a receber:
+                  {t("messageTypes.subtitle")}
                 </p>
                 <ul className="space-y-2 text-gray-700 text-sm md:text-base">
                   <li className="flex items-start space-x-2">
                     <i className="fa-solid fa-check text-green-600 mt-1"></i>
                     <span>
-                      Sugestões de pautas e temas relevantes para cobertura
+                      {t("messageTypes.suggestions")}
                     </span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <i className="fa-solid fa-check text-green-600 mt-1"></i>
-                    <span>Solicitações de entrevistas com Marcio Hubert</span>
+                    <span>{t("messageTypes.interviews")}</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <i className="fa-solid fa-check text-green-600 mt-1"></i>
-                    <span>Propostas de parcerias editoriais ou comerciais</span>
+                    <span>{t("messageTypes.partnerships")}</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <i className="fa-solid fa-check text-green-600 mt-1"></i>
                     <span>
-                      Dúvidas ou esclarecimentos sobre conteúdo publicado
+                      {t("messageTypes.questions")}
                     </span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <i className="fa-solid fa-check text-green-600 mt-1"></i>
-                    <span>Feedback construtivo sobre a linha editorial</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <i className="fa-solid fa-check text-green-600 mt-1"></i>
-                    <span>Convites para eventos, palestras e conferências</span>
+                    <span>{t("messageTypes.feedback")}</span>
                   </li>
                 </ul>
               </div>
@@ -86,14 +82,10 @@ export default function ContactExpectationsSection() {
               </div>
               <div>
                 <h3 className="font-serif font-bold text-lg md:text-xl text-[#0A1628] mb-2 md:mb-3">
-                  Privacidade e Confidencialidade
+                  {t("privacy.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                  Todas as informações compartilhadas conosco são tratadas com{" "}
-                  <strong>confidencialidade</strong>. Seus dados pessoais não serão
-                  compartilhados com terceiros sem autorização expressa. Respeitamos
-                  integralmente a Lei Geral de Proteção de Dados (LGPD) e garantimos a
-                  segurança de todas as comunicações.
+                  {t("privacy.description")}
                 </p>
               </div>
             </div>
@@ -106,14 +98,10 @@ export default function ContactExpectationsSection() {
               </div>
               <div>
                 <h3 className="font-serif font-bold text-lg md:text-xl text-[#0A1628] mb-2 md:mb-3">
-                  Abordagem Profissional
+                  {t("professional.title")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                  Nossa equipe trata todas as solicitações com{" "}
-                  <strong>seriedade, respeito e profissionalismo</strong>. Mesmo que não
-                  possamos atender imediatamente a todas as demandas, garantimos uma resposta
-                  clara, objetiva e cortês. Valorizamos o diálogo aberto e a construção de
-                  relações de longo prazo baseadas em confiança mútua.
+                  {t("professional.description")}
                 </p>
               </div>
             </div>

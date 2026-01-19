@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface ContentFormat {
   icon: string;
   title: string;
@@ -8,72 +10,48 @@ interface ContentFormat {
   bgColor: string;
 }
 
-const contentFormats: ContentFormat[] = [
-  {
-    icon: "fa-solid fa-newspaper",
-    title: "Artigos Analíticos",
-    description:
-      "Textos aprofundados que vão além da notícia factual. Cada artigo é estruturado em seções claras: O Fato, O Contexto, A Análise e Próximos Passos. Esse formato oferece ao leitor uma compreensão completa do tema, com dados verificados, múltiplas fontes e perspectivas equilibradas.",
-    features: [
-      "Publicação diária de análises",
-      "Média de 800 a 1.500 palavras por artigo",
-      "Estrutura editorial padronizada",
-      "Checagem rigorosa de fatos e fontes",
-    ],
-    bgColor: "bg-blue-600",
-  },
-  {
-    icon: "fa-solid fa-video",
-    title: "Vídeos no YouTube",
-    description:
-      "Canal no YouTube com análises em vídeo, entrevistas exclusivas e comentários sobre os principais temas da semana. Os vídeos complementam o conteúdo escrito e oferecem uma experiência audiovisual para quem prefere consumir informação em formato dinâmico.",
-    features: [
-      "Publicação semanal de vídeos",
-      "Duração média de 15 a 25 minutos",
-      "Entrevistas com especialistas e autoridades",
-      "Produção profissional de estúdio",
-    ],
-    bgColor: "bg-red-600",
-  },
-  {
-    icon: "fa-solid fa-calendar-days",
-    title: "Cobertura de Eventos",
-    description:
-      "Presença estratégica nos principais eventos do agronegócio, política e economia. A cobertura inclui entrevistas ao vivo, análises de bastidores, resumos executivos e registro fotográfico e audiovisual dos momentos mais relevantes.",
-    features: [
-      "Cobertura de Agrishow, fóruns setoriais e eventos políticos",
-      "Entrevistas exclusivas com palestrantes e autoridades",
-      "Resumos executivos pós-evento",
-      "Análise de impactos e desdobramentos",
-    ],
-    bgColor: "bg-green-600",
-  },
-  {
-    icon: "fa-solid fa-microphone",
-    title: "Entrevistas Exclusivas",
-    description:
-      "Conversas aprofundadas com ministros, parlamentares, CEOs do agronegócio, economistas e especialistas em política internacional. As entrevistas são conduzidas com rigor jornalístico, buscando respostas claras e contextualizadas sobre temas estratégicos.",
-    features: [
-      "Publicação quinzenal de entrevistas",
-      "Formato escrito e em vídeo",
-      "Foco em temas estratégicos e decisões de impacto",
-      "Acesso a fontes de alto nível",
-    ],
-    bgColor: "bg-purple-600",
-  },
-];
-
 export default function ContentFormatsSection() {
+  const t = useTranslations("mediaKit.contentFormats");
+  
+  const contentFormats: ContentFormat[] = [
+    {
+      icon: "fa-solid fa-newspaper",
+      title: t("articles.title"),
+      description: t("articles.description"),
+      features: t.raw("articles.features") as string[],
+      bgColor: "bg-blue-600",
+    },
+    {
+      icon: "fa-solid fa-video",
+      title: t("videos.title"),
+      description: t("videos.description"),
+      features: t.raw("videos.features") as string[],
+      bgColor: "bg-red-600",
+    },
+    {
+      icon: "fa-solid fa-calendar-days",
+      title: t("events.title"),
+      description: t("events.description"),
+      features: t.raw("events.features") as string[],
+      bgColor: "bg-green-600",
+    },
+    {
+      icon: "fa-solid fa-microphone",
+      title: t("interviews.title"),
+      description: t("interviews.description"),
+      features: t.raw("interviews.features") as string[],
+      bgColor: "bg-purple-600",
+    },
+  ];
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            Formatos de Conteúdo
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-            O Marcio Hubert News produz conteúdo em múltiplos formatos para atender
-            diferentes perfis de consumo de informação
+            {t("subtitle")}
           </p>
         </div>
 

@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import HeroSection from "../../components/shared/HeroSection";
 import ContactIntroSection from "../../components/contato/ContactIntroSection";
 import ContactFormSection from "../../components/contato/ContactFormSection";
@@ -10,21 +11,23 @@ import ContactClosingSection from "../../components/contato/ContactClosingSectio
 import Footer from "../../components/shared/Footer";
 
 export default function ContatoPage() {
+  const t = useTranslations("contato.hero");
+  
   return (
     <main className="font-sans bg-white text-[#2C2C2C] antialiased">
       <HeroSection
         badge={{
           icon: "fa-solid fa-comments",
-          text: "Entre em Contato",
+          text: t("badge"),
         }}
         title={
           <>
-            Estamos Prontos para
+            {t("title")}
             <br />
-            Ouvir Você
+            {t("title2")}
           </>
         }
-        description="Seja você um leitor, jornalista, parceiro comercial ou representante de imprensa, valorizamos sua mensagem. Entre em contato conosco para sugestões de pauta, parcerias estratégicas, solicitações de entrevista ou qualquer outra questão profissional."
+        description={t("description")}
       />
       <ContactIntroSection />
       <ContactFormSection />

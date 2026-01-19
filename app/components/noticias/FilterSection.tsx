@@ -1,18 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function FilterSection() {
-  const [selectedCategory, setSelectedCategory] = useState("Todas");
-  const [sortBy, setSortBy] = useState("Mais Recentes");
+  const t = useTranslations("noticias.filter");
+  
+  const [selectedCategory, setSelectedCategory] = useState(t("all"));
+  const [sortBy, setSortBy] = useState(t("sortOptions.mostRecent"));
 
   const categories = [
-    "Todas",
-    "Agronegócio",
-    "Política",
-    "Economia",
-    "Brasil-EUA",
-    "Mundo",
+    t("all"),
+    t("agribusiness"),
+    t("politics"),
+    t("economy"),
+    t("brazilUsa"),
+    t("world"),
   ];
 
   return (
@@ -21,7 +24,7 @@ export default function FilterSection() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
           <div className="flex flex-col md:flex-row md:items-center space-y-3 md:space-y-0 md:space-x-4">
             <span className="text-xs md:text-sm font-semibold text-[#0A1628]">
-              Filtrar por categoria:
+              {t("filterBy")}
             </span>
             <div className="flex flex-wrap items-center gap-2">
               {categories.map((category) => (
@@ -41,15 +44,15 @@ export default function FilterSection() {
           </div>
 
           <div className="flex items-center space-x-3">
-            <span className="text-xs md:text-sm text-gray-600">Ordenar por:</span>
+            <span className="text-xs md:text-sm text-gray-600">{t("sortBy")}</span>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
               className="px-3 md:px-4 py-2 bg-white border border-gray-300 rounded text-xs md:text-sm focus:outline-none focus:ring-2 focus:ring-[#C8102E]"
             >
-              <option>Mais Recentes</option>
-              <option>Mais Lidas</option>
-              <option>Análises em Destaque</option>
+              <option>{t("sortOptions.mostRecent")}</option>
+              <option>{t("sortOptions.mostRead")}</option>
+              <option>{t("sortOptions.featured")}</option>
             </select>
           </div>
         </div>

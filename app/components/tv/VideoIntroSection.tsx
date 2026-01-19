@@ -1,6 +1,9 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export default function VideoIntroSection() {
+  const t = useTranslations("tv.intro");
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -9,28 +12,21 @@ export default function VideoIntroSection() {
             <div className="inline-flex items-center space-x-2 px-3 md:px-4 py-1.5 md:py-2 bg-red-50 rounded-full mb-4 md:mb-6">
               <i className="fa-brands fa-youtube text-red-600"></i>
               <span className="text-red-600 text-xs md:text-sm font-semibold">
-                PUBLICADO NO YOUTUBE
+                {t("badge")}
               </span>
             </div>
             <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-6 leading-tight">
-              Por Que Consumir Conteúdo em Vídeo?
+              {t("title")}
             </h2>
             <div className="space-y-4 md:space-y-6 text-gray-700 text-base md:text-lg leading-relaxed">
               <p>
-                Todo o conteúdo audiovisual do Marcio Hubert News é publicado no
-                YouTube, garantindo acesso fácil, gratuito e multiplataforma. Os vídeos
-                são otimizados para consumo em desktop, mobile e TV, permitindo que
-                você acompanhe as análises no formato que preferir.
+                {t("description1")}
               </p>
               <p>
-                O formato em vídeo oferece uma experiência mais rica e dinâmica: você
-                não apenas lê sobre os fatos, mas acompanha análises ao vivo, vê
-                entrevistas exclusivas e compreende o contexto através de elementos
-                visuais, gráficos e infográficos explicativos.
+                {t("description2")}
               </p>
               <p>
-                É o complemento perfeito para quem busca profundidade analítica sem
-                abrir mão da praticidade e da imersão que o audiovisual proporciona.
+                {t("description3")}
               </p>
             </div>
           </div>

@@ -2,20 +2,23 @@
 
 import { useState } from "react";
 import { usePathname, Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const t = useTranslations("header");
+  const tCommon = useTranslations("common");
 
   const navItems = [
-    { label: "Home", href: "/" },
-    { label: "Sobre", href: "/sobre" },
-    { label: "Consultoria", href: "/noticias" },
-    { label: "Palestra", href: "/eventos" },
-    { label: "Mentoria", href: "/tv" },
-    { label: "Media Training", href: "/tv" },
-    { label: "Gestão de Crise", href: "/media-kit" },
-    { label: "Contato", href: "/contato" },
+    { label: t("home"), href: "/" },
+    { label: t("about"), href: "/sobre" },
+    { label: t("consulting"), href: "/noticias" },
+    { label: t("lecture"), href: "/eventos" },
+    { label: t("mentoring"), href: "/tv" },
+    { label: t("mediaTraining"), href: "/tv" },
+    { label: t("crisisManagement"), href: "/media-kit" },
+    { label: t("contact"), href: "/contato" },
   ];
 
   const isActive = (href: string) => {
@@ -36,10 +39,10 @@ export default function Header() {
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="font-serif font-bold text-xl text-[#0A1628]">
-                  Marcio Hubert
+                  {tCommon("brandName")}
                 </span>
                 <span className="font-sans text-xs text-gray-600 tracking-wide">
-                  NEWS
+                  {tCommon("brandSubtitle")}
                 </span>
               </div>
             </Link>
@@ -107,7 +110,7 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               <i className="fa-solid fa-envelope"></i>
-              <span>Newsletter</span>
+              <span>{tCommon("newsletter")}</span>
             </Link>
           </nav>
         </div>

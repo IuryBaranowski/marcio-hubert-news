@@ -1,15 +1,18 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export default function SocialMediaSection() {
+  const t = useTranslations("contato.socialMedia");
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            Acompanhe Nossas Redes Sociais
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-            Fique por dentro das últimas notícias, análises e conteúdos exclusivos em tempo real
+            {t("subtitle")}
           </p>
         </div>
 
@@ -22,13 +25,13 @@ export default function SocialMediaSection() {
               <i className="fa-brands fa-youtube text-white text-2xl md:text-3xl"></i>
             </div>
             <h3 className="font-serif font-bold text-lg md:text-xl text-[#0A1628] mb-2">
-              YouTube
+              {t("youtube.name")}
             </h3>
             <p className="text-gray-600 text-xs md:text-sm mb-3">
-              Análises em vídeo e entrevistas exclusivas
+              {t("youtube.description")}
             </p>
             <span className="text-[#C8102E] font-semibold text-xs md:text-sm">
-              @MarcioHubertNews
+              {t("youtube.handle")}
             </span>
           </a>
 
@@ -40,13 +43,13 @@ export default function SocialMediaSection() {
               <i className="fa-brands fa-linkedin text-white text-2xl md:text-3xl"></i>
             </div>
             <h3 className="font-serif font-bold text-lg md:text-xl text-[#0A1628] mb-2">
-              LinkedIn
+              {t("linkedin.name")}
             </h3>
             <p className="text-gray-600 text-xs md:text-sm mb-3">
-              Networking profissional e insights estratégicos
+              {t("linkedin.description")}
             </p>
             <span className="text-[#C8102E] font-semibold text-xs md:text-sm">
-              Marcio Hubert
+              {t("linkedin.handle")}
             </span>
           </a>
 
@@ -58,13 +61,13 @@ export default function SocialMediaSection() {
               <i className="fa-brands fa-x-twitter text-white text-2xl md:text-3xl"></i>
             </div>
             <h3 className="font-serif font-bold text-lg md:text-xl text-[#0A1628] mb-2">
-              X / Twitter
+              {t("twitter.name")}
             </h3>
             <p className="text-gray-600 text-xs md:text-sm mb-3">
-              Notícias em tempo real e comentários rápidos
+              {t("twitter.description")}
             </p>
             <span className="text-[#C8102E] font-semibold text-xs md:text-sm">
-              @MarcioHubertNews
+              {t("twitter.handle")}
             </span>
           </a>
 
@@ -76,21 +79,20 @@ export default function SocialMediaSection() {
               <i className="fa-brands fa-instagram text-white text-2xl md:text-3xl"></i>
             </div>
             <h3 className="font-serif font-bold text-lg md:text-xl text-[#0A1628] mb-2">
-              Instagram
+              {t("instagram.name")}
             </h3>
             <p className="text-gray-600 text-xs md:text-sm mb-3">
-              Bastidores, eventos e conteúdo visual
+              {t("instagram.description")}
             </p>
             <span className="text-[#C8102E] font-semibold text-xs md:text-sm">
-              @MarcioHubertNews
+              {t("instagram.handle")}
             </span>
           </a>
         </div>
 
         <div className="mt-8 md:mt-12 text-center">
           <p className="text-gray-600 text-sm md:text-base">
-            Mensagens diretas nas redes sociais não substituem os canais oficiais de contato
-            profissional listados acima.
+            {t("note")}
           </p>
         </div>
       </div>

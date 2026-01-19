@@ -1,24 +1,29 @@
 "use client";
 
-  import { Link } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("header");
+  const tCommon = useTranslations("common");
+  const tFooter = useTranslations("footer");
+
   const navigationLinks = [
-    { label: "Home", href: "/" },
-    { label: "Sobre", href: "/sobre" },
-    { label: "Consultoria", href: "/noticias" },
-    { label: "Palestra", href: "/tv" },
-    { label: "Mentoria", href: "/eventos" },
-    { label: "Media Training", href: "/media-kit" },
-    { label: "Gestão de Crise", href: "/media-kit" },
-    { label: "Contato", href: "/contato" },
+    { label: t("home"), href: "/" },
+    { label: t("about"), href: "/sobre" },
+    { label: t("consulting"), href: "/noticias" },
+    { label: t("lecture"), href: "/tv" },
+    { label: t("mentoring"), href: "/eventos" },
+    { label: t("mediaTraining"), href: "/media-kit" },
+    { label: t("crisisManagement"), href: "/media-kit" },
+    { label: t("contact"), href: "/contato" },
   ];
 
   const categories = [
-    { label: "Agronegócio", href: "#" },
-    { label: "Política", href: "#" },
-    { label: "Economia", href: "#" },
-    { label: "Estados Unidos", href: "#" }
+    { label: tFooter("agribusiness"), href: "#" },
+    { label: tFooter("politics"), href: "#" },
+    { label: tFooter("economy"), href: "#" },
+    { label: tFooter("unitedStates"), href: "#" }
   ];
 
   const socialLinks = [
@@ -39,15 +44,15 @@ export default function Footer() {
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="font-serif font-bold text-base md:text-xl text-white">
-                  Marcio Hubert
+                  {tCommon("brandName")}
                 </span>
                 <span className="font-sans text-[10px] md:text-xs text-gray-400 tracking-wide">
-                  NEWS
+                  {tCommon("brandSubtitle")}
                 </span>
               </div>
             </div>
             <p className="text-gray-400 text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
-              Leitura institucional e estratégica dos Estados Unidos para líderes e empresas.
+              {tFooter("description")}
             </p>
             <div className="flex items-center space-x-2 md:space-x-3">
               {socialLinks.map((social, index) => (
@@ -66,7 +71,7 @@ export default function Footer() {
 
           <div>
             <h4 className="font-serif font-bold text-white text-sm md:text-lg mb-4 md:mb-6">
-              Navegação
+              {tFooter("navigation")}
             </h4>
             <ul className="space-y-2 md:space-y-3">
               {navigationLinks.map((link) => (
@@ -84,7 +89,7 @@ export default function Footer() {
 
           <div>
             <h4 className="font-serif font-bold text-white text-sm md:text-lg mb-4 md:mb-6">
-              Categorias
+              {tFooter("categories")}
             </h4>
             <ul className="space-y-2 md:space-y-3">
               {categories.map((category) => (
@@ -102,14 +107,14 @@ export default function Footer() {
 
           <div>
             <h4 className="font-serif font-bold text-white text-sm md:text-lg mb-4 md:mb-6">
-              Contato
+              {tFooter("contact")}
             </h4>
             <ul className="space-y-3 md:space-y-4">
               <li className="flex items-start space-x-2 md:space-x-3">
                 <i className="fa-solid fa-envelope text-[#C8102E] mt-0.5 md:mt-1 text-sm"></i>
                 <div>
                   <div className="text-gray-400 text-[10px] md:text-xs mb-0.5 md:mb-1">
-                    E-mail
+                    {tCommon("email")}
                   </div>
                   <a
                     href="mailto:journalist.marciohubert@gmail.com"
@@ -123,7 +128,7 @@ export default function Footer() {
                 <i className="fa-solid fa-phone text-[#C8102E] mt-0.5 md:mt-1 text-sm"></i>
                 <div>
                   <div className="text-gray-400 text-[10px] md:text-xs mb-0.5 md:mb-1">
-                    Imprensa
+                    {tCommon("press")}
                   </div>
                   <a
                     href="tel:+16892434840"
@@ -137,7 +142,7 @@ export default function Footer() {
                 <i className="fa-solid fa-location-dot text-[#C8102E] mt-0.5 md:mt-1 text-sm"></i>
                 <div>
                   <div className="text-gray-400 text-[10px] md:text-xs mb-0.5 md:mb-1">
-                    Sede
+                    {tCommon("headquarters")}
                   </div>
                   <span className="text-white text-xs md:text-sm">
                     Tennessee - USA
@@ -150,26 +155,26 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
           <p className="text-gray-400 text-xs md:text-sm text-center md:text-left">
-            © 2026 Marcio Hubert News. Todos os direitos reservados.
+            {tCommon("allRightsReserved")}
           </p>
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
             <Link
               href="#"
               className="text-gray-400 hover:text-white text-xs md:text-sm transition-colors"
             >
-              Política de Privacidade
+              {tCommon("privacyPolicy")}
             </Link>
             <Link
               href="#"
               className="text-gray-400 hover:text-white text-xs md:text-sm transition-colors"
             >
-              Termos de Uso
+              {tCommon("termsOfUse")}
             </Link>
             <Link
               href="#"
               className="text-gray-400 hover:text-white text-xs md:text-sm transition-colors"
             >
-              Código de Ética
+              {tCommon("codeOfEthics")}
             </Link>
           </div>
         </div>

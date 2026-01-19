@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface NewsCategory {
   icon: string;
   title: string;
@@ -11,72 +13,66 @@ interface NewsCategory {
   spanFull?: boolean;
 }
 
-const categories: NewsCategory[] = [
-  {
-    icon: "fa-solid fa-seedling",
-    title: "Agronegócio",
-    description:
-      "Cobertura completa do setor que move mais de 25% do PIB brasileiro. Análises sobre produção, exportação, tecnologias agrícolas, mercado de commodities, políticas públicas e impactos climáticos.",
-    italicText:
-      "Informação estratégica para produtores rurais, empresários do agro, investidores e profissionais do setor.",
-    borderColor: "border-green-600",
-    iconBgColor: "bg-green-100",
-    iconColor: "text-green-600",
-  },
-  {
-    icon: "fa-solid fa-landmark",
-    title: "Política",
-    description:
-      "Análise dos principais debates políticos nacionais, com foco nos temas que impactam a economia, o agronegócio e as relações internacionais. Cobertura equilibrada do Congresso, Executivo e Judiciário.",
-    italicText: "Contexto e imparcialidade para entender as decisões políticas além da polarização.",
-    borderColor: "border-blue-600",
-    iconBgColor: "bg-blue-100",
-    iconColor: "text-blue-600",
-  },
-  {
-    icon: "fa-solid fa-chart-line",
-    title: "Economia",
-    description:
-      "Mercados financeiros, política monetária, inflação, câmbio, investimentos e perspectivas econômicas. Análise de indicadores e tendências que afetam empresas, consumidores e investidores no Brasil.",
-    italicText: "Dados técnicos explicados de forma acessível para decisões estratégicas.",
-    borderColor: "border-purple-600",
-    iconBgColor: "bg-purple-100",
-    iconColor: "text-purple-600",
-  },
-  {
-    icon: "fa-solid fa-handshake",
-    title: "Brasil & Estados Unidos",
-    description:
-      "Análise especializada das relações bilaterais entre Brasil e Estados Unidos: comércio, investimentos, política externa, acordos setoriais e impactos das decisões americanas no Brasil.",
-    italicText: "Visão privilegiada com fontes estratégicas em ambos os países.",
-    borderColor: "border-red-600",
-    iconBgColor: "bg-red-100",
-    iconColor: "text-red-600",
-  },
-  {
-    icon: "fa-solid fa-earth-americas",
-    title: "Mundo",
-    description:
-      "Cobertura seletiva de eventos globais com impacto estratégico no Brasil: decisões de bancos centrais internacionais, conflitos geopolíticos que afetam commodities, mudanças regulatórias em mercados relevantes e tendências tecnológicas globais.",
-    italicText:
-      "Apenas notícias internacionais com relevância estratégica para o público brasileiro.",
-    borderColor: "border-orange-600",
-    iconBgColor: "bg-orange-100",
-    iconColor: "text-orange-600",
-    spanFull: true,
-  },
-];
-
 export default function NewsCategoriesSection() {
+  const t = useTranslations("noticias.categories");
+  
+  const categories: NewsCategory[] = [
+    {
+      icon: "fa-solid fa-seedling",
+      title: t("agribusiness.title"),
+      description: t("agribusiness.description"),
+      italicText: t("agribusiness.italicText"),
+      borderColor: "border-green-600",
+      iconBgColor: "bg-green-100",
+      iconColor: "text-green-600",
+    },
+    {
+      icon: "fa-solid fa-landmark",
+      title: t("politics.title"),
+      description: t("politics.description"),
+      italicText: t("politics.italicText"),
+      borderColor: "border-blue-600",
+      iconBgColor: "bg-blue-100",
+      iconColor: "text-blue-600",
+    },
+    {
+      icon: "fa-solid fa-chart-line",
+      title: t("economy.title"),
+      description: t("economy.description"),
+      italicText: t("economy.italicText"),
+      borderColor: "border-purple-600",
+      iconBgColor: "bg-purple-100",
+      iconColor: "text-purple-600",
+    },
+    {
+      icon: "fa-solid fa-handshake",
+      title: t("brazilUsa.title"),
+      description: t("brazilUsa.description"),
+      italicText: t("brazilUsa.italicText"),
+      borderColor: "border-red-600",
+      iconBgColor: "bg-red-100",
+      iconColor: "text-red-600",
+    },
+    {
+      icon: "fa-solid fa-earth-americas",
+      title: t("world.title"),
+      description: t("world.description"),
+      italicText: t("world.italicText"),
+      borderColor: "border-orange-600",
+      iconBgColor: "bg-orange-100",
+      iconColor: "text-orange-600",
+      spanFull: true,
+    },
+  ];
   return (
     <section className="py-12 md:py-20 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            Categorias de Cobertura
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg">
-            Navegue pelas áreas temáticas que compõem nossa linha editorial
+            {t("subtitle")}
           </p>
         </div>
 

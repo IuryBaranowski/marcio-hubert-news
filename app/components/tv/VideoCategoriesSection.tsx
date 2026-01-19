@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface VideoCategory {
   icon: string;
@@ -12,56 +13,56 @@ interface VideoCategory {
   iconColor: string;
 }
 
-const videoCategories: VideoCategory[] = [
-  {
-    icon: "fa-solid fa-seedling",
-    title: "Agronegócio",
-    description: "Análises do setor agrícola brasileiro",
-    videoCount: "48 vídeos",
-    borderColor: "border-green-600",
-    iconBgColor: "bg-green-100",
-    iconColor: "text-green-600",
-  },
-  {
-    icon: "fa-solid fa-landmark",
-    title: "Política",
-    description: "Contexto dos debates políticos nacionais",
-    videoCount: "62 vídeos",
-    borderColor: "border-blue-600",
-    iconBgColor: "bg-blue-100",
-    iconColor: "text-blue-600",
-  },
-  {
-    icon: "fa-solid fa-chart-line",
-    title: "Economia",
-    description: "Mercados, indicadores e perspectivas",
-    videoCount: "55 vídeos",
-    borderColor: "border-purple-600",
-    iconBgColor: "bg-purple-100",
-    iconColor: "text-purple-600",
-  },
-  {
-    icon: "fa-solid fa-globe-americas",
-    title: "Brasil-EUA",
-    description: "Relações bilaterais e impactos estratégicos",
-    videoCount: "35 vídeos",
-    borderColor: "border-red-600",
-    iconBgColor: "bg-red-100",
-    iconColor: "text-red-600",
-  },
-];
-
 export default function VideoCategoriesSection() {
+  const t = useTranslations("tv.videoCategories");
+  
+  const videoCategories: VideoCategory[] = [
+    {
+      icon: "fa-solid fa-seedling",
+      title: t("agribusiness.title"),
+      description: t("agribusiness.description"),
+      videoCount: t("agribusiness.count"),
+      borderColor: "border-green-600",
+      iconBgColor: "bg-green-100",
+      iconColor: "text-green-600",
+    },
+    {
+      icon: "fa-solid fa-landmark",
+      title: t("politics.title"),
+      description: t("politics.description"),
+      videoCount: t("politics.count"),
+      borderColor: "border-blue-600",
+      iconBgColor: "bg-blue-100",
+      iconColor: "text-blue-600",
+    },
+    {
+      icon: "fa-solid fa-chart-line",
+      title: t("economy.title"),
+      description: t("economy.description"),
+      videoCount: t("economy.count"),
+      borderColor: "border-purple-600",
+      iconBgColor: "bg-purple-100",
+      iconColor: "text-purple-600",
+    },
+    {
+      icon: "fa-solid fa-globe-americas",
+      title: t("brazilUsa.title"),
+      description: t("brazilUsa.description"),
+      videoCount: t("brazilUsa.count"),
+      borderColor: "border-red-600",
+      iconBgColor: "bg-red-100",
+      iconColor: "text-red-600",
+    },
+  ];
   return (
     <section className="py-12 md:py-20 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            Categorias de Vídeos
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-            Conteúdo organizado por tema para facilitar sua busca por análises
-            específicas
+            {t("subtitle")}
           </p>
         </div>
 

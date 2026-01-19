@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface Principle {
   icon: string;
   title: string;
@@ -8,43 +10,41 @@ interface Principle {
   iconColor: string;
 }
 
-const principles: Principle[] = [
-  {
-    icon: "fa-solid fa-balance-scale",
-    title: "Análise Imparcial",
-    description:
-      "Cobertura equilibrada e isenta, sem viés político ou ideológico. Nosso compromisso é com os fatos e o contexto necessário para compreendê-los.",
-    bgColor: "bg-blue-100",
-    iconColor: "text-blue-600",
-  },
-  {
-    icon: "fa-solid fa-crosshairs",
-    title: "Foco Estratégico",
-    description:
-      "Vamos além das manchetes para oferecer análises que ajudam profissionais e empresários a tomar decisões informadas e estratégicas.",
-    bgColor: "bg-green-100",
-    iconColor: "text-green-600",
-  },
-  {
-    icon: "fa-solid fa-shield-halved",
-    title: "Credibilidade Comprovada",
-    description:
-      "Mais de 15 anos de jornalismo profissional, com fontes verificadas e metodologia rigorosa de apuração e checagem de informações.",
-    bgColor: "bg-red-100",
-    iconColor: "text-[#C8102E]",
-  },
-];
-
 export default function EditorialPrinciples() {
+  const t = useTranslations("home.editorialPrinciples");
+  
+  const principles: Principle[] = [
+    {
+      icon: "fa-solid fa-balance-scale",
+      title: t("principles.impartial.title"),
+      description: t("principles.impartial.description"),
+      bgColor: "bg-blue-100",
+      iconColor: "text-blue-600",
+    },
+    {
+      icon: "fa-solid fa-crosshairs",
+      title: t("principles.strategic.title"),
+      description: t("principles.strategic.description"),
+      bgColor: "bg-green-100",
+      iconColor: "text-green-600",
+    },
+    {
+      icon: "fa-solid fa-shield-halved",
+      title: t("principles.credibility.title"),
+      description: t("principles.credibility.description"),
+      bgColor: "bg-red-100",
+      iconColor: "text-[#C8102E]",
+    },
+  ];
   return (
     <section className="py-12 md:py-20 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-8 md:mb-16">
           <h2 className="font-serif font-bold text-2xl md:text-4xl text-[#0A1628] mb-2 md:mb-4">
-            Ecossistema
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-sm md:text-lg max-w-3xl mx-auto">
-            Parcerias institucionais e estratégicas no Brasil, Estados Unidos e mercados globais.
+            {t("subtitle")}
           </p>
 
           {/* Logos */}

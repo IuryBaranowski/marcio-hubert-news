@@ -1,6 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import EventCard from "./EventCard";
 
 const events = [
@@ -63,24 +64,27 @@ const events = [
 ];
 
 export default function EventsSection() {
+  const t = useTranslations("home.events");
+  const tCommon = useTranslations("common");
+  
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between mb-6 md:mb-12">
           <div>
             <h2 className="font-serif font-bold text-2xl md:text-4xl text-[#0A1628] mb-1 md:mb-3">
-              Cobertura de Eventos
+              {t("title")}
             </h2>
             <p className="text-gray-600 text-sm md:text-lg">
-              Presença nos principais eventos do agronegócio e política nacional
+              {t("subtitle")}
             </p>
           </div>
           <Link
             href="/eventos"
             className="inline-flex items-center space-x-2 text-[#C8102E] font-semibold hover:underline text-sm md:text-base"
           >
-            <span className="hidden md:inline">Ver todos os eventos</span>
-            <span className="md:hidden">Ver todos →</span>
+            <span className="hidden md:inline">{t("seeAll")}</span>
+            <span className="md:hidden">{tCommon("seeAllShort")}</span>
             <i className="fa-solid fa-arrow-right hidden md:inline"></i>
           </Link>
         </div>

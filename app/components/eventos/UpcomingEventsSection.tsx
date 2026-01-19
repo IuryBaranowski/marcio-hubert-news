@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import UpcomingEventCard from "./UpcomingEventCard";
 
 const upcomingEvents = [
@@ -58,21 +59,23 @@ const upcomingEvents = [
 ];
 
 export default function UpcomingEventsSection() {
+  const t = useTranslations("eventos.upcomingEvents");
+  
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 md:mb-12">
           <div className="mb-4 md:mb-0">
             <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-3">
-              Próximos Eventos
+              {t("title")}
             </h2>
             <p className="text-gray-600 text-base md:text-lg">
-              Agenda de eventos com cobertura confirmada do Marcio Hubert News
+              {t("subtitle")}
             </p>
           </div>
           <div className="flex items-center space-x-3">
             <button className="px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">
-              <i className="fa-solid fa-filter mr-2"></i>Filtrar
+              <i className="fa-solid fa-filter mr-2"></i>{t("filter")}
             </button>
           </div>
         </div>

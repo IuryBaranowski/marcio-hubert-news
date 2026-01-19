@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface TimelineEvent {
   year: string;
   title: string;
@@ -8,60 +10,55 @@ interface TimelineEvent {
   side: "left" | "right";
 }
 
-const timelineEvents: TimelineEvent[] = [
-  {
-    year: "2008",
-    title: "Início da Carreira",
-    description:
-      "Primeiros passos no jornalismo econômico em grandes redações brasileiras, cobrindo mercados e política nacional.",
-    icon: "fa-solid fa-star",
-    side: "left",
-  },
-  {
-    year: "2012",
-    title: "Especialização em Agronegócio",
-    description:
-      "Foco estratégico na cobertura do setor agrícola, participando de eventos como Agrishow e desenvolvendo rede de fontes no campo.",
-    icon: "fa-solid fa-seedling",
-    side: "right",
-  },
-  {
-    year: "2018-2021",
-    title: "Correspondente em Washington D.C.",
-    description:
-      "Cobertura das relações Brasil-EUA, negociações comerciais e política americana com impacto direto no Brasil.",
-    icon: "fa-solid fa-globe-americas",
-    side: "left",
-  },
-  {
-    year: "2022",
-    title: "Lançamento do Canal no YouTube",
-    description:
-      "Expansão para conteúdo em vídeo, trazendo análises aprofundadas e entrevistas exclusivas em formato audiovisual.",
-    icon: "fa-solid fa-video",
-    side: "right",
-  },
-  {
-    year: "2024",
-    title: "Fundação do Marcio Hubert News",
-    description:
-      "Criação do portal independente dedicado a jornalismo analítico e estratégico, consolidando 15 anos de experiência.",
-    icon: "fa-solid fa-newspaper",
-    side: "left",
-  },
-];
-
 export default function TimelineSection() {
+  const t = useTranslations("sobre.timeline");
+  
+  const timelineEvents: TimelineEvent[] = [
+    {
+      year: "2008",
+      title: t("events.2008.title"),
+      description: t("events.2008.description"),
+      icon: "fa-solid fa-star",
+      side: "left",
+    },
+    {
+      year: "2012",
+      title: t("events.2012.title"),
+      description: t("events.2012.description"),
+      icon: "fa-solid fa-seedling",
+      side: "right",
+    },
+    {
+      year: "2018-2021",
+      title: t("events.2018-2021.title"),
+      description: t("events.2018-2021.description"),
+      icon: "fa-solid fa-globe-americas",
+      side: "left",
+    },
+    {
+      year: "2022",
+      title: t("events.2022.title"),
+      description: t("events.2022.description"),
+      icon: "fa-solid fa-video",
+      side: "right",
+    },
+    {
+      year: "2024",
+      title: t("events.2024.title"),
+      description: t("events.2024.description"),
+      icon: "fa-solid fa-newspaper",
+      side: "left",
+    },
+  ];
   return (
     <section className="py-12 md:py-20 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            Marcos da Trajetória Profissional
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-            Uma linha do tempo que reflete compromisso, evolução e dedicação ao
-            jornalismo de qualidade
+            {t("subtitle")}
           </p>
         </div>
 

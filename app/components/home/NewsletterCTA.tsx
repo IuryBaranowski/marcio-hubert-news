@@ -1,12 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function NewsletterCTA() {
+  const t = useTranslations("newsletter");
+  const tForm = useTranslations("newsletter.form");
+  const tCommon = useTranslations("common");
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    interest: "Agronegócio",
+    interest: tForm("agribusiness"),
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -27,18 +32,16 @@ export default function NewsletterCTA() {
           <div className="inline-flex items-center space-x-2 px-3 md:px-4 py-1.5 md:py-2 bg-white/10 backdrop-blur-sm rounded-full mb-4 md:mb-6">
             <i className="fa-solid fa-envelope text-[#C8102E] text-sm md:text-base"></i>
             <span className="text-white text-xs md:text-sm font-semibold">
-              NEWSLETTER EXCLUSIVA
+              {t("badge")}
             </span>
           </div>
           <h2 className="font-serif font-bold text-2xl md:text-5xl text-white mb-4 md:mb-6 leading-tight">
-            Não Fique Apenas na Manchete.
+            {t("title")}
             <br />
-            Entenda o Contexto.
+            {t("title2")}
           </h2>
           <p className="text-sm md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-6 md:mb-10">
-            Receba diariamente as principais notícias do agronegócio, política e
-            economia com análises exclusivas direto no seu e-mail. Conteúdo
-            gratuito para profissionais que buscam decisões estratégicas.
+            {t("description")}
           </p>
         </div>
 
@@ -47,11 +50,11 @@ export default function NewsletterCTA() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs md:text-sm font-semibold text-[#0A1628] mb-2">
-                  Nome Completo
+                  {tForm("fullName")}
                 </label>
                 <input
                   type="text"
-                  placeholder="Seu nome"
+                  placeholder={tForm("yourName")}
                   value={formData.name}
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
@@ -61,11 +64,11 @@ export default function NewsletterCTA() {
               </div>
               <div>
                 <label className="block text-xs md:text-sm font-semibold text-[#0A1628] mb-2">
-                  E-mail Profissional
+                  {tForm("professionalEmail")}
                 </label>
                 <input
                   type="email"
-                  placeholder="seu@email.com"
+                  placeholder={tForm("emailPlaceholder")}
                   value={formData.email}
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
@@ -77,7 +80,7 @@ export default function NewsletterCTA() {
 
             <div>
               <label className="block text-xs md:text-sm font-semibold text-[#0A1628] mb-2">
-                Área de Interesse
+                {tForm("interestArea")}
               </label>
               <select
                 value={formData.interest}
@@ -86,11 +89,11 @@ export default function NewsletterCTA() {
                 }
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8102E] focus:border-transparent text-sm"
               >
-                <option>Agronegócio</option>
-                <option>Política</option>
-                <option>Economia</option>
-                <option>Brasil-EUA</option>
-                <option>Todas as áreas</option>
+                <option>{tForm("agribusiness")}</option>
+                <option>{tForm("politics")}</option>
+                <option>{tForm("economy")}</option>
+                <option>{tForm("brazilUsa")}</option>
+                <option>{tForm("allAreas")}</option>
               </select>
             </div>
 
@@ -104,8 +107,7 @@ export default function NewsletterCTA() {
                 htmlFor="terms"
                 className="text-xs md:text-sm text-gray-600"
               >
-                Concordo em receber comunicações do Marcio Hubert News e aceito
-                a política de privacidade. Posso cancelar a qualquer momento.
+                {tForm("terms")}
               </label>
             </div>
 
@@ -113,7 +115,7 @@ export default function NewsletterCTA() {
               type="submit"
               className="w-full py-3.5 md:py-4 bg-[#C8102E] text-white font-bold text-sm md:text-lg rounded-lg hover:bg-red-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              Quero Receber Análises Exclusivas
+              {tForm("submit")}
             </button>
           </form>
 
@@ -124,21 +126,21 @@ export default function NewsletterCTA() {
                   50K+
                 </div>
                 <div className="text-gray-600 text-xs md:text-sm">
-                  Assinantes Ativos
+                  {tForm("stats.subscribers")}
                 </div>
               </div>
               <div>
                 <div className="text-[#C8102E] font-bold text-xl md:text-3xl mb-1">
                   100%
                 </div>
-                <div className="text-gray-600 text-xs md:text-sm">Gratuito</div>
+                <div className="text-gray-600 text-xs md:text-sm">{tForm("stats.free")}</div>
               </div>
               <div>
                 <div className="text-[#C8102E] font-bold text-xl md:text-3xl mb-1">
                   Diário
                 </div>
                 <div className="text-gray-600 text-xs md:text-sm">
-                  Análises Exclusivas
+                  {tForm("stats.daily")}
                 </div>
               </div>
             </div>
@@ -147,8 +149,7 @@ export default function NewsletterCTA() {
 
         <div className="mt-6 md:mt-12 text-center">
           <p className="text-gray-400 text-xs md:text-sm">
-            Junte-se a milhares de profissionais que confiam no Marcio Hubert
-            News para se manterem informados
+            {tForm("joinThousands")}
           </p>
         </div>
       </div>

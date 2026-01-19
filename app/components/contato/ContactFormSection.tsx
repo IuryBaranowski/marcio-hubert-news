@@ -1,8 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function ContactFormSection() {
+  const t = useTranslations("contato.form");
+  const tCommon = useTranslations("common");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,10 +30,10 @@ export default function ContactFormSection() {
             <div className="lg:col-span-2 bg-gradient-to-br from-[#0A1628] to-[#1E3A5F] p-8 md:p-12 flex flex-col justify-between">
               <div>
                 <h3 className="font-serif font-bold text-2xl md:text-3xl text-white mb-4 md:mb-6 leading-tight">
-                  Envie Sua Mensagem
+                  {t("title")}
                 </h3>
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
-                  Preencha o formulário ao lado e nossa equipe responderá em até 48 horas úteis. Todas as mensagens são tratadas com confidencialidade e profissionalismo.
+                  {t("description")}
                 </p>
 
                 <div className="space-y-4 md:space-y-6">
@@ -40,10 +43,10 @@ export default function ContactFormSection() {
                     </div>
                     <div>
                       <div className="text-white font-semibold mb-1 text-sm md:text-base">
-                        Tempo de Resposta
+                        {t("responseTime")}
                       </div>
                       <div className="text-gray-400 text-xs md:text-sm">
-                        Até 48 horas úteis
+                        {t("responseTimeValue")}
                       </div>
                     </div>
                   </div>
@@ -54,10 +57,10 @@ export default function ContactFormSection() {
                     </div>
                     <div>
                       <div className="text-white font-semibold mb-1 text-sm md:text-base">
-                        Privacidade Garantida
+                        {t("privacy")}
                       </div>
                       <div className="text-gray-400 text-xs md:text-sm">
-                        Seus dados são protegidos
+                        {t("privacyValue")}
                       </div>
                     </div>
                   </div>
@@ -68,10 +71,10 @@ export default function ContactFormSection() {
                     </div>
                     <div>
                       <div className="text-white font-semibold mb-1 text-sm md:text-base">
-                        Atendimento Profissional
+                        {t("professional")}
                       </div>
                       <div className="text-gray-400 text-xs md:text-sm">
-                        Equipe especializada
+                        {t("professionalValue")}
                       </div>
                     </div>
                   </div>
@@ -80,7 +83,7 @@ export default function ContactFormSection() {
 
               <div className="pt-6 md:pt-8 border-t border-white/20 mt-6 md:mt-8">
                 <p className="text-gray-400 text-xs md:text-sm">
-                  Preferiu outro canal? Veja as informações de contato direto abaixo do formulário.
+                  {t("preferOtherChannel")}
                 </p>
               </div>
             </div>
@@ -90,11 +93,11 @@ export default function ContactFormSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
                     <label className="block text-xs md:text-sm font-semibold text-[#0A1628] mb-2">
-                      Nome Completo <span className="text-[#C8102E]">*</span>
+                      {t("fullName")} <span className="text-[#C8102E]">{t("required")}</span>
                     </label>
                     <input
                       type="text"
-                      placeholder="Seu nome"
+                      placeholder={tCommon("yourName")}
                       required
                       value={formData.name}
                       onChange={(e) =>
@@ -106,7 +109,7 @@ export default function ContactFormSection() {
 
                   <div>
                     <label className="block text-xs md:text-sm font-semibold text-[#0A1628] mb-2">
-                      E-mail <span className="text-[#C8102E]">*</span>
+                      {tCommon("email")} <span className="text-[#C8102E]">{t("required")}</span>
                     </label>
                     <input
                       type="email"
@@ -124,11 +127,11 @@ export default function ContactFormSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                   <div>
                     <label className="block text-xs md:text-sm font-semibold text-[#0A1628] mb-2">
-                      Telefone
+                      {t("phone")}
                     </label>
                     <input
                       type="tel"
-                      placeholder="+55 (11) 99999-9999"
+                      placeholder={t("phonePlaceholder")}
                       value={formData.phone}
                       onChange={(e) =>
                         setFormData({ ...formData, phone: e.target.value })
@@ -139,7 +142,7 @@ export default function ContactFormSection() {
 
                   <div>
                     <label className="block text-xs md:text-sm font-semibold text-[#0A1628] mb-2">
-                      Assunto <span className="text-[#C8102E]">*</span>
+                      {t("subject")} <span className="text-[#C8102E]">{t("required")}</span>
                     </label>
                     <select
                       required
@@ -149,25 +152,25 @@ export default function ContactFormSection() {
                       }
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C8102E] focus:border-transparent text-sm"
                     >
-                      <option value="">Selecione um assunto</option>
-                      <option>Sugestão de Pauta</option>
-                      <option>Solicitação de Entrevista</option>
-                      <option>Parceria Comercial</option>
-                      <option>Assessoria de Imprensa</option>
-                      <option>Dúvida sobre Conteúdo</option>
-                      <option>Feedback Editorial</option>
-                      <option>Outro Assunto</option>
+                      <option value="">{t("subjectSelect")}</option>
+                      <option>{t("subjectOptions.suggestion")}</option>
+                      <option>{t("subjectOptions.interview")}</option>
+                      <option>{t("subjectOptions.partnership")}</option>
+                      <option>{t("subjectOptions.pressOffice")}</option>
+                      <option>{t("subjectOptions.contentQuestion")}</option>
+                      <option>{t("subjectOptions.feedback")}</option>
+                      <option>{t("subjectOptions.other")}</option>
                     </select>
                   </div>
                 </div>
 
                 <div>
                   <label className="block text-xs md:text-sm font-semibold text-[#0A1628] mb-2">
-                    Empresa / Organização
+                    {t("company")}
                   </label>
                   <input
                     type="text"
-                    placeholder="Nome da empresa (opcional)"
+                    placeholder={t("companyPlaceholder")}
                     value={formData.company}
                     onChange={(e) =>
                       setFormData({ ...formData, company: e.target.value })
@@ -178,11 +181,11 @@ export default function ContactFormSection() {
 
                 <div>
                   <label className="block text-xs md:text-sm font-semibold text-[#0A1628] mb-2">
-                    Mensagem <span className="text-[#C8102E]">*</span>
+                    {t("message")} <span className="text-[#C8102E]">{t("required")}</span>
                   </label>
                   <textarea
                     rows={6}
-                    placeholder="Descreva sua solicitação, sugestão ou dúvida de forma clara e objetiva..."
+                    placeholder={t("messagePlaceholder")}
                     required
                     value={formData.message}
                     onChange={(e) =>
@@ -204,12 +207,8 @@ export default function ContactFormSection() {
                     className="mt-1 w-4 h-4 text-[#C8102E] border-gray-300 rounded focus:ring-[#C8102E]"
                   />
                   <label htmlFor="privacy" className="text-xs md:text-sm text-gray-600">
-                    Concordo com a{" "}
-                    <a href="#" className="text-[#C8102E] hover:underline font-medium">
-                      Política de Privacidade
-                    </a>{" "}
-                    e autorizo o uso dos meus dados para responder esta solicitação.{" "}
-                    <span className="text-[#C8102E]">*</span>
+                    {t("privacyCheck")}{" "}
+                    <span className="text-[#C8102E]">{t("required")}</span>
                   </label>
                 </div>
 
@@ -217,12 +216,11 @@ export default function ContactFormSection() {
                   type="submit"
                   className="w-full py-3 md:py-4 bg-[#C8102E] text-white font-bold text-base md:text-lg rounded-lg hover:bg-red-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
-                  Enviar Mensagem
+                  {t("submit")}
                 </button>
 
                 <p className="text-xs text-gray-500 text-center">
-                  Campos marcados com <span className="text-[#C8102E]">*</span> são
-                  obrigatórios
+                  {t("requiredFields")}
                 </p>
               </form>
             </div>

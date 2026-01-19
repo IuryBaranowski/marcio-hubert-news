@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 interface VideoStyle {
   icon: string;
   title: string;
@@ -8,44 +10,41 @@ interface VideoStyle {
   iconColor: string;
 }
 
-const videoStyles: VideoStyle[] = [
-  {
-    icon: "fa-solid fa-bullseye",
-    title: "Tom Direto",
-    description:
-      "Sem rodeios ou enrolação. Cada vídeo vai direto ao ponto, apresentando os fatos, o contexto e a análise de forma clara e objetiva. Respeitamos o tempo do espectador oferecendo conteúdo denso e bem estruturado.",
-    bgColor: "bg-blue-100",
-    iconColor: "text-blue-600",
-  },
-  {
-    icon: "fa-solid fa-chart-simple",
-    title: "Abordagem Analítica",
-    description:
-      "Não basta relatar o que aconteceu. Explicamos o porquê, exploramos as causas, apresentamos múltiplas perspectivas e projetamos possíveis desdobramentos. Análise estratégica é o diferencial de cada vídeo.",
-    bgColor: "bg-purple-100",
-    iconColor: "text-purple-600",
-  },
-  {
-    icon: "fa-solid fa-book-open",
-    title: "Contexto Sempre Presente",
-    description:
-      "Cada tema é contextualizado historicamente, politicamente e economicamente. O espectador não fica apenas com a notícia, mas compreende o panorama completo que permite decisões informadas.",
-    bgColor: "bg-green-100",
-    iconColor: "text-green-600",
-  },
-];
-
 export default function VideoStyleSection() {
+  const t = useTranslations("tv.style");
+  
+  const videoStyles: VideoStyle[] = [
+    {
+      icon: "fa-solid fa-bullseye",
+      title: t("direct.title"),
+      description: t("direct.description"),
+      bgColor: "bg-blue-100",
+      iconColor: "text-blue-600",
+    },
+    {
+      icon: "fa-solid fa-chart-simple",
+      title: t("analytical.title"),
+      description: t("analytical.description"),
+      bgColor: "bg-purple-100",
+      iconColor: "text-purple-600",
+    },
+    {
+      icon: "fa-solid fa-book-open",
+      title: t("contextual.title"),
+      description: t("contextual.description"),
+      bgColor: "bg-green-100",
+      iconColor: "text-green-600",
+    },
+  ];
   return (
     <section className="py-12 md:py-20 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            O Estilo dos Nossos Vídeos
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-            Conteúdo direto, analítico e contextualizado, sem sensacionalismo ou
-            superficialidade
+            {t("subtitle")}
           </p>
         </div>
 
@@ -76,10 +75,7 @@ export default function VideoStyleSection() {
           <div className="max-w-4xl mx-auto text-center">
             <i className="fa-solid fa-quote-left text-[#C8102E] text-3xl md:text-4xl mb-6"></i>
             <blockquote className="font-serif text-xl md:text-3xl text-white leading-relaxed mb-6 md:mb-8 italic">
-              "O vídeo não substitui o texto, mas complementa a experiência de quem
-              busca informação de qualidade. É a mesma profundidade analítica, agora
-              em um formato que permite maior imersão e compreensão visual dos temas
-              estratégicos."
+              &ldquo;{t("quote")}&rdquo;
             </blockquote>
             <div className="text-gray-300 font-semibold text-base md:text-lg">
               — Marcio Hubert

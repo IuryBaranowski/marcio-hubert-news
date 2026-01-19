@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface CategoryItem {
   icon: string;
@@ -12,49 +13,47 @@ interface CategoryItem {
   bgColor: string;
 }
 
-const categories: CategoryItem[] = [
-  {
-    icon: "fa-solid fa-seedling",
-    title: "Agronegócio",
-    description: "Mediador em painéis, fóruns e debates técnicos no agro.",
-    color: "green",
-    borderColor: "border-green-600",
-    textColor: "text-green-600",
-    bgColor: "bg-green-100",
-  },
-  {
-    icon: "fa-solid fa-landmark",
-    title: "Política",
-    description:
-      "Cobertura de eventos políticos, entrevistas e debates nacionais.",
-    color: "blue",
-    borderColor: "border-blue-600",
-    textColor: "text-blue-600",
-    bgColor: "bg-blue-100",
-  },
-  {
-    icon: "fa-solid fa-chart-line",
-    title: "Economia",
-    description:
-      "Eventos de economia estratégica para o agronegócio Brasileiro.",
-    color: "purple",
-    borderColor: "border-purple-600",
-    textColor: "text-purple-600",
-    bgColor: "bg-purple-100",
-  },
-  {
-    icon: "fa-solid fa-globe-americas",
-    title: "Estados Unidos",
-    description:
-      "Editor, produtor e âncora do Headlines na CBS TV - News 12.",
-    color: "red",
-    borderColor: "border-red-600",
-    textColor: "text-red-600",
-    bgColor: "bg-red-100",
-  },
-];
-
 export default function CategoryHighlights() {
+  const t = useTranslations("home.categoryHighlights");
+  
+  const categories: CategoryItem[] = [
+    {
+      icon: "fa-solid fa-seedling",
+      title: t("agribusiness.title"),
+      description: t("agribusiness.description"),
+      color: "green",
+      borderColor: "border-green-600",
+      textColor: "text-green-600",
+      bgColor: "bg-green-100",
+    },
+    {
+      icon: "fa-solid fa-landmark",
+      title: t("politics.title"),
+      description: t("politics.description"),
+      color: "blue",
+      borderColor: "border-blue-600",
+      textColor: "text-blue-600",
+      bgColor: "bg-blue-100",
+    },
+    {
+      icon: "fa-solid fa-chart-line",
+      title: t("economy.title"),
+      description: t("economy.description"),
+      color: "purple",
+      borderColor: "border-purple-600",
+      textColor: "text-purple-600",
+      bgColor: "bg-purple-100",
+    },
+    {
+      icon: "fa-solid fa-globe-americas",
+      title: t("unitedStates.title"),
+      description: t("unitedStates.description"),
+      color: "red",
+      borderColor: "border-red-600",
+      textColor: "text-red-600",
+      bgColor: "bg-red-100",
+    },
+  ];
   return (
     <section className="py-10 md:py-16 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">

@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function SubscribeCTASection() {
+  const t = useTranslations("tv.subscribe");
   return (
     <section className="py-16 md:py-24 bg-gradient-to-br from-[#0A1628] via-[#1E3A5F] to-[#0A1628] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -15,18 +17,16 @@ export default function SubscribeCTASection() {
           <div className="inline-flex items-center space-x-2 px-3 md:px-4 py-1.5 md:py-2 bg-white/10 backdrop-blur-sm rounded-full mb-4 md:mb-6">
             <i className="fa-brands fa-youtube text-red-600"></i>
             <span className="text-white text-xs md:text-sm font-semibold">
-              INSCREVA-SE NO CANAL
+              {t("badge")}
             </span>
           </div>
           <h2 className="font-serif font-bold text-3xl md:text-5xl text-white mb-4 md:mb-6 leading-tight">
-            Não Perca Nenhuma Análise.
+            {t("title")}
             <br />
-            Inscreva-se no Canal.
+            {t("title2")}
           </h2>
           <p className="text-base md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-6 md:mb-10">
-            Receba notificações sempre que um novo vídeo for publicado. Análises
-            estratégicas, entrevistas exclusivas e cobertura aprofundada dos temas
-            que impactam o Brasil e o mundo.
+            {t("description")}
           </p>
         </div>
 
@@ -36,14 +36,14 @@ export default function SubscribeCTASection() {
             className="inline-flex items-center space-x-3 px-8 md:px-10 py-4 md:py-5 bg-red-600 text-white font-bold text-base md:text-lg rounded-lg hover:bg-red-700 transition-all transform hover:scale-105 shadow-2xl"
           >
             <i className="fa-brands fa-youtube text-xl md:text-2xl"></i>
-            <span>Inscrever-se no YouTube</span>
+            <span>{t("ctaSubscribe")}</span>
           </Link>
           <Link
             href="#"
             className="inline-flex items-center space-x-3 px-8 md:px-10 py-4 md:py-5 bg-white/10 backdrop-blur-sm text-white font-bold text-base md:text-lg rounded-lg hover:bg-white/20 transition-all border border-white/20"
           >
             <i className="fa-solid fa-bell"></i>
-            <span>Ativar Notificações</span>
+            <span>{t("ctaNotifications")}</span>
           </Link>
         </div>
 
@@ -53,7 +53,7 @@ export default function SubscribeCTASection() {
               200+
             </div>
             <div className="text-gray-400 text-sm md:text-base">
-              Vídeos Publicados
+              {t("stats.videos")}
             </div>
           </div>
           <div className="text-center">
@@ -61,7 +61,7 @@ export default function SubscribeCTASection() {
               50K+
             </div>
             <div className="text-gray-400 text-sm md:text-base">
-              Inscritos no Canal
+              {t("stats.subscribers")}
             </div>
           </div>
           <div className="text-center">
@@ -69,7 +69,7 @@ export default function SubscribeCTASection() {
               2M+
             </div>
             <div className="text-gray-400 text-sm md:text-base">
-              Visualizações Totais
+              {t("stats.views")}
             </div>
           </div>
         </div>

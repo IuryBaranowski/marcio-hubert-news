@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import TVVideoCard from "./TVVideoCard";
 
 const latestVideos = [
@@ -93,16 +94,18 @@ const latestVideos = [
 ];
 
 export default function LatestVideosSection() {
+  const t = useTranslations("tv.latestVideos");
+  
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 md:mb-12">
           <div className="mb-4 md:mb-0">
             <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-3">
-              Vídeos Recentes
+              {t("title")}
             </h2>
             <p className="text-gray-600 text-base md:text-lg">
-              Análises atualizadas sobre os principais temas do momento
+              {t("subtitle")}
             </p>
           </div>
           <Link
@@ -110,7 +113,7 @@ export default function LatestVideosSection() {
             className="inline-flex items-center space-x-2 px-5 md:px-6 py-2.5 md:py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors"
           >
             <i className="fa-brands fa-youtube"></i>
-            <span>Ver Todos no YouTube</span>
+            <span>{t("cta")}</span>
           </Link>
         </div>
 

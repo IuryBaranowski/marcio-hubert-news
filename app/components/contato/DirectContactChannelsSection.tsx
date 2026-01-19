@@ -1,15 +1,18 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export default function DirectContactChannelsSection() {
+  const t = useTranslations("contato.directChannels");
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            Canais de Contato Direto
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-            Prefere falar diretamente? Utilize um dos nossos canais oficiais de comunicação
+            {t("subtitle")}
           </p>
         </div>
 
@@ -19,10 +22,10 @@ export default function DirectContactChannelsSection() {
               <i className="fa-solid fa-envelope text-white text-2xl md:text-3xl"></i>
             </div>
             <h3 className="font-serif font-bold text-xl md:text-2xl text-[#0A1628] mb-3">
-              E-mail Geral
+              {t("generalEmail.title")}
             </h3>
             <p className="text-gray-600 mb-4 text-sm md:text-base">
-              Para sugestões, dúvidas e feedback editorial
+              {t("generalEmail.description")}
             </p>
             <a
               href="mailto:contato@marciohubertnews.com"
@@ -32,7 +35,7 @@ export default function DirectContactChannelsSection() {
             </a>
             <div className="mt-4 md:mt-6 pt-4 md:pt-6 border-t border-gray-300">
               <p className="text-xs md:text-sm text-gray-500">
-                Resposta em até 48 horas úteis
+                {t("generalEmail.response")}
               </p>
             </div>
           </div>
@@ -42,10 +45,10 @@ export default function DirectContactChannelsSection() {
               <i className="fa-solid fa-newspaper text-white text-2xl md:text-3xl"></i>
             </div>
             <h3 className="font-serif font-bold text-xl md:text-2xl text-[#0A1628] mb-3">
-              Assessoria de Imprensa
+              {t("pressOffice.title")}
             </h3>
             <p className="text-gray-600 mb-4 text-sm md:text-base">
-              Solicitações de entrevistas e comentários à imprensa
+              {t("pressOffice.description")}
             </p>
             <a
               href="mailto:imprensa@marciohubertnews.com"
@@ -54,7 +57,7 @@ export default function DirectContactChannelsSection() {
               imprensa@marciohubertnews.com
             </a>
             <div className="mt-4 md:mt-6 pt-4 md:pt-6 border-t border-gray-300">
-              <p className="text-xs md:text-sm text-gray-500">Atendimento prioritário</p>
+              <p className="text-xs md:text-sm text-gray-500">{t("pressOffice.response")}</p>
             </div>
           </div>
 
@@ -63,10 +66,10 @@ export default function DirectContactChannelsSection() {
               <i className="fa-solid fa-briefcase text-white text-2xl md:text-3xl"></i>
             </div>
             <h3 className="font-serif font-bold text-xl md:text-2xl text-[#0A1628] mb-3">
-              Parcerias Comerciais
+              {t("commercial.title")}
             </h3>
             <p className="text-gray-600 mb-4 text-sm md:text-base">
-              Propostas de patrocínio e colaboração estratégica
+              {t("commercial.description")}
             </p>
             <a
               href="mailto:comercial@marciohubertnews.com"
@@ -76,7 +79,7 @@ export default function DirectContactChannelsSection() {
             </a>
             <div className="mt-4 md:mt-6 pt-4 md:pt-6 border-t border-gray-300">
               <p className="text-xs md:text-sm text-gray-500">
-                Análise de propostas em 5 dias úteis
+                {t("commercial.response")}
               </p>
             </div>
           </div>
@@ -88,12 +91,11 @@ export default function DirectContactChannelsSection() {
               <div className="flex items-center space-x-3 mb-4">
                 <i className="fa-solid fa-phone text-[#C8102E] text-2xl md:text-3xl"></i>
                 <h3 className="font-serif font-bold text-xl md:text-2xl text-white">
-                  Telefone de Contato
+                  {t("phone.title")}
                 </h3>
               </div>
               <p className="text-gray-300 mb-4 text-sm md:text-base">
-                Para assuntos urgentes relacionados à imprensa ou parcerias estratégicas,
-                entre em contato via telefone.
+                {t("phone.description")}
               </p>
               <a
                 href="tel:+5561999999999"
@@ -102,7 +104,7 @@ export default function DirectContactChannelsSection() {
                 +55 61 99999-9999
               </a>
               <p className="text-gray-400 text-xs md:text-sm mt-2">
-                Segunda a sexta, 9h às 18h (horário de Brasília)
+                {t("phone.schedule")}
               </p>
             </div>
 
@@ -110,7 +112,7 @@ export default function DirectContactChannelsSection() {
               <div className="flex items-center space-x-3 mb-4">
                 <i className="fa-solid fa-location-dot text-[#C8102E] text-2xl md:text-3xl"></i>
                 <h3 className="font-serif font-bold text-xl md:text-2xl text-white">
-                  Endereço da Redação
+                  {t("address.title")}
                 </h3>
               </div>
               <p className="text-gray-300 mb-2 text-sm md:text-base">
@@ -123,7 +125,7 @@ export default function DirectContactChannelsSection() {
                 Brasília, DF – CEP 70300-500
               </p>
               <p className="text-gray-400 text-xs md:text-sm mt-4">
-                Atendimento presencial mediante agendamento prévio
+                {t("address.description")}
               </p>
             </div>
           </div>

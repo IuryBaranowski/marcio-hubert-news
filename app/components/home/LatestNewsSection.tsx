@@ -1,6 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import NewsCard from "./NewsCard";
 
 const newsData = [
@@ -89,6 +90,8 @@ const newsData = [
 ];
 
 export default function LatestNewsSection() {
+  const t = useTranslations("home.latestNews");
+  const tCommon = useTranslations("common");
   const featuredNews = newsData.find((item) => item.featured);
   const sidebarNews = newsData.filter(
     (item) => item.id === 2 || item.id === 3
@@ -101,18 +104,18 @@ export default function LatestNewsSection() {
         <div className="flex items-center justify-between mb-8 md:mb-12">
           <div>
             <h2 className="font-serif font-bold text-2xl md:text-4xl text-[#0A1628] mb-2 md:mb-3">
-              Últimas Notícias
+              {t("title")}
             </h2>
             <p className="text-gray-600 text-sm md:text-lg">
-              Cobertura atualizada dos principais acontecimentos
+              {t("subtitle")}
             </p>
           </div>
           <Link
             href="/noticias"
             className="inline-flex items-center space-x-2 text-[#C8102E] font-semibold hover:underline text-sm md:text-base"
           >
-            <span className="hidden md:inline">Ver todas as notícias</span>
-            <span className="md:hidden">Ver todas →</span>
+            <span className="hidden md:inline">{t("seeAll")}</span>
+            <span className="md:hidden">{tCommon("seeAllShort")}</span>
             <i className="fa-solid fa-arrow-right hidden md:inline"></i>
           </Link>
         </div>

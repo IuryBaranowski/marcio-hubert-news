@@ -1,13 +1,299 @@
 {
-  "Home": {
-    "title": "Marcio Hubert News",
-    "subtitle": "Under construction."
+  "common": {
+    "brandName": "Marcio Hubert",
+    "brandSubtitle": "NEWS",
+    "newsletter": "Newsletter",
+    "readMore": "Read more",
+    "seeAll": "See all",
+    "seeAllShort": "See all →",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "press": "Press",
+    "headquarters": "Headquarters",
+    "subscribe": "Subscribe",
+    "subscribeFree": "Subscribe Free",
+    "download": "Download",
+    "downloadPDF": "Download PDF",
+    "enterContact": "Contact Us",
+    "send": "Send",
+    "name": "Name",
+    "message": "Message",
+    "subject": "Subject",
+    "yourEmail": "Your best email",
+    "yourName": "Your name",
+    "allRightsReserved": "© 2026 Marcio Hubert News. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "codeOfEthics": "Code of Ethics"
   },
-  "Header": {
+  "header": {
     "home": "Home",
+    "about": "About",
+    "consulting": "Consulting",
+    "lecture": "Lecture",
+    "mentoring": "Mentoring",
+    "mediaTraining": "Media Training",
+    "crisisManagement": "Crisis Management",
+    "contact": "Contact"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "categories": "Categories",
+    "contact": "Contact",
+    "description": "Institutional and strategic reading of the United States for leaders and companies.",
+    "agribusiness": "Agribusiness",
     "politics": "Politics",
     "economy": "Economy",
-    "usbr": "US x Brazil",
-    "contact": "Contact"
+    "unitedStates": "United States"
+  },
+  "home": {
+    "hero": { "badge": "", "title": "", "title2": "", "description": "" },
+    "aboutMarcio": { "badge": "", "title": "", "description1": "" },
+    "latestNews": { "title": "", "subtitle": "" },
+    "tv": { "badge": "", "title": "", "subtitle": "" },
+    "events": { "title": "", "subtitle": "" },
+    "editorialPrinciples": { "title": "", "subtitle": "" },
+    "categoryHighlights": { "agribusiness": { "title": "" } }
+  },
+  "sobre": {
+    "hero": { "badge": "", "title": "", "title2": "", "description": "" },
+    "trajectory": {
+      "title": "",
+      "description1": "",
+      "description2": "",
+      "description3": "",
+      "description4": "",
+      "highlights": {
+        "title": "",
+        "items": []
+      }
+    },
+    "coverageAreas": { "title": "", "subtitle": "" },
+    "timeline": { "title": "", "subtitle": "" },
+    "editorialPrinciples": { "title": "", "subtitle": "" },
+    "closingMission": { "title": "", "description1": "" },
+    "newsletter": { "title": "", "description": "" }
+  },
+  "noticias": {
+    "hero": { "badge": "", "title": "", "title2": "", "description": "" },
+    "intro": { "title": "", "description1": "" },
+    "categories": { "title": "", "subtitle": "" },
+    "articlesGrid": { "badge": "", "title": "" },
+    "filter": { "filterBy": "", "sortBy": "" },
+    "readingExperience": { "title": "", "description1": "" },
+    "newsletter": { "title": "", "description": "" }
+  },
+  "tv": {
+    "hero": { "badge": "", "title": "", "title2": "", "description": "" },
+    "intro": { "badge": "", "title": "", "description1": "" },
+    "style": { "title": "", "subtitle": "" },
+    "latestVideos": { "title": "", "subtitle": "" },
+    "subscribe": { "badge": "", "title": "", "title2": "" },
+    "videoCategories": { "title": "", "subtitle": "" },
+    "newsletter": { "title": "", "description": "" }
+  },
+  "eventos": {
+    "hero": { "badge": "", "title": "", "title2": "", "description": "" },
+    "newsletter": { "title": "", "description": "" },
+    "intro": { "title": "", "description1": "" },
+    "coverageFormat": { "title": "", "subtitle": "" },
+    "eventTypes": { "title": "", "subtitle": "" },
+    "commitment": { "title": "", "description1": "" },
+    "coverageStructure": { "title": "", "subtitle": "" },
+    "upcomingEvents": { "title": "", "subtitle": "" },
+    "pastEvents": { "title": "", "subtitle": "" }
+  },
+  "mediaKit": {
+    "hero": {
+      "badge": "Press and Partnership Information",
+      "title": "Media Kit",
+      "title2": "Marcio Hubert News",
+      "description": "Institutional information, audience data, editorial profile and contacts for strategic partnerships, press relations and collaboration opportunities.",
+      "ctaDownload": "Download Complete Media Kit (PDF)",
+      "ctaContact": "Contact Us"
+    },
+    "newsletter": {
+      "title": "Receive Daily Analysis in Your Email",
+      "description": "Don't just read the headlines. Understand the context with exclusive analysis on agribusiness, politics, economy and Brazil-US relations."
+    },
+    "intro": {
+      "title": "About This Media Kit",
+      "description": "This document brings together strategic information about Marcio Hubert News, its editorial profile, audience, content formats and communication channels. Developed to facilitate the work of press offices, commercial partners, sponsors and media outlets interested in establishing collaborations.",
+      "purpose": {
+        "title": "Media Kit Purpose",
+        "description1": "Marcio Hubert News is an analytical journalism portal specialized in agribusiness, politics, economy and Brazil-US relations. Created to serve professionals seeking strategic information, the outlet stands out for its editorial depth, impartiality and commitment to context.",
+        "description2": "This Media Kit provides a complete overview of the portal's editorial identity, audience profile, main content formats and partnership opportunities. It is an essential resource for journalists, communication advisors, agribusiness companies, political institutions and organizations that wish to establish contact or collaboration with Marcio Hubert News."
+      }
+    },
+    "professionalProfile": {
+      "title": "",
+      "subtitle": "",
+      "name": "",
+      "role": "",
+      "credentials": {
+        "title": "",
+        "items": []
+      },
+      "biography": {
+        "title": "",
+        "paragraph1": "",
+        "paragraph2": "",
+        "paragraph3": "",
+        "paragraph4": ""
+      },
+      "specializations": {
+        "title": "",
+        "agribusiness": {
+          "title": "",
+          "description": ""
+        },
+        "politics": {
+          "title": "",
+          "description": ""
+        },
+        "economy": {
+          "title": "",
+          "description": ""
+        },
+        "brazilUsa": {
+          "title": "",
+          "description": ""
+        }
+      }
+    },
+    "contentFormats": {
+      "title": "",
+      "subtitle": "",
+      "articles": {
+        "title": "",
+        "description": "",
+        "features": []
+      },
+      "videos": {
+        "title": "",
+        "description": "",
+        "features": []
+      },
+      "events": {
+        "title": "",
+        "description": "",
+        "features": []
+      },
+      "interviews": {
+        "title": "",
+        "description": "",
+        "features": []
+      }
+    },
+    "audienceProfile": {
+      "title": "",
+      "subtitle": "",
+      "metrics": {
+        "readers": {
+          "value": "",
+          "title": "",
+          "description": ""
+        },
+        "subscribers": {
+          "value": "",
+          "title": "",
+          "description": ""
+        },
+        "engagement": {
+          "value": "",
+          "title": "",
+          "description": ""
+        }
+      },
+      "segments": {
+        "title": "",
+        "professional": {
+          "title": "",
+          "items": []
+        },
+        "demographic": {
+          "title": "",
+          "items": []
+        }
+      }
+    },
+    "pressContact": {
+      "title": "",
+      "subtitle": "",
+      "cards": {
+        "press": {
+          "title": "",
+          "description": ""
+        },
+        "partnerships": {
+          "title": "",
+          "description": ""
+        },
+        "advertising": {
+          "title": "",
+          "description": ""
+        }
+      },
+      "form": {
+        "title": "",
+        "subtitle": "",
+        "fullName": "",
+        "company": "",
+        "professionalEmail": "",
+        "phone": "",
+        "requestType": "",
+        "message": "",
+        "placeholders": {
+          "name": "",
+          "company": "",
+          "email": "",
+          "phone": "",
+          "message": ""
+        },
+        "requestTypes": {
+          "interview": "",
+          "audience": "",
+          "editorial": "",
+          "commercial": "",
+          "event": "",
+          "other": ""
+        },
+        "submit": ""
+      }
+    },
+    "downloadCTA": {
+      "badge": "",
+      "title": "",
+      "description": "",
+      "download": "",
+      "requestEmail": "",
+      "info": {
+        "title": "",
+        "description": "",
+        "size": "",
+        "updated": ""
+      }
+    }
+  },
+  "contato": {
+    "hero": { "badge": "", "title": "", "title2": "", "description": "" },
+    "intro": { "title": "", "description": "" },
+    "form": { "title": "", "description": "" },
+    "directChannels": { "title": "", "subtitle": "" },
+    "expectations": { "title": "", "subtitle": "" },
+    "socialMedia": { "title": "", "subtitle": "" },
+    "closing": { "title": "", "description1": "" }
+  },
+  "newsletter": {
+    "badge": "EXCLUSIVE NEWSLETTER",
+    "defaultTitle": "Receive Daily Analysis in Your Email",
+    "defaultDescription": "Don't just read the headlines. Understand the context with exclusive analysis on agribusiness, politics, economy and Brazil-US relations.",
+    "joinText": "Join over 50,000 professionals who trust Marcio Hubert News",
+    "title": "Don't Just Read the Headlines.",
+    "title2": "Understand the Context.",
+    "description": "Receive daily the main news from agribusiness, politics and economy with exclusive analysis directly in your email. Free content for professionals seeking strategic decisions.",
+    "form": { "fullName": "", "professionalEmail": "" }
   }
 }

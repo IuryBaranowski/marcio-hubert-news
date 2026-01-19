@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import HeroSection from "../../components/shared/HeroSection";
 import EventsIntroSection from "../../components/eventos/EventsIntroSection";
 import EventCoverageFormatSection from "../../components/eventos/EventCoverageFormatSection";
@@ -12,21 +13,24 @@ import SimpleNewsletterCTA from "../../components/shared/SimpleNewsletterCTA";
 import Footer from "../../components/shared/Footer";
 
 export default function EventosPage() {
+  const t = useTranslations("eventos.hero");
+  const tNewsletter = useTranslations("eventos.newsletter");
+  
   return (
     <main className="font-sans bg-white text-[#2C2C2C] antialiased">
       <HeroSection
         badge={{
           icon: "fa-solid fa-calendar-days",
-          text: "Cobertura de Eventos",
+          text: t("badge"),
         }}
         title={
           <>
-            Jornalismo Além das
+            {t("title")}
             <br />
-            Manchetes dos Eventos
+            {t("title2")}
           </>
         }
-        description="A presença do Marcio Hubert News nos principais eventos do agronegócio, política e economia garante cobertura aprofundada, análise contextualizada e registro completo dos momentos que movem o Brasil."
+        description={t("description")}
       />
       <EventsIntroSection />
       <EventCoverageFormatSection />
@@ -36,8 +40,8 @@ export default function EventosPage() {
       <EventTypesSection />
       <EventCommitmentSection />
       <SimpleNewsletterCTA
-        title="Receba Cobertura Exclusiva de Eventos"
-        description="Seja o primeiro a receber análises, entrevistas e bastidores dos principais eventos do agronegócio, política e economia brasileira."
+        title={tNewsletter("title")}
+        description={tNewsletter("description")}
         source="eventos"
       />
       <Footer />

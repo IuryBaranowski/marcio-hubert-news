@@ -1,6 +1,9 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export default function ReadingExperienceSection() {
+  const t = useTranslations("noticias.readingExperience");
   return (
     <section className="py-12 md:py-20 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">
@@ -11,32 +14,13 @@ export default function ReadingExperienceSection() {
             </div>
 
             <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-6">
-              Uma Experiência de Leitura Diferenciada
+              {t("title")}
             </h2>
 
             <div className="space-y-4 md:space-y-6 text-base md:text-lg text-gray-700 leading-relaxed">
-              <p>
-                No Marcio Hubert News, cada artigo é estruturado para oferecer não
-                apenas informação, mas <strong>compreensão estratégica</strong>.
-                Nosso formato editorial divide o conteúdo em seções claras:{" "}
-                <strong>O Fato</strong>, <strong>O Contexto</strong>,{" "}
-                <strong>A Análise</strong> e <strong>Próximos Passos</strong>.
-              </p>
-
-              <p>
-                Essa estrutura garante que o leitor tenha acesso ao acontecimento,
-                entenda suas causas históricas e políticas, compreenda as implicações
-                práticas e saiba quais desdobramentos esperar. É jornalismo que
-                empodera o leitor a tomar decisões informadas.
-              </p>
-
-              <p>
-                Além disso, priorizamos <strong>clareza na escrita</strong>,{" "}
-                <strong>profundidade analítica</strong> e <strong>acessibilidade</strong>.
-                Mesmo temas técnicos são explicados de forma que profissionais de
-                diferentes áreas possam compreender e aplicar as informações em seus
-                contextos estratégicos.
-              </p>
+              <p dangerouslySetInnerHTML={{ __html: t("description1") }} />
+              <p>{t("description2")}</p>
+              <p dangerouslySetInnerHTML={{ __html: t("description3") }} />
             </div>
 
             <div className="mt-8 md:mt-10 pt-8 md:pt-10 border-t border-gray-200">
@@ -46,7 +30,7 @@ export default function ReadingExperienceSection() {
                     100%
                   </div>
                   <div className="text-gray-600 font-medium text-sm md:text-base">
-                    Checagem de Fatos
+                    {t("stats.factChecking")}
                   </div>
                 </div>
                 <div>
@@ -54,7 +38,7 @@ export default function ReadingExperienceSection() {
                     Zero
                   </div>
                   <div className="text-gray-600 font-medium text-sm md:text-base">
-                    Sensacionalismo
+                    {t("stats.sensationalism")}
                   </div>
                 </div>
                 <div>
@@ -62,7 +46,7 @@ export default function ReadingExperienceSection() {
                     Total
                   </div>
                   <div className="text-gray-600 font-medium text-sm md:text-base">
-                    Imparcialidade
+                    {t("stats.impartiality")}
                   </div>
                 </div>
               </div>

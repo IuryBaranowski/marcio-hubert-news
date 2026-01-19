@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import PastEventCard from "./PastEventCard";
 
 const pastEvents = [
@@ -83,23 +84,25 @@ const pastEvents = [
 ];
 
 export default function PastEventsSection() {
+  const t = useTranslations("eventos.pastEvents");
+  
   return (
     <section className="py-12 md:py-20 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 md:mb-12">
           <div className="mb-4 md:mb-0">
             <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-3">
-              Eventos Cobertos
+              {t("title")}
             </h2>
             <p className="text-gray-600 text-base md:text-lg">
-              Acesse a cobertura completa de eventos anteriores
+              {t("subtitle")}
             </p>
           </div>
           <Link
             href="#"
             className="inline-flex items-center space-x-2 text-[#C8102E] font-semibold hover:underline"
           >
-            <span>Ver todos os eventos</span>
+            <span>{t("seeAll")}</span>
             <i className="fa-solid fa-arrow-right"></i>
           </Link>
         </div>

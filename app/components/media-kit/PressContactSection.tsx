@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 interface ContactCard {
   icon: string;
@@ -10,37 +11,39 @@ interface ContactCard {
   bgColor: string;
 }
 
-const contactCards: ContactCard[] = [
-  {
-    icon: "fa-solid fa-envelope",
-    title: "Assessoria de Imprensa",
-    email: "imprensa@marciohubertnews.com",
-    description: "Para solicitações de entrevistas e informações editoriais",
-    bgColor: "bg-blue-600",
-  },
-  {
-    icon: "fa-solid fa-handshake",
-    title: "Parcerias Estratégicas",
-    email: "parcerias@marciohubertnews.com",
-    description: "Para oportunidades de colaboração institucional",
-    bgColor: "bg-green-600",
-  },
-  {
-    icon: "fa-solid fa-bullhorn",
-    title: "Publicidade e Mídia",
-    email: "comercial@marciohubertnews.com",
-    description: "Para oportunidades comerciais e patrocínios",
-    bgColor: "bg-purple-600",
-  },
-];
-
 export default function PressContactSection() {
+  const t = useTranslations("mediaKit.pressContact");
+  
+  const contactCards: ContactCard[] = [
+    {
+      icon: "fa-solid fa-envelope",
+      title: t("cards.press.title"),
+      email: "imprensa@marciohubertnews.com",
+      description: t("cards.press.description"),
+      bgColor: "bg-blue-600",
+    },
+    {
+      icon: "fa-solid fa-handshake",
+      title: t("cards.partnerships.title"),
+      email: "parcerias@marciohubertnews.com",
+      description: t("cards.partnerships.description"),
+      bgColor: "bg-green-600",
+    },
+    {
+      icon: "fa-solid fa-bullhorn",
+      title: t("cards.advertising.title"),
+      email: "comercial@marciohubertnews.com",
+      description: t("cards.advertising.description"),
+      bgColor: "bg-purple-600",
+    },
+  ];
+  
   const [formData, setFormData] = useState({
     name: "",
     company: "",
     email: "",
     phone: "",
-    requestType: "Entrevista com Marcio Hubert",
+    requestType: t("form.requestTypes.interview"),
     message: "",
   });
 
@@ -55,12 +58,10 @@ export default function PressContactSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-[#0A1628] mb-4">
-            Contato para Imprensa e Parcerias
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-            Para entrevistas, solicitações de informações adicionais, parcerias
-            estratégicas ou colaborações editoriais, entre em contato através dos
-            canais abaixo
+            {t("subtitle")}
           </p>
         </div>
 
@@ -93,11 +94,10 @@ export default function PressContactSection() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8 md:mb-10">
               <h3 className="font-serif font-bold text-2xl md:text-3xl text-white mb-4">
-                Solicite Informações Adicionais
+                {t("form.title")}
               </h3>
               <p className="text-gray-300 text-base md:text-lg">
-                Preencha o formulário abaixo e nossa equipe entrará em contato em
-                até 24 horas úteis
+                {t("form.subtitle")}
               </p>
             </div>
 
@@ -105,11 +105,11 @@ export default function PressContactSection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div>
                   <label className="block text-white font-semibold mb-2 text-xs md:text-sm">
-                    Nome Completo
+                    {t("form.fullName")}
                   </label>
                   <input
                     type="text"
-                    placeholder="Seu nome"
+                    placeholder={t("form.placeholders.name")}
                     value={formData.name}
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
@@ -120,11 +120,11 @@ export default function PressContactSection() {
                 </div>
                 <div>
                   <label className="block text-white font-semibold mb-2 text-xs md:text-sm">
-                    Empresa / Veículo
+                    {t("form.company")}
                   </label>
                   <input
                     type="text"
-                    placeholder="Nome da empresa"
+                    placeholder={t("form.placeholders.company")}
                     value={formData.company}
                     onChange={(e) =>
                       setFormData({ ...formData, company: e.target.value })
@@ -138,11 +138,11 @@ export default function PressContactSection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div>
                   <label className="block text-white font-semibold mb-2 text-xs md:text-sm">
-                    E-mail Profissional
+                    {t("form.professionalEmail")}
                   </label>
                   <input
                     type="email"
-                    placeholder="seu@email.com"
+                    placeholder={t("form.placeholders.email")}
                     value={formData.email}
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
@@ -153,11 +153,11 @@ export default function PressContactSection() {
                 </div>
                 <div>
                   <label className="block text-white font-semibold mb-2 text-xs md:text-sm">
-                    Telefone
+                    {t("form.phone")}
                   </label>
                   <input
                     type="tel"
-                    placeholder="(00) 00000-0000"
+                    placeholder={t("form.placeholders.phone")}
                     value={formData.phone}
                     onChange={(e) =>
                       setFormData({ ...formData, phone: e.target.value })
@@ -170,7 +170,7 @@ export default function PressContactSection() {
 
               <div>
                 <label className="block text-white font-semibold mb-2 text-xs md:text-sm">
-                  Tipo de Solicitação
+                  {t("form.requestType")}
                 </label>
                 <select
                   value={formData.requestType}
@@ -180,22 +180,22 @@ export default function PressContactSection() {
                   className="w-full px-4 py-3 bg-white rounded-lg text-[#0A1628] focus:outline-none focus:ring-2 focus:ring-[#C8102E] text-sm"
                   required
                 >
-                  <option>Entrevista com Marcio Hubert</option>
-                  <option>Informações sobre audiência</option>
-                  <option>Parceria editorial</option>
-                  <option>Oportunidade comercial</option>
-                  <option>Cobertura de evento</option>
-                  <option>Outro assunto</option>
+                  <option>{t("form.requestTypes.interview")}</option>
+                  <option>{t("form.requestTypes.audience")}</option>
+                  <option>{t("form.requestTypes.editorial")}</option>
+                  <option>{t("form.requestTypes.commercial")}</option>
+                  <option>{t("form.requestTypes.event")}</option>
+                  <option>{t("form.requestTypes.other")}</option>
                 </select>
               </div>
 
               <div>
                 <label className="block text-white font-semibold mb-2 text-xs md:text-sm">
-                  Mensagem
+                  {t("form.message")}
                 </label>
                 <textarea
                   rows={5}
-                  placeholder="Descreva sua solicitação"
+                  placeholder={t("form.placeholders.message")}
                   value={formData.message}
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
@@ -209,7 +209,7 @@ export default function PressContactSection() {
                 type="submit"
                 className="w-full py-3 md:py-4 bg-[#C8102E] text-white font-bold text-base md:text-lg rounded-lg hover:bg-red-700 transition-colors shadow-xl"
               >
-                Enviar Solicitação
+                {t("form.submit")}
               </button>
             </form>
           </div>
