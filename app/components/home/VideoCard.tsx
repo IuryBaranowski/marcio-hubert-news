@@ -19,11 +19,16 @@ export default function VideoCard({
   duration,
   title,
   description,
-  date,
-  views,
   href,
 }: VideoCardProps) {
+  const Wrapper = href ? "a" : "div";
   return (
+    <Wrapper
+    href={href}
+    target={href ? "_blank" : undefined}
+    rel={href ? "noopener noreferrer" : undefined}
+    className="block"
+  >
     <article className="bg-white rounded-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow group cursor-pointer">
       <div className="relative h-48 md:h-64 overflow-hidden bg-gray-900">
         <img
@@ -48,15 +53,8 @@ export default function VideoCard({
           {title}
         </h3>
         <p className="text-gray-600 text-sm mb-3 md:mb-4">{description}</p>
-        <div className="flex items-center justify-between text-xs md:text-sm text-gray-500">
-          <span>{date}</span>
-          <span className="flex items-center space-x-1">
-            <i className="fa-solid fa-eye"></i>
-            <span>{views}</span>
-          </span>
-        </div>
       </div>
     </article>
+    </Wrapper>
   );
 }
-

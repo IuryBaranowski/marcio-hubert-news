@@ -10,14 +10,13 @@ const videos = [
     thumbnail:
       "https://storage.googleapis.com/uxpilot-auth.appspot.com/f9aba1d8ae-aefa72bac2a3b02e92a4.png",
     thumbnailAlt:
-      "professional news studio setup, editorial video production, broadcast quality",
-    duration: "15:42",
+      "Banco Master - o caso que cruzou a fronteira jurídica #008",
+    duration: "5:37",
     title:
-      "O que o Federal Reserve nunca explica ao público I #002",
+      "Banco Master - o caso que cruzou a fronteira jurídica #008",
     description:
-      "Neste episódio, você começa a entender, de forma clara e objetiva, qual é o papel do Banco Central americano (Federal Reserve), como ele funciona e por que suas decisões influenciam toda a economia mundial.",
-    date: "13 de Janeiro, 2025",
-    views: "12.5K",
+      "Quando a Justiça dos Estados Unidos reconhece a liquidação de um banco estrangeiro, isso não é apenas um ato formal. É a entrada desse caso no sistema judicial americano, um sistema que opera com base em documentos, rastreabilidade financeira e registros verificáveis. Explicarei o que realmente significa o reconhecimento do caso do Banco Master nos Estados Unidos.",
+    href: "https://www.youtube.com/watch?v=CpG4aNTKfos",
   },
   {
     id: 2,
@@ -25,26 +24,24 @@ const videos = [
       "https://storage.googleapis.com/uxpilot-auth.appspot.com/572ca6c787-bb5c8fb58c2866989c88.png",
     thumbnailAlt:
       "political interview setup, professional journalism, editorial broadcast",
-    duration: "22:15",
+    duration: "4:15",
     title:
-      "Entrevista: Ministro da Agricultura sobre Políticas de Exportação",
+      "O debate político no Brasil NÃO entende o sistema dos Estados Unidos #007",
     description:
-      "Conversa exclusiva sobre as estratégias do governo para fortalecer as vendas externas.",
-    date: "10 de Janeiro, 2025",
-    views: "18.2K",
+      "O debate político no Brasil frequentemente usa os Estados Unidos como referência, mas ignora como o sistema americano realmente funciona. Neste vídeo, entenda por que as comparações são equivocadas, como o sistema político dos EUA é diferente do brasileiro, e por que isso distorce o debate público no Brasil.",
+    href: "https://www.youtube.com/watch?v=YmglrfXg7bc",
   },
   {
     id: 3,
     thumbnail:
       "https://storage.googleapis.com/uxpilot-auth.appspot.com/3c6f6ccd99-5d3121a7fc83d9d3dbca.png",
     thumbnailAlt:
-      "economic analysis studio, financial news broadcast, professional editorial",
-    duration: "18:30",
-    title: "Análise: Impactos da Política Monetária Americana no Brasil",
+      "Por que o produtor brasileiro está sem margem no jogo global?",
+    duration: "4:29",
+    title: "Por que o produtor brasileiro está sem margem no jogo global? #006",
     description:
-      "Como as decisões do Federal Reserve afetam a economia brasileira e o agronegócio.",
-    date: "08 de Janeiro, 2025",
-    views: "9.8K",
+      "O produtor brasileiro produz mais, investe mais e assume mais riscos, mas fica com cada vez menos margem. Neste episódio, eu explico por que o produtor está perdendo margem no jogo global, quem realmente dita as regras do mercado, como a formação de preços acontece na prática e por que, no fim, a conta não fecha para quem está na ponta da produção.",
+    href: "https://www.youtube.com/watch?v=o6omSiJyBUY",
   },
 ];
 
