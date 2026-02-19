@@ -8,8 +8,8 @@ interface VideoCardProps {
   duration: string;
   title: string;
   description: string;
-  date: string;
-  views: string;
+  date?: string;
+  views?: string;
   href?: string;
 }
 
@@ -34,7 +34,7 @@ export default function VideoCard({
         <img
           src={thumbnail}
           alt={thumbnailAlt}
-          className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-contain opacity-90 group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="w-14 h-14 md:w-16 md:h-16 bg-[#C8102E] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">

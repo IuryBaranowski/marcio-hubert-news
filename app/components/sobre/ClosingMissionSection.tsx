@@ -39,16 +39,6 @@ export default function ClosingMissionSection() {
             {t("vision.description")}
           </p>
         </div>
-
-        <div>
-          <Link
-            href="#"
-            className="inline-flex items-center space-x-3 px-8 md:px-10 py-4 md:py-5 bg-[#C8102E] text-white font-bold text-base md:text-lg rounded-lg hover:bg-red-700 transition-all transform hover:scale-105 shadow-2xl"
-          >
-            <span>{t("cta")}</span>
-            <i className="fa-solid fa-arrow-right"></i>
-          </Link>
-        </div>
       </div>
     </section>
   );

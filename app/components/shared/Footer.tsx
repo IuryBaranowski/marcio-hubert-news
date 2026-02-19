@@ -11,7 +11,7 @@ export default function Footer() {
   const navigationLinks = [
     { label: t("home"), href: "/" },
     { label: t("about"), href: "/sobre" },
-    { label: t("consulting"), href: "/noticias" },
+    { label: t("consulting"), href: "/consultoria" },
     { label: t("lecture"), href: "/tv" },
     { label: t("mentoring"), href: "/eventos" },
     { label: t("mediaTraining"), href: "/media-kit" },

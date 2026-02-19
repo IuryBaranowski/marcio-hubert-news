@@ -36,13 +36,13 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <Link
-              href="/noticias"
+            {/* <Link
+              href="/consultoria"
               className="inline-flex items-center space-x-2 px-6 md:px-8 py-3 md:py-4 bg-[#C8102E] text-white font-semibold rounded-lg hover:bg-red-700 transition-all transform hover:scale-105 shadow-xl"
             >
               <span>{t("ctaSchedule")}</span>
               <i className="fa-solid fa-arrow-right"></i>
-            </Link>
+            </Link> */}
             <Link
               href="https://www.youtube.com/@MarcioHubertNews"
               target="_blank"

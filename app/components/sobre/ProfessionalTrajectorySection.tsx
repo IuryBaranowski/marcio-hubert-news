@@ -28,6 +28,21 @@ export default function ProfessionalTrajectorySection() {
               <p>
                 {t("description4")}
               </p>
+              <p>
+                {t("description5")}
+              </p>
+              <p>
+                {t("description6")}
+              </p>
+              <p>
+                {t("description7")}
+              </p>
+              <p>
+                {t("description8")}
+              </p>
+              <p>
+                {t("description9")}
+              </p>
             </div>
           </div>
 
@@ -35,7 +50,7 @@ export default function ProfessionalTrajectorySection() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8">
               <img
                 className="w-full h-auto object-cover"
-                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d93acf9715-3b1b2b5f4966254e90a6.png"
+                src="/images/capa_site_02png.png"
                 alt="Marcio Hubert - Jornalista especializado em agronegócio, política e relações internacionais"
               />
             </div>

@@ -30,11 +30,10 @@ export default function SobrePage() {
         description={t("description")}
       />
       <ProfessionalTrajectorySection />
-      <TimelineSection />
+      {/* <TimelineSection /> */}
       <EditorialPrinciplesDetailSection />
       <CoverageAreasSection />
       <ClosingMissionSection />
-      <SimpleNewsletterCTA source="sobre" />
       <Footer />
     </main>
   );
