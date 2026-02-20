@@ -12,7 +12,7 @@ interface EventType {
 
 export default function EventTypesSection() {
   const t = useTranslations("eventos.eventTypes");
-  
+
   const eventTypes: EventType[] = [
     {
       icon: "fa-solid fa-tractor",

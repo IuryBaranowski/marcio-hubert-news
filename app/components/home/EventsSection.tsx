@@ -80,7 +80,7 @@ export default function EventsSection() {
             </p>
           </div>
           <Link
-            href="/eventos"
+            href="/palestras"
             className="inline-flex items-center space-x-2 text-[#C8102E] font-semibold hover:underline text-sm md:text-base"
           >
             <span className="hidden md:inline">{t("seeAll")}</span>

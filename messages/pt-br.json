@@ -32,7 +32,8 @@
     "home": "Home",
     "about": "Sobre",
     "consulting": "Consultoria",
-    "lecture": "Palestra",
+    "lecture": "Palestras",
+    "entrevistas": "Entrevistas",
     "mentoring": "Mentoria",
     "mediaTraining": "Media Training",
     "crisisManagement": "Gestão de Crise",
@@ -410,6 +411,14 @@
     "newsletter": {
       "title": "Receba Análises Diárias no Seu E-mail",
       "description": "Não fique apenas na manchete. Entenda o contexto com análises exclusivas sobre agronegócio, política, economia e relações Brasil-EUA."
+    }
+  },
+  "entrevistas": {
+    "hero": {
+      "badge": "Cobertura de Entrevistas",
+      "title": "Jornalismo em",
+      "title2": "Conversa com Quem Decide",
+      "description": "Entrevistas exclusivas do Marcio Hubert News com lideranças do agronegócio, política e economia. Perguntas que vão além do óbvio e respostas que contextualizam o Brasil."
     }
   },
   "eventos": {

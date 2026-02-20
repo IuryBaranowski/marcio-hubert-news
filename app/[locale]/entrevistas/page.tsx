@@ -2,17 +2,17 @@
 
 import { useTranslations } from "next-intl";
 import HeroSection from "../../components/shared/HeroSection";
-import ContactInfoSection from "../../components/contato/ContactInfoSection";
+import EntrevistasVitrine from "../../components/entrevistas/EntrevistasVitrine";
 import Footer from "../../components/shared/Footer";
 
-export default function ContatoPage() {
-  const t = useTranslations("contato.hero");
+export default function EntrevistasPage() {
+  const t = useTranslations("entrevistas.hero");
 
   return (
     <main className="font-sans bg-white text-[#2C2C2C] antialiased">
       <HeroSection
         badge={{
-          icon: "fa-solid fa-comments",
+          icon: "fa-solid fa-microphone",
           text: t("badge"),
         }}
         title={
@@ -24,7 +24,7 @@ export default function ContatoPage() {
         }
         description={t("description")}
       />
-      <ContactInfoSection />
+      <EntrevistasVitrine />
       <Footer />
     </main>
   );

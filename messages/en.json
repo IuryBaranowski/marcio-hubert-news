@@ -32,7 +32,8 @@
     "home": "Home",
     "about": "About",
     "consulting": "Consulting",
-    "lecture": "Lecture",
+    "lecture": "Lectures",
+    "entrevistas": "Interviews",
     "mentoring": "Mentoring",
     "mediaTraining": "Media Training",
     "crisisManagement": "Crisis Management",
@@ -93,6 +94,14 @@
     "subscribe": { "badge": "", "title": "", "title2": "" },
     "videoCategories": { "title": "", "subtitle": "" },
     "newsletter": { "title": "", "description": "" }
+  },
+  "entrevistas": {
+    "hero": {
+      "badge": "Interview Coverage",
+      "title": "Journalism in",
+      "title2": "Conversation with Decision Makers",
+      "description": "Exclusive Marcio Hubert News interviews with leaders in agribusiness, politics and economy. Questions that go beyond the obvious and answers that contextualize Brazil."
+    }
   },
   "eventos": {
     "hero": { "badge": "", "title": "", "title2": "", "description": "" },

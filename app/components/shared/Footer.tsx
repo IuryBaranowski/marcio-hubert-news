@@ -11,11 +11,12 @@ export default function Footer() {
   const navigationLinks = [
     { label: t("home"), href: "/" },
     { label: t("about"), href: "/sobre" },
-    { label: t("consulting"), href: "/consultoria" },
-    { label: t("lecture"), href: "/tv" },
-    { label: t("mentoring"), href: "/eventos" },
-    { label: t("mediaTraining"), href: "/media-kit" },
-    { label: t("crisisManagement"), href: "/media-kit" },
+    // { label: t("consulting"), href: "/consultoria" },
+    { label: t("lecture"), href: "/palestras" },
+    { label: t("entrevistas"), href: "/entrevistas" },
+    // { label: t("mentoring"), href: "/tv" },
+    // { label: t("mediaTraining"), href: "/media-kit" },
+    // { label: t("crisisManagement"), href: "/media-kit" },
     { label: t("contact"), href: "/contato" },
   ];
 

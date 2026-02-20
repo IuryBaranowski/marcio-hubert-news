@@ -12,7 +12,7 @@ interface CoverageFormat {
 
 export default function EventCoverageFormatSection() {
   const t = useTranslations("eventos.coverageFormat");
-  
+
   const coverageFormats: CoverageFormat[] = [
     {
       icon: "fa-solid fa-newspaper",

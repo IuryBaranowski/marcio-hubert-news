@@ -11,7 +11,7 @@ interface StructureItem {
 
 export default function CoverageStructureSection() {
   const t = useTranslations("eventos.coverageStructure");
-  
+
   const structureItems: StructureItem[] = [
     {
       icon: "fa-solid fa-circle-info",

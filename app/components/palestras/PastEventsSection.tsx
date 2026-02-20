@@ -85,7 +85,7 @@ const pastEvents = [
 
 export default function PastEventsSection() {
   const t = useTranslations("eventos.pastEvents");
-  
+
   return (
     <section className="py-12 md:py-20 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto px-6">

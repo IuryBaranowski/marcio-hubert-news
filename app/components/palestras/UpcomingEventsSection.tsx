@@ -60,7 +60,7 @@ const upcomingEvents = [
 
 export default function UpcomingEventsSection() {
   const t = useTranslations("eventos.upcomingEvents");
-  
+
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
