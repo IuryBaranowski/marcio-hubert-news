@@ -29,14 +29,16 @@ export default function ContactInfoSection() {
             </div>
           </div>
           <div className="flex items-start space-x-3">
-            <i className="fa-solid fa-phone text-[#C8102E] mt-1 text-lg" />
+            <i className="fa-brands fa-whatsapp text-[#C8102E] mt-1 text-lg" />
             <div>
               <div className="text-gray-500 text-sm mb-0.5">{t("press")}</div>
               <a
-                href="tel:+16892434840"
+                href="https://wa.me/5511989978968"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#0A1628] font-medium hover:text-[#C8102E] transition-colors"
               >
-                +1 (689) 243-4840
+                +55 (11) 98997-8968 <span className="text-gray-500 font-normal">(WhatsApp)</span>
               </a>
             </div>
           </div>

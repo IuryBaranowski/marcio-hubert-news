@@ -126,16 +126,18 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-start space-x-2 md:space-x-3">
-                <i className="fa-solid fa-phone text-[#C8102E] mt-0.5 md:mt-1 text-sm"></i>
+                <i className="fa-brands fa-whatsapp text-[#C8102E] mt-0.5 md:mt-1 text-sm"></i>
                 <div>
                   <div className="text-gray-400 text-[10px] md:text-xs mb-0.5 md:mb-1">
                     {tCommon("press")}
                   </div>
                   <a
-                    href="tel:+16892434840"
+                    href="https://wa.me/5511989978968"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-white text-xs md:text-sm hover:text-[#C8102E] transition-colors"
                   >
-                    +1 (689) 243-4840
+                    +55 (11) 98997-8968 <span className="text-gray-400">(WhatsApp)</span>
                   </a>
                 </div>
               </li>
