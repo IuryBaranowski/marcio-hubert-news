@@ -5,8 +5,21 @@ import { useTranslations } from "next-intl";
 import VideoCard from "./VideoCard";
 
 const videos = [
-  {
+    {
     id: 1,
+    thumbnail:
+      "/images/Manipulado.jpeg",
+    thumbnailAlt:
+      "Você está sendo usado. E talvez ainda não tenha percebido #011",
+    duration: "4:09",
+    title:
+      "Você está sendo usado. E talvez ainda não tenha percebido #011",
+    description:
+      "Enquanto você briga por políticos, ministros ou ideologias, o sistema aprende que pode avançar sem resistência. Este vídeo não é sobre direita ou esquerda.É sobre limite. É sobre Constituição. É sobre separação de poderes. Eu vivo e trabalho dentro da imprensa americana.",
+         href: "https://www.youtube.com/watch?v=7PK13BYWC4c",
+  },
+  {
+    id: 2,
     thumbnail:
       "/images/SISTEMA_CAPA.png",
     thumbnailAlt:
@@ -19,7 +32,7 @@ const videos = [
     href: "https://www.youtube.com/watch?v=_xmthTk2XRw",
   },
   {
-    id: 2,
+    id: 3,
     thumbnail:
       "/images/JORNALISTA.png",
     thumbnailAlt:
@@ -30,20 +43,7 @@ const videos = [
     description:
       "Gaúcho, começou a carreira no interior do Rio Grande do Sul e mudou-se para São Paulo/SP onde fez graduação, pós-graduação, mestrado e dezenas de especializações em diversos mercados: financeiro, gestão e liderança de equipe.",
     href: "https://www.youtube.com/watch?v=nkDWozvKJU4",
-  },
-  {
-    id: 3,
-    thumbnail:
-      "/images/MASTER_CASO.png",
-    thumbnailAlt:
-      "Banco Master - o caso que cruzou a fronteira jurídica #008",
-    duration: "5:37",
-    title:
-      "Banco Master - o caso que cruzou a fronteira jurídica #008",
-    description:
-      "Quando a Justiça dos Estados Unidos reconhece a liquidação de um banco estrangeiro, isso não é apenas um ato formal. É a entrada desse caso no sistema judicial americano, um sistema que opera com base em documentos, rastreabilidade financeira e registros verificáveis.",
-    href: "https://www.youtube.com/watch?v=CpG4aNTKfos",
-  },
+  }
 ];
 
 export default function TVSection() {
