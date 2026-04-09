@@ -97,6 +97,22 @@ export default function EditorialPrinciples() {
                   />
                 </div>
               </a>
+
+              {/* Logo 4 */}
+              <a
+                href="#"
+                aria-label="Parceiro 3"
+                className="group"
+              >
+                <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-200 p-5 md:p-7 h-28 md:h-50 flex items-center justify-center">
+                  <img
+                    src="/images/engenharia.png"
+                    alt="Logo Parceiro 4"
+                    className="h-full w-full object-contain opacity-90 group-hover:opacity-100 transition-opacity md:grayscale md:group-hover:grayscale-0"
+                    loading="lazy"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>
